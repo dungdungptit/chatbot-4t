@@ -125,9 +125,10 @@ async def search_results(question: str):
 async def get_answer_code(body: ChatRequest):
     question = body.question
     chat_history = body.chat_history
+    organozation = body.organozation
     # return body
     print(body)
-    res = get_answer(question, chat_history)
+    res = get_answer(question, chat_history, organozation)
     print(res)
     return {
         "result": "successfully",

@@ -274,15 +274,15 @@ Nếu câu trả lời có link ảnh (type: image) hoặc link đường dẫn,
  """
 
 # Prompt
-template = """Từ câu hỏi và văn bản sau đây, hãy trả lời câu hỏi dựa trên \nQuestion: {question}\nContext: {context}\n
+template = """Từ câu hỏi, thông tin tổ chức và văn bản sau đây, hãy trả lời câu hỏi dựa trên \nQuestion: {question}\nOrganization: {organization}\nContext: {context}\n
 Đưa ra câu trả lời là các standarzation liên quan nhất đến thông tin câu hỏi và context
-Cần phân tách câu trả lời và trình bày như 1 danh sách có n standarzation theo số thứ tự như mẫu sau:
+Cần phân tách câu trả lời và trình bày như 1 danh sách có tối thiểu 10-15 (n) standarzation theo số thứ tự như mẫu sau:
 1. 
 2. 
 3. 
 .....
 n. 
-"""
+---\nOutput:"""
 
 prompt = ChatPromptTemplate.from_template(template)
 
@@ -292,7 +292,7 @@ from langchain_community.vectorstores import FAISS
 
 embed_model = OpenAIEmbeddings()
 vectorstore = FAISS.load_local(
-    "./Chatbot_06102024",
+    "./Chatbot_11102024",
     OpenAIEmbeddings(),
     allow_dangerous_deserialization=True,
 )
@@ -300,7 +300,7 @@ vectorstore = FAISS.load_local(
 retriever = vectorstore.as_retriever(search_kwargs={"k": 5, "threshold": 0.5})
 
 template_vietnamese_fusion = """Bạn là một tư vấn viên chuyên nghiệp và là người giải quyết vấn đề, được giao nhiệm vụ trả lời bất kỳ câu hỏi nào \
-về các thông tin tuyển sinh của Học viện Công nghệ Bưu Chính Viễn thông (PTIT).
+về các thông tin về các standarzation.
 Bạn có thể tạo ra nhiều truy vấn tìm kiếm dựa trên một truy vấn đầu vào duy nhất. \n
 Tạo ra nhiều truy vấn tìm kiếm liên quan đến: {question} \n
 Đầu ra (3 truy vấn):"""
@@ -371,6 +371,7 @@ retrieval_chain_rag_fusion = generate_queries | retriever.map()
 class ChatRequest(BaseModel):
     question: str
     chat_history: Optional[List[Dict[str, str]]]
+    organozation: str
 
 
 def _format_chat_history(chat_history: List[Dict[str, str]]) -> List:
@@ -393,14 +394,32 @@ _inputs = RunnableParallel(
 
 final_rag_chain = _inputs | prompt | llm | StrOutputParser()
 
+vu = {
+    "vu_buu_chinh": """Vụ Bưu chính là tổ chức thuộc Bộ Thông tin và Truyền thông, thực hiện chức năng tham mưu, giúp Bộ trưởng quản lý nhà nước về bưu chính.""",
+    "vu_ke_hoach_tai_chinh": """Vụ Kế hoạch – Tài chính là tổ chức thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện chức năng quản lý, tổng hợp về công tác chiến lược, quy hoạch, kế hoạch phát triển ngành, lĩnh vực; kế hoạch đầu tư phát triển và dự toán thu, chi ngân sách nhà nước; các chương trình đầu tư công, định mức kinh tế kỹ thuật và các nhiệm vụ tài chính, kế hoạch, thống kê; quản lý đầu tư xây dựng cơ bản; quản lý kinh tế về dịch vụ công; quản lý kinh tế chuyên ngành trong phạm vi quản lý nhà nước của Bộ.""",
+    "vu_hop_tac_quoc_te": """Vụ Hợp tác quốc tế là tổ chức thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý về quan hệ đối ngoại, hội nhập và hợp tác quốc tế trong các lĩnh vực thuộc phạm vi quản lý nhà nước của Bộ Thông tin và Truyền thông.""",
+    "vu_khoa_hoc_con_nghe": """Vụ Khoa học và Công nghệ là tổ chức trực thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý nhà nước về khoa học và công nghệ, tiêu chuẩn đo lường chất lượng và bảo vệ môi trường trong các ngành, lĩnh vực thuộc phạm vi quản lý của Bộ Thông tin và Truyền thông.""",
+    "vu_kinh_te_va_xa_hoi_so": """Vụ Kinh tế số và Xã hội số là tổ chức thuộc Bộ Thông tin và Truyền thông, thực hiện chức năng tham mưu giúp Bộ trưởng về phát triển kinh tế số, xã hội số; quản lý nhà nước về giao dịch điện tử theo quy định của pháp luật.""",
+    "vu_phap_che": """Vụ Pháp chế là tổ chức thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý nhà nước bằng pháp luật trong lĩnh vực thông tin và truyền thông và tổ chức thực hiện công tác pháp chế theo quy định của pháp luật.""",
+}
 
-def get_answer(question: str, chat_history: any):
+
+def get_answer(question: str, chat_history: any, organization: str):
     question = normalize_replace_abbreviation_text(question)
-
+    description = ""
+    for k, v in vu.items():
+        if organization == k:
+            description = v
+            break
     docs = get_results(question)
 
     response = final_rag_chain.invoke(
-        {"question": question, "docs": docs, "chat_history": chat_history}
+        {
+            "question": question,
+            "docs": docs,
+            "organization": description,
+            "chat_history": chat_history,
+        }
     )
     print(response)
     return {"response": response}
