@@ -8,7 +8,7 @@ from typing import Dict, List, Optional, Sequence, Tuple
 import langsmith
 
 # from chain import ChatRequest, answer_chain
-from fastapi import FastAPI
+from fastapi import Body, FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from langserve import add_routes
 from langsmith import Client
@@ -122,13 +122,23 @@ async def search_results(question: str):
 
 
 @app.post("/chain_code")
-async def get_answer_code(body: ChatRequest):
+async def get_answer_code(
+    body: ChatRequest = Body(
+        examples=[
+            {
+                "question": "Standard involved in Machine Learning",
+                "chat_history": [],
+                "organization": "vu_khoa_hoc_cong_nghe",
+            }
+        ],
+    )
+):
     question = body.question
     chat_history = body.chat_history
-    organozation = body.organozation
+    organization = body.organization
     # return body
     print(body)
-    res = get_answer(question, chat_history, organozation)
+    res = get_answer(question, chat_history, organization)
     print(res)
     return {
         "result": "successfully",

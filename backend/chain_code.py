@@ -371,7 +371,7 @@ retrieval_chain_rag_fusion = generate_queries | retriever.map()
 class ChatRequest(BaseModel):
     question: str
     chat_history: Optional[List[Dict[str, str]]]
-    organozation: str
+    organization: str
 
 
 def _format_chat_history(chat_history: List[Dict[str, str]]) -> List:
@@ -387,6 +387,7 @@ def _format_chat_history(chat_history: List[Dict[str, str]]) -> List:
 _inputs = RunnableParallel(
     {
         "question": lambda x: x["question"],
+        "organization": itemgetter("organization"),
         "chat_history": lambda x: _format_chat_history(x["chat_history"]),
         "context": RunnableLambda(itemgetter("question")) | get_results,
     }
@@ -398,7 +399,7 @@ vu = {
     "vu_buu_chinh": """Vụ Bưu chính là tổ chức thuộc Bộ Thông tin và Truyền thông, thực hiện chức năng tham mưu, giúp Bộ trưởng quản lý nhà nước về bưu chính.""",
     "vu_ke_hoach_tai_chinh": """Vụ Kế hoạch – Tài chính là tổ chức thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện chức năng quản lý, tổng hợp về công tác chiến lược, quy hoạch, kế hoạch phát triển ngành, lĩnh vực; kế hoạch đầu tư phát triển và dự toán thu, chi ngân sách nhà nước; các chương trình đầu tư công, định mức kinh tế kỹ thuật và các nhiệm vụ tài chính, kế hoạch, thống kê; quản lý đầu tư xây dựng cơ bản; quản lý kinh tế về dịch vụ công; quản lý kinh tế chuyên ngành trong phạm vi quản lý nhà nước của Bộ.""",
     "vu_hop_tac_quoc_te": """Vụ Hợp tác quốc tế là tổ chức thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý về quan hệ đối ngoại, hội nhập và hợp tác quốc tế trong các lĩnh vực thuộc phạm vi quản lý nhà nước của Bộ Thông tin và Truyền thông.""",
-    "vu_khoa_hoc_con_nghe": """Vụ Khoa học và Công nghệ là tổ chức trực thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý nhà nước về khoa học và công nghệ, tiêu chuẩn đo lường chất lượng và bảo vệ môi trường trong các ngành, lĩnh vực thuộc phạm vi quản lý của Bộ Thông tin và Truyền thông.""",
+    "vu_khoa_hoc_cong_nghe": """Vụ Khoa học và Công nghệ là tổ chức trực thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý nhà nước về khoa học và công nghệ, tiêu chuẩn đo lường chất lượng và bảo vệ môi trường trong các ngành, lĩnh vực thuộc phạm vi quản lý của Bộ Thông tin và Truyền thông.""",
     "vu_kinh_te_va_xa_hoi_so": """Vụ Kinh tế số và Xã hội số là tổ chức thuộc Bộ Thông tin và Truyền thông, thực hiện chức năng tham mưu giúp Bộ trưởng về phát triển kinh tế số, xã hội số; quản lý nhà nước về giao dịch điện tử theo quy định của pháp luật.""",
     "vu_phap_che": """Vụ Pháp chế là tổ chức thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý nhà nước bằng pháp luật trong lĩnh vực thông tin và truyền thông và tổ chức thực hiện công tác pháp chế theo quy định của pháp luật.""",
 }
