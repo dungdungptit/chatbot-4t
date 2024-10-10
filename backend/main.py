@@ -118,6 +118,7 @@ class GetTraceBody(BaseModel):
 @app.get("/search_results")
 async def search_results(question: str):
     res = get_results(question)
+    res = [i[0] for i in res]
     return {"result": "preprocessed successfully", "code": 200, "res": res}
 
 
@@ -140,11 +141,15 @@ async def get_answer_code(
     print(body)
     res = get_answer(question, chat_history, organization)
     print(res)
+    sources = get_results(question)
+    sources = [i[0] for i in sources]
+    print(sources)
+    sources = [i for i in sources if i.metadata["name_en"] in res["response"]]
     return {
         "result": "successfully",
         "status": 200,
         "output": res,
-        "sources": get_results(question),
+        "sources": sources,
     }
     # try:
     # except:
