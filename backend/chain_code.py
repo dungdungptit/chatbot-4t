@@ -463,12 +463,20 @@ vu = {
     "vu_kinh_te_va_xa_hoi_so": """Vụ Kinh tế số và Xã hội số là tổ chức thuộc Bộ Thông tin và Truyền thông, thực hiện chức năng tham mưu giúp Bộ trưởng về phát triển kinh tế số, xã hội số; quản lý nhà nước về giao dịch điện tử theo quy định của pháp luật.""",
     "vu_phap_che": """Vụ Pháp chế là tổ chức thuộc Bộ Thông tin và Truyền thông, có chức năng tham mưu giúp Bộ trưởng thực hiện quản lý nhà nước bằng pháp luật trong lĩnh vực thông tin và truyền thông và tổ chức thực hiện công tác pháp chế theo quy định của pháp luật.""",
 }
+vu_en = {
+    "vu_buu_chinh": """The Postal Department is an organization under the Ministry of Information and Communications, performing the function of advising and assisting the Minister in state management of postal services.""",
+    "vu_ke_hoach_tai_chinh": """The Department of Planning and Finance is an organization under the Ministry of Information and Communications, with the function of advising and assisting the Minister in performing management and synthesis functions on strategy, planning, Sector and field development plans; development investment plans and state budget revenue and expenditure estimates; public investment programs, economic and technical norms and financial tasks, plans and regulations statistics; capital construction investment management; economic management of public services; specialized economic management within the scope of state management of the Ministry.""",
+    "vu_hop_tac_quoc_te": """The Department of International Cooperation is an organization under the Ministry of Information and Communications, with the function of advising and assisting the Minister in implementing the management of foreign relations, integration and international cooperation in the fields under the state management of the Ministry of Information and Communications.""",
+    "vu_khoa_hoc_cong_nghe": """The Department of Science and Technology is an organization under the Ministry of Information and Communications, with the function of advising and assisting the Minister in implementing state management of science and technology and measurement standards quality and environmental protection in industries and fields under the management of the Ministry of Information and Communications.""",
+    "vu_kinh_te_va_xa_hoi_so": """The Department of Digital Economy and Digital Society is an organization under the Ministry of Information and Communications, performing the function of advising and assisting the Minister on digital economy and digital society development; state management on electronic transactions according to the provisions of law.""",
+    "vu_phap_che": """The Department of Legal Affairs is an organization under the Ministry of Information and Communications, with the function of advising and assisting the Minister in implementing state management by law in the field of information and communications and organizing implementation Carry out legal work according to the provisions of law.""",
+}
 
 
 def get_answer(question: str, chat_history: any, organization: str):
     question = normalize_replace_abbreviation_text(question)
     description = ""
-    for k, v in vu.items():
+    for k, v in vu_en.items():
         if organization == k:
             description = v
             break
