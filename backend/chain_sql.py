@@ -22,7 +22,9 @@ template = """Based on the table schema below, write a SQL query that would answ
 {schema}
 
 Question: {question}
-SQL Query:"""
+
+if query about delete, update, insert with database, return 'No permission'
+else SQL Query:"""
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "Given an input question, convert it to a SQL query. No pre-amble."),
@@ -33,7 +35,7 @@ prompt = ChatPromptTemplate.from_messages(
 
 def get_schema():
     db_get_table_info = ""
-    with open("./database.sql", "r") as file:
+    with open("./database.sql", "r", encoding='utf-8') as file:
         db_get_table_info = file.readlines()
         file.close()
     return """--BẢNG CHA

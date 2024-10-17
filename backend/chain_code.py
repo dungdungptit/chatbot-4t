@@ -246,6 +246,30 @@ def normalize_replace_abbreviation_text(text):
 
     return text.lower()
 
+df2 = pd.read_excel("./Phan Cap (phan_cap).xlsx")
+def search_standard(docs):
+    #  {
+    #   "page_content": "Information technology — Artificial intelligence — Assessment of machine learning classification performance\n\nThis document specifies methodologies for measuring classification performance of machine learning models, systems and algorithms.",
+    #   "metadata": {
+    #     "source": "https://www.iso.org/standard/79799.html?browse=ics",
+    #     "seq_num": 28441,
+    #     "domain": null,
+    #     "id": "ISO/IEC TS 4213:2022",
+    #     "branch": "ISO -> 35 -> 35.020",
+    #     "year_public": null,
+    #     "status": "Còn hiệu lực",
+    #     "name_en": "Information technology — Artificial intelligence — Assessment of machine learning classification performance",
+    #     "name_vn": null
+    #   },
+    #   "type": "Document"
+    # },
+    for index in range(len(docs)):
+        # print(docs[index].metadata["branch"])
+        res = df2.loc[df2['full_name'].str.contains(str(docs[index].metadata["branch"]), na=False)].to_json(orient='records')
+        res = json.loads(res)
+        # # res[0]
+        docs[index].metadata["tree"] = res[0]
+    return docs
 
 from getpass import getpass
 import os
@@ -292,7 +316,7 @@ from langchain_community.vectorstores import FAISS
 
 embed_model = OpenAIEmbeddings()
 vectorstore = FAISS.load_local(
-    "./Chatbot_11102024",
+    "./Chatbot_17102024",
     OpenAIEmbeddings(),
     allow_dangerous_deserialization=True,
 )

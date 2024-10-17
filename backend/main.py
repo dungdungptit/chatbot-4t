@@ -13,7 +13,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from langserve import add_routes
 from langsmith import Client
 from pydantic import BaseModel
-from chain_code import get_answer, get_results, final_rag_chain, ChatRequest
+from chain_code import get_answer, get_results, search_standard, final_rag_chain, ChatRequest
 from chain_sql import get_sql
 
 # client = Client()
@@ -119,6 +119,13 @@ class GetTraceBody(BaseModel):
 async def search_results(question: str):
     res = get_results(question)
     res = [i[0] for i in res]
+    print(res)
+    for index in range(len(res)):
+        for k, v in res[index].metadata.items():
+            if type(v) is list: 
+                print(k, v[0])
+                res[index].metadata[k] = v[0]
+    res = search_standard(res)
     return {"result": "preprocessed successfully", "code": 200, "res": res}
 
 
@@ -157,9 +164,10 @@ async def get_answer_code(
     #     return {"result": "error", "status": 500, "output": res}
 
 
+import json
 @app.get("/chain_sql")
 async def get_answer_sql(question: str):
-    res = get_sql(question)
+    res = get_sql(json.dumps(question, ensure_ascii= True))
     return {"result": "preprocessed successfully", "code": 200, "query": res}
 
 
