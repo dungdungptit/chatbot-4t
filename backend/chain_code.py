@@ -246,7 +246,39 @@ def normalize_replace_abbreviation_text(text):
 
     return text.lower()
 
-df2 = pd.read_excel("./Phan Cap (phan_cap).xlsx")
+
+df2 = pd.read_excel("./data/Phan Cap (phan_cap)(1).xlsx")
+
+
+def paser_standard(res):
+    res = res
+    full_name = res["full_name"].split("->")
+    full_name = [i.strip() for i in full_name]
+
+    list_data = []
+    if len(full_name) > 1:
+        for i in range(len(full_name)):
+            tmp = res.copy()
+            # print(full_name[i])
+            st = f"Cha "
+            for j in range(i + 1):
+                if j == 0:
+                    st += f"1"
+                elif j != i - 1:
+                    st += f".1"
+                else:
+                    if tmp["description"] is not None:
+                        st = tmp["description"]
+                    else:
+                        st += f".1"
+            tmp.update({"name": st})
+            list_data.append(tmp)
+
+        for i in range(len(full_name) - 1):
+            list_data[i]["children"] = [list_data[i + 1]]
+    return list_data[0]
+
+
 def search_standard(docs):
     #  {
     #   "page_content": "Information technology — Artificial intelligence — Assessment of machine learning classification performance\n\nThis document specifies methodologies for measuring classification performance of machine learning models, systems and algorithms.",
@@ -265,11 +297,15 @@ def search_standard(docs):
     # },
     for index in range(len(docs)):
         # print(docs[index].metadata["branch"])
-        res = df2.loc[df2['full_name'].str.contains(str(docs[index].metadata["branch"]), na=False)].to_json(orient='records')
+        res = df2.loc[
+            df2["full_name"].str.contains(str(docs[index].metadata["branch"]), na=False)
+        ].to_json(orient="records")
         res = json.loads(res)
+
         # # res[0]
-        docs[index].metadata["tree"] = res[0]
+        docs[index].metadata["tree"] = paser_standard(res[0])
     return docs
+
 
 from getpass import getpass
 import os

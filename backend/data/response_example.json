@@ -1,0 +1,165 @@
+{
+  "result": "preprocessed successfully",
+  "code": 200,
+  "res": [
+    {
+      "page_content": "Information technology — Artificial intelligence — Assessment of machine learning classification performance\n\nThis document specifies methodologies for measuring classification performance of machine learning models, systems and algorithms.",
+      "metadata": {
+        "source": "https://www.iso.org/standard/79799.html?browse=ics",
+        "seq_num": 28441,
+        "domain": null,
+        "id": "ISO/IEC TS 4213:2022",
+        "branch": "ISO -> 35 -> 35.020",
+        "year_public": null,
+        "status": "Còn hiệu lực",
+        "name_en": "Information technology — Artificial intelligence — Assessment of machine learning classification performance",
+        "name_vn": null,
+        "tree": {
+          "full_name": "ISO",
+          "name": "Cha 1",
+          "description": null,
+          "parent": "ISO -> 35",
+          "children": [
+            {
+              "full_name": "ISO1",
+              "name": "Cha 1.1",
+              "description": null,
+              "parent": "ISO -> 35",
+              "children": [
+                {
+                  "full_name": "ISO12",
+                  "name": "Cha 1.1.1",
+                  "description": null,
+                  "parent": "ISO -> 35",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "full_name": "ISO1",
+              "name": "Cha 1.2",
+              "description": null,
+              "parent": "ISO -> 35",
+              "children": [
+                {
+                  "full_name": "ISO12",
+                  "name": "Cha 1.2.1",
+                  "description": null,
+                  "parent": "ISO -> 35",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "type": "Document"
+    },
+    {
+      "page_content": "Information technology — Programming languages, their environments and system software interfaces — Extension for the programming language C to support decimal floating-point arithmetic\n\nISO/IEC TR 24732:2009 specifies an extension to the programming language C, specified by the International Standard ISO/IEC 9899:1999. The extension provides support for decimal floating-point arithmetic that is intended to be consistent with the specification in IEEE 754-2008. Any conflict between the requirements described here and that specification is unintentional. ISO/IEC TR 24732:2009 defers to IEEE 754-2008.The binary floating-point arithmetic as specified in IEEE 754-2008 is not considered in ISO/IEC TR 24732:2009.",
+      "metadata": {
+        "source": "https://www.iso.org/standard/38842.html?browse=ics",
+        "seq_num": 27770,
+        "domain": null,
+        "id": "ISO/IEC TR 24732:2009",
+        "branch": "ISO -> 35 -> 35.060",
+        "year_public": null,
+        "status": "Còn hiệu lực",
+        "name_en": "Information technology — Programming languages, their environments and system software interfaces — Extension for the programming language C to support decimal floating-point arithmetic",
+        "name_vn": null,
+        "tree": {
+          "full_name": "ISO",
+          "name": "35.020",
+          "description": null,
+          "parent": "ISO -> 35",
+          "children": [
+            {
+              "full_name": "ISO1",
+              "name": "Cha 1.1",
+              "description": null,
+              "parent": "ISO -> 35",
+              "children": [
+                {
+                  "full_name": "ISO12",
+                  "name": "Cha 1.1.1",
+                  "description": null,
+                  "parent": "ISO -> 35",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "full_name": "ISO1",
+              "name": "Cha 1.2",
+              "description": null,
+              "parent": "ISO -> 35",
+              "children": [
+                {
+                  "full_name": "ISO12",
+                  "name": "Cha 1.2.1",
+                  "description": null,
+                  "parent": "ISO -> 35",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "type": "Document"
+    },
+    {
+      "page_content": "Information technology — Database languages — SQL multimedia and application packages\n\nISO/IEC 13249-6:2002 specifies an interface for data mining to enable standard access to and storage and manipulation of typical data structures in data mining.ISO/IEC 13249-6:2002 specifiesuser-defined types for the four major data mining functionsassociation rules,clustering,classification,and regression,routines to manipulate these user-defined types to allowsetting parameters for mining activities,training of mining models,testing of mining models,and application of mining models,user-defined types for data structures common across these data mining functions to capture metadata for data mining input.ISO/IEC 13249-6:2002 provides for interchange of data mining models so that models built on one system can be imported and deployed in other environments.",
+      "metadata": {
+        "source": "https://www.iso.org/standard/34129.html?browse=ics",
+        "seq_num": 27623,
+        "domain": null,
+        "id": "ISO/IEC 13249-6:2002",
+        "branch": "ISO -> 35 -> 35.060",
+        "year_public": null,
+        "status": "Còn hiệu lực",
+        "name_en": "Information technology — Database languages — SQL multimedia and application packages",
+        "name_vn": null,
+        "tree": {
+          "full_name": "ISO",
+          "name": "35.020",
+          "description": null,
+          "parent": "ISO -> 35",
+          "children": [
+            {
+              "full_name": "ISO1",
+              "name": "Cha 1.1",
+              "description": null,
+              "parent": "ISO -> 35",
+              "children": [
+                {
+                  "full_name": "ISO12",
+                  "name": "Cha 1.1.1",
+                  "description": null,
+                  "parent": "ISO -> 35",
+                  "children": null
+                }
+              ]
+            },
+            {
+              "full_name": "ISO1",
+              "name": "Cha 1.2",
+              "description": null,
+              "parent": "ISO -> 35",
+              "children": [
+                {
+                  "full_name": "ISO12",
+                  "name": "Cha 1.2.1",
+                  "description": null,
+                  "parent": "ISO -> 35",
+                  "children": null
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "type": "Document"
+    }
+  ]
+}
