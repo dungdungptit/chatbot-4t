@@ -1,0 +1,2119 @@
+display_name,name,description,parrent,children
+3GPP,3GPP,3GPP ROOT,,3GPP -> TSG CT
+,,,,3GPP -> TSG RAN
+,,,,3GPP -> TSG SA
+3GPP -> TSG CT,TSG CT,Core Network & Terminals,3GPP,3GPP -> TSG CT -> CT WG1
+,,,,3GPP -> TSG CT -> CT WG3
+,,,,3GPP -> TSG CT -> CT WG4
+,,,,3GPP -> TSG CT -> CT WG6
+3GPP -> TSG CT -> CT WG1,CT WG1,User Equipment to Core Network protocols,3GPP -> TSG CT,
+3GPP -> TSG CT -> CT WG3,CT WG3,Interworking with External Networks & Policy and Charging Control,3GPP -> TSG CT,
+3GPP -> TSG CT -> CT WG4,CT WG4,Core Network Protocols,3GPP -> TSG CT,
+3GPP -> TSG CT -> CT WG6,CT WG6,Smart Card Application Aspects,3GPP -> TSG CT,
+3GPP -> TSG RAN,TSG RAN,Radio Access Network,3GPP,3GPP -> TSG RAN -> RAN AH1
+,,,,3GPP -> TSG RAN -> RAN WG1
+,,,,3GPP -> TSG RAN -> RAN WG2
+,,,,3GPP -> TSG RAN -> RAN WG3
+,,,,3GPP -> TSG RAN -> RAN WG4
+,,,,3GPP -> TSG RAN -> RAN WG5
+3GPP -> TSG RAN -> RAN AH1,RAN AH1,ITU-R Ad Hoc,3GPP -> TSG RAN,
+3GPP -> TSG RAN -> RAN WG1,RAN WG1,Radio Layer 1 (Physical layer),3GPP -> TSG RAN,
+3GPP -> TSG RAN -> RAN WG2,RAN WG2,Radio layer 2 and Radio layer 3 Radio Resource Control,3GPP -> TSG RAN,
+3GPP -> TSG RAN -> RAN WG3,RAN WG3,UTRAN/E-UTRAN/NG-RAN architecture and related network interfaces,3GPP -> TSG RAN,
+3GPP -> TSG RAN -> RAN WG4,RAN WG4,Radio Performance and Protocol Aspects,3GPP -> TSG RAN,
+3GPP -> TSG RAN -> RAN WG5,RAN WG5,Mobile terminal conformance testing,3GPP -> TSG RAN,
+3GPP -> TSG SA,TSG SA,Service & System Aspects,3GPP,3GPP -> TSG SA -> SA WG1
+,,,,3GPP -> TSG SA -> SA WG2
+,,,,3GPP -> TSG SA -> SA WG3
+,,,,3GPP -> TSG SA -> SA WG4
+,,,,3GPP -> TSG SA -> SA WG5
+,,,,3GPP -> TSG SA -> SA WG6
+3GPP -> TSG SA -> SA WG1,SA WG1,Services,3GPP -> TSG SA,
+3GPP -> TSG SA -> SA WG2,SA WG2,System Architecture and Services,3GPP -> TSG SA,
+3GPP -> TSG SA -> SA WG3,SA WG3,Security and Privacy,3GPP -> TSG SA,
+3GPP -> TSG SA -> SA WG4,SA WG4,"Multimedia Codecs, Systems and Services",3GPP -> TSG SA,
+3GPP -> TSG SA -> SA WG5,SA WG5,"Management, Orchestration and Charging",3GPP -> TSG SA,
+3GPP -> TSG SA -> SA WG6,SA WG6,Application Enablement and Critical Communication Applications,3GPP -> TSG SA,
+IEC,IEC,IEC ROOT,,IEC -> SC 3C
+,,,,IEC -> TC 1
+,,,,IEC -> TC 2
+,,,,IEC -> TC 3
+IEC -> SC 3C,SC 3C,Graphical symbols for use on equipment,IEC,
+IEC -> TC 1,TC 1,Terminology,IEC,
+IEC -> TC 2,TC 2,Rotating machinery,IEC,
+IEC -> TC 3,TC 3,"Documentation, graphical symbols and representations of technical information",IEC,
+ISO,ISO,ISO ROOT,,ISO -> 01
+,,,,ISO -> 03
+,,,,ISO -> 07
+,,,,ISO -> 11
+,,,,ISO -> 13
+,,,,ISO -> 17
+,,,,ISO -> 19
+,,,,ISO -> 21
+,,,,ISO -> 23
+,,,,ISO -> 25
+,,,,ISO -> 27
+,,,,ISO -> 29
+,,,,ISO -> 31
+,,,,ISO -> 33
+,,,,ISO -> 35
+,,,,ISO -> 37
+,,,,ISO -> 39
+,,,,ISO -> 43
+,,,,ISO -> 45
+,,,,ISO -> 47
+,,,,ISO -> 49
+,,,,ISO -> 53
+,,,,ISO -> 55
+,,,,ISO -> 59
+,,,,ISO -> 61
+,,,,ISO -> 65
+,,,,ISO -> 67
+,,,,ISO -> 71
+,,,,ISO -> 73
+,,,,ISO -> 75
+,,,,ISO -> 77
+,,,,ISO -> 79
+,,,,ISO -> 81
+,,,,ISO -> 83
+,,,,ISO -> 85
+,,,,ISO -> 87
+,,,,ISO -> 91
+,,,,ISO -> 93
+,,,,ISO -> 95
+,,,,ISO -> 97
+ISO -> 01,01,Generalities. Terminology. Standardization. Documentation,ISO,ISO -> 01 -> 01.020
+,,,,ISO -> 01 -> 01.040
+,,,,ISO -> 01 -> 01.060
+,,,,ISO -> 01 -> 01.070
+,,,,ISO -> 01 -> 01.075
+,,,,ISO -> 01 -> 01.080
+,,,,ISO -> 01 -> 01.100
+,,,,ISO -> 01 -> 01.110
+,,,,ISO -> 01 -> 01.120
+,,,,ISO -> 01 -> 01.140
+ISO -> 01 -> 01.020,01.020,Terminology (principles and coordination)Including terminography,ISO -> 01,
+ISO -> 01 -> 01.040,01.040,Vocabularies,ISO -> 01,ISO -> 01 -> 01.040 -> 01.040.01
+,,,,ISO -> 01 -> 01.040 -> 01.040.03
+,,,,ISO -> 01 -> 01.040 -> 01.040.07
+,,,,ISO -> 01 -> 01.040 -> 01.040.11
+,,,,ISO -> 01 -> 01.040 -> 01.040.13
+,,,,ISO -> 01 -> 01.040 -> 01.040.17
+,,,,ISO -> 01 -> 01.040 -> 01.040.19
+,,,,ISO -> 01 -> 01.040 -> 01.040.21
+,,,,ISO -> 01 -> 01.040 -> 01.040.23
+,,,,ISO -> 01 -> 01.040 -> 01.040.25
+,,,,ISO -> 01 -> 01.040 -> 01.040.27
+,,,,ISO -> 01 -> 01.040 -> 01.040.31
+,,,,ISO -> 01 -> 01.040 -> 01.040.33
+,,,,ISO -> 01 -> 01.040 -> 01.040.35
+,,,,ISO -> 01 -> 01.040 -> 01.040.37
+,,,,ISO -> 01 -> 01.040 -> 01.040.39
+,,,,ISO -> 01 -> 01.040 -> 01.040.43
+,,,,ISO -> 01 -> 01.040 -> 01.040.45
+,,,,ISO -> 01 -> 01.040 -> 01.040.47
+,,,,ISO -> 01 -> 01.040 -> 01.040.49
+,,,,ISO -> 01 -> 01.040 -> 01.040.53
+,,,,ISO -> 01 -> 01.040 -> 01.040.55
+,,,,ISO -> 01 -> 01.040 -> 01.040.59
+,,,,ISO -> 01 -> 01.040 -> 01.040.61
+,,,,ISO -> 01 -> 01.040 -> 01.040.65
+,,,,ISO -> 01 -> 01.040 -> 01.040.67
+,,,,ISO -> 01 -> 01.040 -> 01.040.71
+,,,,ISO -> 01 -> 01.040 -> 01.040.73
+,,,,ISO -> 01 -> 01.040 -> 01.040.75
+,,,,ISO -> 01 -> 01.040 -> 01.040.77
+,,,,ISO -> 01 -> 01.040 -> 01.040.79
+,,,,ISO -> 01 -> 01.040 -> 01.040.81
+,,,,ISO -> 01 -> 01.040 -> 01.040.83
+,,,,ISO -> 01 -> 01.040 -> 01.040.85
+,,,,ISO -> 01 -> 01.040 -> 01.040.87
+,,,,ISO -> 01 -> 01.040 -> 01.040.91
+,,,,ISO -> 01 -> 01.040 -> 01.040.93
+,,,,ISO -> 01 -> 01.040 -> 01.040.97
+ISO -> 01 -> 01.040 -> 01.040.01,01.040.01,Generalities. Terminology. Standardization. Documentation (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.03,01.040.03,"Services. Company organization, management and quality. Administration. Transport. Sociology. (Vocabularies)",ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.07,01.040.07,Natural and applied sciences (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.11,01.040.11,Health care technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.13,01.040.13,Environment. Health protection. Safety (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.17,01.040.17,Metrology and measurement. Physical phenomena (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.19,01.040.19,Testing (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.21,01.040.21,Mechanical systems and components for general use (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.23,01.040.23,Fluid systems and components for general use (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.25,01.040.25,Manufacturing engineering (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.27,01.040.27,Energy and heat transfer engineering (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.31,01.040.31,Electronics (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.33,01.040.33,Telecommunications. Audio and video engineering (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.35,01.040.35,Information technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.37,01.040.37,Image technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.39,01.040.39,Precision mechanics. Jewellery (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.43,01.040.43,Road vehicle engineering (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.45,01.040.45,Railway engineering (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.47,01.040.47,Shipbuilding and marine structures (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.49,01.040.49,Aircraft and space vehicle engineering (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.53,01.040.53,Materials handling equipment (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.55,01.040.55,Packaging and distribution of goods (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.59,01.040.59,Textile and leather technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.61,01.040.61,Clothing industry (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.65,01.040.65,Agriculture (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.67,01.040.67,Food technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.71,01.040.71,Chemical technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.73,01.040.73,Mining and minerals (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.75,01.040.75,Petroleum and related technologies (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.77,01.040.77,Metallurgy (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.79,01.040.79,Wood technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.81,01.040.81,Glass and ceramics industries (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.83,01.040.83,Rubber and plastics industries (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.85,01.040.85,Paper technology (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.87,01.040.87,Paint and colour industries (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.91,01.040.91,Construction materials and building (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.93,01.040.93,Civil engineering (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.040 -> 01.040.97,01.040.97,Domestic and commercial equipment. Entertainment. Sports (Vocabularies),ISO -> 01 -> 01.040,
+ISO -> 01 -> 01.060,01.060,Quantities and units,ISO -> 01,
+ISO -> 01 -> 01.070,01.070,"Colour codingSafety colours in the context of graphical symbols, see01.080.10",ISO -> 01,
+ISO -> 01 -> 01.075,01.075,Character symbols,ISO -> 01,
+ISO -> 01 -> 01.080,01.080,Graphical symbols,ISO -> 01,ISO -> 01 -> 01.080 -> 01.080.01
+,,,,ISO -> 01 -> 01.080 -> 01.080.10
+,,,,ISO -> 01 -> 01.080 -> 01.080.20
+,,,,ISO -> 01 -> 01.080 -> 01.080.30
+,,,,ISO -> 01 -> 01.080 -> 01.080.40
+,,,,ISO -> 01 -> 01.080 -> 01.080.50
+,,,,ISO -> 01 -> 01.080 -> 01.080.99
+ISO -> 01 -> 01.080 -> 01.080.01,01.080.01,Graphical symbols in general,ISO -> 01 -> 01.080,
+ISO -> 01 -> 01.080 -> 01.080.10,01.080.10,"Public information symbols. Signs. Plates. LabelsIncluding safety signs, safety colours, etc.",ISO -> 01 -> 01.080,
+ISO -> 01 -> 01.080 -> 01.080.20,01.080.20,Graphical symbols for use on specific equipment,ISO -> 01 -> 01.080,
+ISO -> 01 -> 01.080 -> 01.080.30,01.080.30,"Graphical symbols for use on mechanical engineering and construction drawings, diagrams, plans, maps and in relevant technical product documentation",ISO -> 01 -> 01.080,
+ISO -> 01 -> 01.080 -> 01.080.40,01.080.40,"Graphical symbols for use on electrical and electronics engineering drawings, diagrams, charts and in relevant technical product documentation",ISO -> 01 -> 01.080,
+ISO -> 01 -> 01.080 -> 01.080.50,01.080.50,Graphical symbols for use on information technology and telecommunications technical drawings and in relevant technical product documentation,ISO -> 01 -> 01.080,
+ISO -> 01 -> 01.080 -> 01.080.99,01.080.99,Other graphical symbols,ISO -> 01 -> 01.080,
+ISO -> 01 -> 01.100,01.100,"Technical drawingsGraphical symbols for use on technical drawings, see01.080.30Computer-aided design, see35.240.10",ISO -> 01,ISO -> 01 -> 01.100 -> 01.100.01
+,,,,ISO -> 01 -> 01.100 -> 01.100.20
+,,,,ISO -> 01 -> 01.100 -> 01.100.30
+,,,,ISO -> 01 -> 01.100 -> 01.100.40
+,,,,ISO -> 01 -> 01.100 -> 01.100.99
+ISO -> 01 -> 01.100 -> 01.100.01,01.100.01,Technical drawings in general,ISO -> 01 -> 01.100,
+ISO -> 01 -> 01.100 -> 01.100.20,01.100.20,Mechanical engineering drawings,ISO -> 01 -> 01.100,
+ISO -> 01 -> 01.100 -> 01.100.30,01.100.30,Construction drawingsIncluding civil engineering drawings,ISO -> 01 -> 01.100,
+ISO -> 01 -> 01.100 -> 01.100.40,01.100.40,Drawing equipment,ISO -> 01 -> 01.100,
+ISO -> 01 -> 01.100 -> 01.100.99,01.100.99,Other standards related to technical drawings,ISO -> 01 -> 01.100,
+ISO -> 01 -> 01.110,01.110,"Technical product documentationIncluding rules for preparation of user guides, manuals, product specifications, etc.",ISO -> 01,
+ISO -> 01 -> 01.120,01.120,Standardization. General rulesIncluding rules for the preparation of standards catalogues and management of technical documents,ISO -> 01,
+ISO -> 01 -> 01.140,01.140,"Information sciences. PublishingInformation technology applications in information, documentation and publishing, see35.240.30",ISO -> 01,ISO -> 01 -> 01.140 -> 01.140.10
+,,,,ISO -> 01 -> 01.140 -> 01.140.20
+,,,,ISO -> 01 -> 01.140 -> 01.140.30
+,,,,ISO -> 01 -> 01.140 -> 01.140.40
+ISO -> 01 -> 01.140 -> 01.140.10,01.140.10,"Writing and transliterationCoded character sets for bibliographic information interchange, see35.040.10",ISO -> 01 -> 01.140,
+ISO -> 01 -> 01.140 -> 01.140.20,01.140.20,"Information sciencesIncluding documentation, librarianship and archive systems",ISO -> 01 -> 01.140,
+ISO -> 01 -> 01.140 -> 01.140.30,01.140.30,"Documents in administration, commerce and industryTechnical product documentation, see01.110Banking documents, see03.060Electronic data interchange (EDI), see35.240.60",ISO -> 01 -> 01.140,
+ISO -> 01 -> 01.140 -> 01.140.40,01.140.40,"PublishingElectronic publishing, see35.240.30",ISO -> 01 -> 01.140,
+ISO -> 03,03,"Services. Company organization, management and quality. Administration. Transport. Sociology",ISO,ISO -> 03 -> 03.020
+,,,,ISO -> 03 -> 03.060
+,,,,ISO -> 03 -> 03.080
+,,,,ISO -> 03 -> 03.100
+,,,,ISO -> 03 -> 03.120
+,,,,ISO -> 03 -> 03.140
+,,,,ISO -> 03 -> 03.160
+,,,,ISO -> 03 -> 03.180
+,,,,ISO -> 03 -> 03.200
+,,,,ISO -> 03 -> 03.220
+,,,,ISO -> 03 -> 03.240
+ISO -> 03 -> 03.020,03.020,Sociology. Demography,ISO -> 03,
+ISO -> 03 -> 03.060,03.060,"Finances. Banking. Monetary systems. InsuranceIncluding personal financial planningInformation technology applications in banking, see35.240.40",ISO -> 03,
+ISO -> 03 -> 03.080,03.080,"ServicesTransport, see03.220Postal services, see03.240",ISO -> 03,ISO -> 03 -> 03.080 -> 03.080.01
+,,,,ISO -> 03 -> 03.080 -> 03.080.10
+,,,,ISO -> 03 -> 03.080 -> 03.080.20
+,,,,ISO -> 03 -> 03.080 -> 03.080.30
+,,,,ISO -> 03 -> 03.080 -> 03.080.99
+ISO -> 03 -> 03.080 -> 03.080.01,03.080.01,Services in general,ISO -> 03 -> 03.080,
+ISO -> 03 -> 03.080 -> 03.080.10,03.080.10,"Maintenance services. Facilities managementIncluding cleaning and pest controlSterilization and desinfection in health care, see11.080",ISO -> 03 -> 03.080,
+ISO -> 03 -> 03.080 -> 03.080.20,03.080.20,"Services for companiesIncluding publicity, advertising, professional services, recruitment services, management consultancy, outsourcing, etc.Outsourcing as part of a company organization, see03.100.01Staff training and staff certification, see03.100.30",ISO -> 03 -> 03.080,
+ISO -> 03 -> 03.080 -> 03.080.30,03.080.30,"Services for consumersIncluding hotels, restaurants, washing, cleaning, removals, funerals, real estate, vehicle repair and servicing, furniture removals, services for elderly, sheltered housing services for elderly, sheltered housing, etc.Transport services and costs, see03.220Services for dementia care, assisted living, see11.020.10Consumer information, see97.020",ISO -> 03 -> 03.080,
+ISO -> 03 -> 03.080 -> 03.080.99,03.080.99,Other services,ISO -> 03 -> 03.080,
+ISO -> 03 -> 03.100,03.100,Company organization and management. Management systems,ISO -> 03,ISO -> 03 -> 03.100 -> 03.100.01
+,,,,ISO -> 03 -> 03.100 -> 03.100.02
+,,,,ISO -> 03 -> 03.100 -> 03.100.10
+,,,,ISO -> 03 -> 03.100 -> 03.100.20
+,,,,ISO -> 03 -> 03.100 -> 03.100.30
+,,,,ISO -> 03 -> 03.100 -> 03.100.40
+,,,,ISO -> 03 -> 03.100 -> 03.100.70
+ISO -> 03 -> 03.100 -> 03.100.01,03.100.01,"Company organization and management in generalIncluding legal aspects and risk management, societal security, outsourcingOutsourcing as a business to business service, see03.080.20Management systems, see03.100.70Security and protection against crime, see13.310",ISO -> 03 -> 03.100,
+ISO -> 03 -> 03.100 -> 03.100.02,03.100.02,"Governance and ethicsIncluding anti-bribery, anti-procurement fraud, corporate social responsibility",ISO -> 03 -> 03.100,
+ISO -> 03 -> 03.100 -> 03.100.10,03.100.10,"Purchasing. Procurement. LogisticsIncluding asset management, supply chain, etc.",ISO -> 03 -> 03.100,
+ISO -> 03 -> 03.100 -> 03.100.20,03.100.20,"Trade. Commercial function. MarketingE-commerce, see35.240.60",ISO -> 03 -> 03.100,
+ISO -> 03 -> 03.100 -> 03.100.30,03.100.30,"Management of human resourcesIncluding staff training, staff responsibilities, staff qualifications and certificationWelders' qualifications, see25.160.01",ISO -> 03 -> 03.100,
+ISO -> 03 -> 03.100 -> 03.100.40,03.100.40,"Research and developmentIncluding project management, value analysis, etc.",ISO -> 03 -> 03.100,
+ISO -> 03 -> 03.100 -> 03.100.70,03.100.70,"Management systemsIncluding environmental management systems (EMS), road traffic management systems, energy management systems, health care management systems, etc.",ISO -> 03 -> 03.100,
+ISO -> 03 -> 03.120,03.120,Quality,ISO -> 03,ISO -> 03 -> 03.120 -> 03.120.10
+,,,,ISO -> 03 -> 03.120 -> 03.120.20
+,,,,ISO -> 03 -> 03.120 -> 03.120.30
+ISO -> 03 -> 03.120 -> 03.120.10,03.120.10,"Quality management and quality assuranceQuality management systems, see03.100.70",ISO -> 03 -> 03.120,
+ISO -> 03 -> 03.120 -> 03.120.20,03.120.20,Product and company certification. Conformity assessmentIncluding laboratory accreditation and audit programmes and auditing,ISO -> 03 -> 03.120,
+ISO -> 03 -> 03.120 -> 03.120.30,03.120.30,Application of statistical methods,ISO -> 03 -> 03.120,
+ISO -> 03 -> 03.140,03.140,Patents. Intellectual property,ISO -> 03,
+ISO -> 03 -> 03.160,03.160,"Law. AdministrationIncluding flags and associated symbols (emblems) of political and administrative entities, military flags, flags of organizations, etc.",ISO -> 03,
+ISO -> 03 -> 03.180,03.180,"EducationE-learning, see35.240.90",ISO -> 03,
+ISO -> 03 -> 03.200,03.200,"Leisure. TourismCamping equipment, see97.200.30",ISO -> 03,ISO -> 03 -> 03.200 -> 03.200.01
+,,,,ISO -> 03 -> 03.200 -> 03.200.10
+,,,,ISO -> 03 -> 03.200 -> 03.200.99
+ISO -> 03 -> 03.200 -> 03.200.01,03.200.01,"Leisure and tourism in generalIncluding outdoor events management, tourist information offices, tourism services, hotels, etc.",ISO -> 03 -> 03.200,
+ISO -> 03 -> 03.200 -> 03.200.10,03.200.10,Adventure tourism,ISO -> 03 -> 03.200,
+ISO -> 03 -> 03.200 -> 03.200.99,03.200.99,Other standards relating to leisure and tourismIncluding recreational diving services,ISO -> 03 -> 03.200,
+ISO -> 03 -> 03.220,03.220,"TransportTransport of dangerous goods, see13.300",ISO -> 03,ISO -> 03 -> 03.220 -> 03.220.01
+,,,,ISO -> 03 -> 03.220 -> 03.220.20
+,,,,ISO -> 03 -> 03.220 -> 03.220.30
+,,,,ISO -> 03 -> 03.220 -> 03.220.40
+ISO -> 03 -> 03.220 -> 03.220.01,03.220.01,Transport in general,ISO -> 03 -> 03.220,
+ISO -> 03 -> 03.220 -> 03.220.20,03.220.20,"Road transportIncluding road transport servicesRoad traffic management system, see03.100.70Road traffic control equipment and installations, see93.080.30",ISO -> 03 -> 03.220,
+ISO -> 03 -> 03.220 -> 03.220.30,03.220.30,"Transport by railIncluding rail transport servicesRail traffic control equipment and installations, see93.100",ISO -> 03 -> 03.220,
+ISO -> 03 -> 03.220 -> 03.220.40,03.220.40,"Transport by waterIncluding water transport servicesWater transport control equipment and installations, see93.140",ISO -> 03 -> 03.220,
+ISO -> 03 -> 03.240,03.240,"Postal servicesIncluding postal equipment, post-boxes and letter-boxes, etc.",ISO -> 03,
+ISO -> 07,07,Natural and applied sciences,ISO,ISO -> 07 -> 07.030
+,,,,ISO -> 07 -> 07.040
+,,,,ISO -> 07 -> 07.060
+,,,,ISO -> 07 -> 07.080
+,,,,ISO -> 07 -> 07.100
+,,,,ISO -> 07 -> 07.120
+,,,,ISO -> 07 -> 07.140
+ISO -> 07 -> 07.030,07.030,"Physics. ChemistryApplied physics, see17Chemical technology, see71",ISO -> 07,
+ISO -> 07 -> 07.040,07.040,Astronomy. Geodesy. Geography,ISO -> 07,
+ISO -> 07 -> 07.060,07.060,Geology. Meteorology. Hydrology,ISO -> 07,
+ISO -> 07 -> 07.080,07.080,Biology. Botany. ZoologyIncluding biotechnology,ISO -> 07,
+ISO -> 07 -> 07.100,07.100,Microbiology,ISO -> 07,ISO -> 07 -> 07.100 -> 07.100.01
+,,,,ISO -> 07 -> 07.100 -> 07.100.10
+,,,,ISO -> 07 -> 07.100 -> 07.100.20
+,,,,ISO -> 07 -> 07.100 -> 07.100.30
+,,,,ISO -> 07 -> 07.100 -> 07.100.40
+,,,,ISO -> 07 -> 07.100 -> 07.100.99
+ISO -> 07 -> 07.100 -> 07.100.01,07.100.01,Microbiology in general,ISO -> 07 -> 07.100,
+ISO -> 07 -> 07.100 -> 07.100.10,07.100.10,"Medical microbiologyLaboratory medicine, see11.100",ISO -> 07 -> 07.100,
+ISO -> 07 -> 07.100 -> 07.100.20,07.100.20,"Microbiology of waterExamination of biological properties of water, see13.060.70",ISO -> 07 -> 07.100,
+ISO -> 07 -> 07.100 -> 07.100.30,07.100.30,"Food microbiologyIncluding microbiology of animal feeding stuffsAnimal feeding stuffs, see65.120General methods of tests and analysis for food products, see67.050",ISO -> 07 -> 07.100,
+ISO -> 07 -> 07.100 -> 07.100.40,07.100.40,Cosmetics microbiology,ISO -> 07 -> 07.100,
+ISO -> 07 -> 07.100 -> 07.100.99,07.100.99,Other standards related to microbiology,ISO -> 07 -> 07.100,
+ISO -> 07 -> 07.120,07.120,Nanotechnologies,ISO -> 07,
+ISO -> 07 -> 07.140,07.140,Forensic science,ISO -> 07,
+ISO -> 11,11,Health care technology,ISO,ISO -> 11 -> 11.020
+,,,,ISO -> 11 -> 11.040
+,,,,ISO -> 11 -> 11.060
+,,,,ISO -> 11 -> 11.080
+,,,,ISO -> 11 -> 11.100
+,,,,ISO -> 11 -> 11.120
+,,,,ISO -> 11 -> 11.140
+,,,,ISO -> 11 -> 11.160
+,,,,ISO -> 11 -> 11.180
+,,,,ISO -> 11 -> 11.200
+ISO -> 11 -> 11.020,11.020,"Medical sciences and health care facilities in generalForensic science, see07.140",ISO -> 11,ISO -> 11 -> 11.020 -> 11.020.01
+,,,,ISO -> 11 -> 11.020 -> 11.020.10
+,,,,ISO -> 11 -> 11.020 -> 11.020.20
+,,,,ISO -> 11 -> 11.020 -> 11.020.99
+ISO -> 11 -> 11.020 -> 11.020.01,11.020.01,"Quality and environmental management in health careIncluding quality and environmental management in health care technologyHealth care management systems, see03.100.70IT applications in health care technology, see35.240.80",ISO -> 11 -> 11.020,
+ISO -> 11 -> 11.020 -> 11.020.10,11.020.10,"Health care services in generalIncluding care homes, dementia care, assisted living, aesthetic surgery, chiropractic services, etc.",ISO -> 11 -> 11.020,
+ISO -> 11 -> 11.020 -> 11.020.20,11.020.20,"Medical scienceIncluding regenerative medicine, cell therapy, stratified medicine",ISO -> 11 -> 11.020,
+ISO -> 11 -> 11.020 -> 11.020.99,11.020.99,Other standards related to health care in general,ISO -> 11 -> 11.020,
+ISO -> 11 -> 11.040,11.040,Medical equipment,ISO -> 11,ISO -> 11 -> 11.040 -> 11.040.01
+,,,,ISO -> 11 -> 11.040 -> 11.040.10
+,,,,ISO -> 11 -> 11.040 -> 11.040.20
+,,,,ISO -> 11 -> 11.040 -> 11.040.25
+,,,,ISO -> 11 -> 11.040 -> 11.040.30
+,,,,ISO -> 11 -> 11.040 -> 11.040.40
+,,,,ISO -> 11 -> 11.040 -> 11.040.50
+,,,,ISO -> 11 -> 11.040 -> 11.040.55
+,,,,ISO -> 11 -> 11.040 -> 11.040.60
+,,,,ISO -> 11 -> 11.040 -> 11.040.70
+,,,,ISO -> 11 -> 11.040 -> 11.040.99
+ISO -> 11 -> 11.040 -> 11.040.01,11.040.01,Medical equipment in general,ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.10,11.040.10,"Anaesthetic, respiratory and reanimation equipmentIncluding medical gas installations",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.20,11.040.20,"Transfusion, infusion and injection equipmentIncluding blood packs and containers for transfusionSyringes, needles and catheters, see11.040.25",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.25,11.040.25,"Syringes, needles and catheters",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.30,11.040.30,"Surgical instruments and materialsIncluding surgical dressings, sutures, etc.",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.40,11.040.40,"Implants for surgery, prosthetics and orthoticsIncluding pacemakersOphthalmic implants, see11.040.70",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.50,11.040.50,"Radiographic equipmentIncluding radiographic diagnostic and therapy equipmentIn vitro diagnostic systems, see11.100.10Dental, medical and industrial radiographic films, see37.040.25",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.55,11.040.55,"Diagnostic equipmentIncluding medical monitoring equipment, medical thermometers and related materials",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.60,11.040.60,Therapy equipment,ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.70,11.040.70,"Ophthalmic equipmentIncluding ophthalmic implants, glasses, contact lenses and their cleaning products",ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.040 -> 11.040.99,11.040.99,Other medical equipment,ISO -> 11 -> 11.040,
+ISO -> 11 -> 11.060,11.060,Dentistry,ISO -> 11,ISO -> 11 -> 11.060 -> 11.060.01
+,,,,ISO -> 11 -> 11.060 -> 11.060.10
+,,,,ISO -> 11 -> 11.060 -> 11.060.15
+,,,,ISO -> 11 -> 11.060 -> 11.060.20
+,,,,ISO -> 11 -> 11.060 -> 11.060.25
+ISO -> 11 -> 11.060 -> 11.060.01,11.060.01,Dentistry in general,ISO -> 11 -> 11.060,
+ISO -> 11 -> 11.060 -> 11.060.10,11.060.10,Dental materials,ISO -> 11 -> 11.060,
+ISO -> 11 -> 11.060 -> 11.060.15,11.060.15,Dental implantsIncluding dentures,ISO -> 11 -> 11.060,
+ISO -> 11 -> 11.060 -> 11.060.20,11.060.20,"Dental equipmentDental radiographic films, see37.040.25Toothbrushes and dental floss, see97.170",ISO -> 11 -> 11.060,
+ISO -> 11 -> 11.060 -> 11.060.25,11.060.25,Dental instruments,ISO -> 11 -> 11.060,
+ISO -> 11 -> 11.080,11.080,Sterilization and disinfection,ISO -> 11,ISO -> 11 -> 11.080 -> 11.080.01
+,,,,ISO -> 11 -> 11.080 -> 11.080.10
+,,,,ISO -> 11 -> 11.080 -> 11.080.20
+,,,,ISO -> 11 -> 11.080 -> 11.080.30
+ISO -> 11 -> 11.080 -> 11.080.01,11.080.01,"Sterilization and disinfection in generalIncluding sterilization methods, air quality of surgery rooms, etc.",ISO -> 11 -> 11.080,
+ISO -> 11 -> 11.080 -> 11.080.10,11.080.10,Sterilizing equipment,ISO -> 11 -> 11.080,
+ISO -> 11 -> 11.080 -> 11.080.20,11.080.20,"Disinfectants and antisepticsIncluding indicatorsChemicals for industrial and domestic disinfection purposes, see71.100.35",ISO -> 11 -> 11.080,
+ISO -> 11 -> 11.080 -> 11.080.30,11.080.30,Sterilized packaging,ISO -> 11 -> 11.080,
+ISO -> 11 -> 11.100,11.100,Laboratory medicine,ISO -> 11,ISO -> 11 -> 11.100 -> 11.100.01
+,,,,ISO -> 11 -> 11.100 -> 11.100.10
+,,,,ISO -> 11 -> 11.100 -> 11.100.20
+,,,,ISO -> 11 -> 11.100 -> 11.100.30
+,,,,ISO -> 11 -> 11.100 -> 11.100.99
+ISO -> 11 -> 11.100 -> 11.100.01,11.100.01,Laboratory medicine in general,ISO -> 11 -> 11.100,
+ISO -> 11 -> 11.100 -> 11.100.10,11.100.10,In vitro diagnostic test systems,ISO -> 11 -> 11.100,
+ISO -> 11 -> 11.100 -> 11.100.20,11.100.20,"Biological evaluation of medical devicesMedical microbiology, see07.100.10",ISO -> 11 -> 11.100,
+ISO -> 11 -> 11.100 -> 11.100.30,11.100.30,Analysis of blood and urineIncluding doping control,ISO -> 11 -> 11.100,
+ISO -> 11 -> 11.100 -> 11.100.99,11.100.99,Other standards related to laboratory medicine,ISO -> 11 -> 11.100,
+ISO -> 11 -> 11.120,11.120,Pharmaceutics,ISO -> 11,ISO -> 11 -> 11.120 -> 11.120.01
+,,,,ISO -> 11 -> 11.120 -> 11.120.10
+,,,,ISO -> 11 -> 11.120 -> 11.120.99
+ISO -> 11 -> 11.120 -> 11.120.01,11.120.01,Pharmaceutics in general,ISO -> 11 -> 11.120,
+ISO -> 11 -> 11.120 -> 11.120.10,11.120.10,MedicamentsIncluding medical prescriptions and medicinal herbs,ISO -> 11 -> 11.120,
+ISO -> 11 -> 11.120 -> 11.120.99,11.120.99,Other standards related to pharmaceuticsIncluding equipment for pharmaceutical industry,ISO -> 11 -> 11.120,
+ISO -> 11 -> 11.140,11.140,"Hospital equipmentIncluding hospital beds, surgical tables, medical garments, medical gloves, containers for sharp disposal, etc.",ISO -> 11,
+ISO -> 11 -> 11.160,11.160,"First aidIncluding kits, equipment, facilities and medical transport for first aid",ISO -> 11,
+ISO -> 11 -> 11.180,11.180,Aids for disabled or handicapped personsIncluding aids for elderly people,ISO -> 11,ISO -> 11 -> 11.180 -> 11.180.01
+,,,,ISO -> 11 -> 11.180 -> 11.180.10
+,,,,ISO -> 11 -> 11.180 -> 11.180.15
+,,,,ISO -> 11 -> 11.180 -> 11.180.20
+,,,,ISO -> 11 -> 11.180 -> 11.180.30
+,,,,ISO -> 11 -> 11.180 -> 11.180.99
+ISO -> 11 -> 11.180 -> 11.180.01,11.180.01,Aids for disabled and handicapped persons in general,ISO -> 11 -> 11.180,
+ISO -> 11 -> 11.180 -> 11.180.10,11.180.10,"Aids and adaptation for movingIncluding wheelchairs, walking sticks and lifting platforms",ISO -> 11 -> 11.180,
+ISO -> 11 -> 11.180 -> 11.180.15,11.180.15,Aids for deaf and hearing impaired people,ISO -> 11 -> 11.180,
+ISO -> 11 -> 11.180 -> 11.180.20,11.180.20,Aids for incontinence and ostomy,ISO -> 11 -> 11.180,
+ISO -> 11 -> 11.180 -> 11.180.30,11.180.30,"Aids for blind or partially sighted peopleIncluding BrailleGlasses, contact lenses and their cleaning products, see11.040.70",ISO -> 11 -> 11.180,
+ISO -> 11 -> 11.180 -> 11.180.99,11.180.99,Other standards related to aids for disabled and handicapped people,ISO -> 11 -> 11.180,
+ISO -> 11 -> 11.200,11.200,Birth control. Mechanical contraceptives,ISO -> 11,
+ISO -> 13,13,Environment. Health protection. Safety,ISO,ISO -> 13 -> 13.020
+,,,,ISO -> 13 -> 13.030
+,,,,ISO -> 13 -> 13.040
+,,,,ISO -> 13 -> 13.060
+,,,,ISO -> 13 -> 13.080
+,,,,ISO -> 13 -> 13.100
+,,,,ISO -> 13 -> 13.110
+,,,,ISO -> 13 -> 13.120
+,,,,ISO -> 13 -> 13.140
+,,,,ISO -> 13 -> 13.160
+,,,,ISO -> 13 -> 13.180
+,,,,ISO -> 13 -> 13.200
+,,,,ISO -> 13 -> 13.220
+,,,,ISO -> 13 -> 13.230
+,,,,ISO -> 13 -> 13.240
+,,,,ISO -> 13 -> 13.280
+,,,,ISO -> 13 -> 13.300
+,,,,ISO -> 13 -> 13.310
+,,,,ISO -> 13 -> 13.320
+,,,,ISO -> 13 -> 13.340
+ISO -> 13 -> 13.020,13.020,"Environmental protectionEnergy efficiency, see27.015",ISO -> 13,ISO -> 13 -> 13.020 -> 13.020.01
+,,,,ISO -> 13 -> 13.020 -> 13.020.10
+,,,,ISO -> 13 -> 13.020 -> 13.020.20
+,,,,ISO -> 13 -> 13.020 -> 13.020.30
+,,,,ISO -> 13 -> 13.020 -> 13.020.40
+,,,,ISO -> 13 -> 13.020 -> 13.020.50
+,,,,ISO -> 13 -> 13.020 -> 13.020.60
+,,,,ISO -> 13 -> 13.020 -> 13.020.99
+ISO -> 13 -> 13.020 -> 13.020.01,13.020.01,Environment and environmental protection in general,ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.020 -> 13.020.10,13.020.10,"Environmental managementIncluding certification and auditEnvironmental management systems (EMS), see03.100.70",ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.020 -> 13.020.20,13.020.20,"Environmental economics. SustainabilityIncluding responsible sourcing, procurement, sustainable development, sustainable events management, sustainable communities, smart urban infrastructure, biodiversity",ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.020 -> 13.020.30,13.020.30,Environmental impact assessmentIncluding environmental risk management,ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.020 -> 13.020.40,13.020.40,"Pollution, pollution control and conservationIncluding ecotoxicology and greenhouse gas emissions",ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.020 -> 13.020.50,13.020.50,Ecolabelling,ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.020 -> 13.020.60,13.020.60,"Product life-cyclesIncluding environmental footprint, carbon neutrality",ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.020 -> 13.020.99,13.020.99,Other standards related to environmental protection,ISO -> 13 -> 13.020,
+ISO -> 13 -> 13.030,13.030,Wastes,ISO -> 13,ISO -> 13 -> 13.030 -> 13.030.01
+,,,,ISO -> 13 -> 13.030 -> 13.030.10
+,,,,ISO -> 13 -> 13.030 -> 13.030.20
+,,,,ISO -> 13 -> 13.030 -> 13.030.30
+,,,,ISO -> 13 -> 13.030 -> 13.030.40
+,,,,ISO -> 13 -> 13.030 -> 13.030.50
+,,,,ISO -> 13 -> 13.030 -> 13.030.99
+ISO -> 13 -> 13.030 -> 13.030.01,13.030.01,Wastes in general,ISO -> 13 -> 13.030,
+ISO -> 13 -> 13.030 -> 13.030.10,13.030.10,Solid wastes,ISO -> 13 -> 13.030,
+ISO -> 13 -> 13.030 -> 13.030.20,13.030.20,"Liquid wastes. SludgeSewage water disposal and treatment, see13.060.30",ISO -> 13 -> 13.030,
+ISO -> 13 -> 13.030 -> 13.030.30,13.030.30,"Special wastesIncluding radioactive wastes, hospital wastes, carcasses, electrical, electronic equipment and other hazardous wastes",ISO -> 13 -> 13.030,
+ISO -> 13 -> 13.030 -> 13.030.40,13.030.40,"Installations and equipment for waste disposal and treatmentIncluding street cleaning equipment, waste containers, incineration and compaction equipment, equipment for dumping of refuse, landfill sites, etc.Waste collection vehicles, see43.160Waste chutes, see91.140.70Food waste disposal units, see97.040.50",ISO -> 13 -> 13.030,
+ISO -> 13 -> 13.030 -> 13.030.50,13.030.50,"RecyclingIncluding relevant equipmentMotor vehicle recycling, see43.020",ISO -> 13 -> 13.030,
+ISO -> 13 -> 13.030 -> 13.030.99,13.030.99,Other standards related to wastesIncluding waste prevention,ISO -> 13 -> 13.030,
+ISO -> 13 -> 13.040,13.040,Air quality,ISO -> 13,ISO -> 13 -> 13.040 -> 13.040.01
+,,,,ISO -> 13 -> 13.040 -> 13.040.20
+,,,,ISO -> 13 -> 13.040 -> 13.040.30
+,,,,ISO -> 13 -> 13.040 -> 13.040.35
+,,,,ISO -> 13 -> 13.040 -> 13.040.40
+,,,,ISO -> 13 -> 13.040 -> 13.040.50
+,,,,ISO -> 13 -> 13.040 -> 13.040.99
+ISO -> 13 -> 13.040 -> 13.040.01,13.040.01,Air quality in general,ISO -> 13 -> 13.040,
+ISO -> 13 -> 13.040 -> 13.040.20,13.040.20,Ambient atmospheresIncluding indoor air,ISO -> 13 -> 13.040,
+ISO -> 13 -> 13.040 -> 13.040.30,13.040.30,"Workplace atmospheresAir quality of surgery rooms, see11.080.01",ISO -> 13 -> 13.040,
+ISO -> 13 -> 13.040 -> 13.040.35,13.040.35,Cleanrooms and associated controlled environments,ISO -> 13 -> 13.040,
+ISO -> 13 -> 13.040 -> 13.040.40,13.040.40,Stationary source emissions,ISO -> 13 -> 13.040,
+ISO -> 13 -> 13.040 -> 13.040.50,13.040.50,Transport exhaust emissions,ISO -> 13 -> 13.040,
+ISO -> 13 -> 13.040 -> 13.040.99,13.040.99,Other standards related to air quality,ISO -> 13 -> 13.040,
+ISO -> 13 -> 13.060,13.060,"Water qualityIncluding toxicity, biodegradability, protection against pollution, related installations and equipment",ISO -> 13,ISO -> 13 -> 13.060 -> 13.060.01
+,,,,ISO -> 13 -> 13.060 -> 13.060.10
+,,,,ISO -> 13 -> 13.060 -> 13.060.20
+,,,,ISO -> 13 -> 13.060 -> 13.060.25
+,,,,ISO -> 13 -> 13.060 -> 13.060.30
+,,,,ISO -> 13 -> 13.060 -> 13.060.45
+,,,,ISO -> 13 -> 13.060 -> 13.060.50
+,,,,ISO -> 13 -> 13.060 -> 13.060.60
+,,,,ISO -> 13 -> 13.060 -> 13.060.70
+,,,,ISO -> 13 -> 13.060 -> 13.060.99
+ISO -> 13 -> 13.060 -> 13.060.01,13.060.01,Water quality in general,ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.10,13.060.10,Water of natural resources,ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.20,13.060.20,"Drinking waterMineral water, see67.160.20Chemicals for purification of water, see71.100.80Drinking water supply systems, see91.140.60",ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.25,13.060.25,"Water for industrial useIncluding water for commercial use: for swimming pools, fish breeding, etc.",ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.30,13.060.30,"Sewage waterIncluding sewage water disposal and treatmentLiquid wastes, see13.030.20Drainage systems, see91.140.80Sewage systems, see93.030",ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.45,13.060.45,Examination of water in generalIncluding sampling,ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.50,13.060.50,Examination of water for chemical substances,ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.60,13.060.60,Examination of physical properties of water,ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.70,13.060.70,"Examination of biological properties of waterMicrobiology of water, see07.100.20",ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.060 -> 13.060.99,13.060.99,Other standards related to water quality,ISO -> 13 -> 13.060,
+ISO -> 13 -> 13.080,13.080,"Soil quality. PedologySoil properties related to geotechnics, see93.020",ISO -> 13,ISO -> 13 -> 13.080 -> 13.080.01
+,,,,ISO -> 13 -> 13.080 -> 13.080.05
+,,,,ISO -> 13 -> 13.080 -> 13.080.10
+,,,,ISO -> 13 -> 13.080 -> 13.080.20
+,,,,ISO -> 13 -> 13.080 -> 13.080.30
+,,,,ISO -> 13 -> 13.080 -> 13.080.40
+,,,,ISO -> 13 -> 13.080 -> 13.080.99
+ISO -> 13 -> 13.080 -> 13.080.01,13.080.01,"Soil quality and pedology in generalIncluding pollution, erosion, degradation, etc.",ISO -> 13 -> 13.080,
+ISO -> 13 -> 13.080 -> 13.080.05,13.080.05,Examination of soils in generalIncluding sampling,ISO -> 13 -> 13.080,
+ISO -> 13 -> 13.080 -> 13.080.10,13.080.10,Chemical characteristics of soils,ISO -> 13 -> 13.080,
+ISO -> 13 -> 13.080 -> 13.080.20,13.080.20,Physical properties of soils,ISO -> 13 -> 13.080,
+ISO -> 13 -> 13.080 -> 13.080.30,13.080.30,Biological properties of soils,ISO -> 13 -> 13.080,
+ISO -> 13 -> 13.080 -> 13.080.40,13.080.40,Hydrological properties of soils,ISO -> 13 -> 13.080,
+ISO -> 13 -> 13.080 -> 13.080.99,13.080.99,Other standards related to soil qualityIncluding agricultural aspects related to soils and re-use of soil materials,ISO -> 13 -> 13.080,
+ISO -> 13 -> 13.100,13.100,"Occupational safety. Industrial hygieneProtective clothing and equipment, see13.340Workplace lighting, see91.160.10",ISO -> 13,
+ISO -> 13 -> 13.110,13.110,Safety of machinery,ISO -> 13,
+ISO -> 13 -> 13.120,13.120,"Domestic safetyChild safety, see97.190Safety of toys, see97.200.50",ISO -> 13,
+ISO -> 13 -> 13.140,13.140,"Noise with respect to human beingsIncluding audiometryHearing protectors, see13.340.20Acoustics and acoustic measurements, see17.140",ISO -> 13,
+ISO -> 13 -> 13.160,13.160,"Vibration and shock with respect to human beingsVibrations, shock and vibration measurements, see17.160",ISO -> 13,
+ISO -> 13 -> 13.180,13.180,Ergonomics,ISO -> 13,
+ISO -> 13 -> 13.200,13.200,"Accident and disaster controlIncluding emergency evacuations and emergency control systemsSeismic and vibration protection of buildings, see91.120.25",ISO -> 13,
+ISO -> 13 -> 13.220,13.220,Protection against fire,ISO -> 13,ISO -> 13 -> 13.220 -> 13.220.01
+,,,,ISO -> 13 -> 13.220 -> 13.220.10
+,,,,ISO -> 13 -> 13.220 -> 13.220.20
+,,,,ISO -> 13 -> 13.220 -> 13.220.40
+,,,,ISO -> 13 -> 13.220 -> 13.220.50
+,,,,ISO -> 13 -> 13.220 -> 13.220.99
+ISO -> 13 -> 13.220 -> 13.220.01,13.220.01,Protection against fire in generalIncluding fire safety,ISO -> 13 -> 13.220,
+ISO -> 13 -> 13.220 -> 13.220.10,13.220.10,"Fire-fightingIncluding equipment and vehiclesFlameproof clothing, see13.340.10",ISO -> 13 -> 13.220,
+ISO -> 13 -> 13.220 -> 13.220.20,13.220.20,Fire protectionIncluding equipment,ISO -> 13 -> 13.220,
+ISO -> 13 -> 13.220 -> 13.220.40,13.220.40,Ignitability and burning behaviour of materials and products,ISO -> 13 -> 13.220,
+ISO -> 13 -> 13.220 -> 13.220.50,13.220.50,Fire-resistance of building materials and elements,ISO -> 13 -> 13.220,
+ISO -> 13 -> 13.220 -> 13.220.99,13.220.99,Other standards related to protection against fire,ISO -> 13 -> 13.220,
+ISO -> 13 -> 13.230,13.230,"Explosion protectionElectrical apparatus for explosive atmospheres, see29.260.20Explosives and pyrotechnics, see71.100.30",ISO -> 13,
+ISO -> 13 -> 13.240,13.240,"Protection against excessive pressureIncluding safety valves, bursting disc devices, etc.",ISO -> 13,
+ISO -> 13 -> 13.280,13.280,"Radiation protectionIncluding protection against radio-frequency radiationRadiation measurements, see17.240",ISO -> 13,
+ISO -> 13 -> 13.300,13.300,"Protection against dangerous goodsIncluding performance requirements for dangerous goods, their handling, storage, transportation, marking, labelling, etc.Nuclear fissile materials, see27.120.30Explosives, see71.100.30",ISO -> 13,
+ISO -> 13 -> 13.310,13.310,"Protection against crimeIncluding security services, security procedures, burglar alarm devices, burglary resisting materials and equipment, bullet resisting materials and equipment, anti-theft devices for vehicles, safes, strong rooms, etc.",ISO -> 13,
+ISO -> 13 -> 13.320,13.320,"Alarm and warning systemsBurglar alarm and warning systems, see13.310Warning devices for road vehicles, see43.040.20",ISO -> 13,
+ISO -> 13 -> 13.340,13.340,"Protective equipmentOccupational safety, see13.100",ISO -> 13,ISO -> 13 -> 13.340 -> 13.340.01
+,,,,ISO -> 13 -> 13.340 -> 13.340.10
+,,,,ISO -> 13 -> 13.340 -> 13.340.20
+,,,,ISO -> 13 -> 13.340 -> 13.340.30
+,,,,ISO -> 13 -> 13.340 -> 13.340.40
+,,,,ISO -> 13 -> 13.340 -> 13.340.50
+,,,,ISO -> 13 -> 13.340 -> 13.340.60
+,,,,ISO -> 13 -> 13.340 -> 13.340.70
+,,,,ISO -> 13 -> 13.340 -> 13.340.99
+ISO -> 13 -> 13.340 -> 13.340.01,13.340.01,Protective equipment in general,ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.10,13.340.10,Protective clothingIncluding flameproof clothing,ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.20,13.340.20,"Head protective equipmentIncluding helmets, eye-protectors, hearing protectors, ear muffs, teeth protectors and hoods.",ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.30,13.340.30,Respiratory protective devices,ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.40,13.340.40,"Hand and arm protectionIncluding protective gloves, sleeves and mitsMedical gloves, see11.140",ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.50,13.340.50,Leg and foot protectionIncluding safety boots and shoes,ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.60,13.340.60,"Protection against falling and slippingIncluding safety ropes, harnesses and fall arrestorsMountaineering equipment, see97.220.40",ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.70,13.340.70,"Lifejackets, buoyancy aids and flotation devices",ISO -> 13 -> 13.340,
+ISO -> 13 -> 13.340 -> 13.340.99,13.340.99,Other protective equipment,ISO -> 13 -> 13.340,
+ISO -> 17,17,Metrology and measurement. Physical phenomena,ISO,ISO -> 17 -> 17.020
+,,,,ISO -> 17 -> 17.040
+,,,,ISO -> 17 -> 17.060
+,,,,ISO -> 17 -> 17.080
+,,,,ISO -> 17 -> 17.120
+,,,,ISO -> 17 -> 17.140
+,,,,ISO -> 17 -> 17.160
+,,,,ISO -> 17 -> 17.180
+,,,,ISO -> 17 -> 17.200
+,,,,ISO -> 17 -> 17.220
+,,,,ISO -> 17 -> 17.240
+ISO -> 17 -> 17.020,17.020,"Metrology and measurement in generalIncluding measuring instruments in general, preferred numbers, standard measures, general aspects of reference materials, etc.Quantities and units, see01.060Chemical reference materials, see71.040.30",ISO -> 17,
+ISO -> 17 -> 17.040,17.040,Linear and angular measurements,ISO -> 17,ISO -> 17 -> 17.040 -> 17.040.01
+,,,,ISO -> 17 -> 17.040 -> 17.040.10
+,,,,ISO -> 17 -> 17.040 -> 17.040.20
+,,,,ISO -> 17 -> 17.040 -> 17.040.30
+,,,,ISO -> 17 -> 17.040 -> 17.040.40
+ISO -> 17 -> 17.040 -> 17.040.01,17.040.01,Linear and angular measurements in general,ISO -> 17 -> 17.040,
+ISO -> 17 -> 17.040 -> 17.040.10,17.040.10,Limits and fits,ISO -> 17 -> 17.040,
+ISO -> 17 -> 17.040 -> 17.040.20,17.040.20,Properties of surfaces,ISO -> 17 -> 17.040,
+ISO -> 17 -> 17.040 -> 17.040.30,17.040.30,Measuring instruments,ISO -> 17 -> 17.040,
+ISO -> 17 -> 17.040 -> 17.040.40,17.040.40,Geometrical Product Specification (GPS),ISO -> 17 -> 17.040,
+ISO -> 17 -> 17.060,17.060,"Measurement of volume, mass, density, viscosityIncluding measuring instrumentsVolumetric measurements of petroleum products and natural gas, see75.180.30",ISO -> 17,
+ISO -> 17 -> 17.080,17.080,"Measurement of time, velocity, acceleration, angular velocityIncluding measuring instrumentsTime-measuring instruments, see39.040",ISO -> 17,
+ISO -> 17 -> 17.120,17.120,Measurement of fluid flowIncluding measuring instruments and installations,ISO -> 17,ISO -> 17 -> 17.120 -> 17.120.01
+,,,,ISO -> 17 -> 17.120 -> 17.120.10
+,,,,ISO -> 17 -> 17.120 -> 17.120.20
+ISO -> 17 -> 17.120 -> 17.120.01,17.120.01,Measurement of fluid flow in general,ISO -> 17 -> 17.120,
+ISO -> 17 -> 17.120 -> 17.120.10,17.120.10,"Flow in closed conduitsGas meters in buildings, see91.140.40Water meters in buildings, see91.140.60",ISO -> 17 -> 17.120,
+ISO -> 17 -> 17.120 -> 17.120.20,17.120.20,Flow in open channelsIncluding hydrometric determinations,ISO -> 17 -> 17.120,
+ISO -> 17 -> 17.140,17.140,"Acoustics and acoustic measurementsIncluding measuring instruments and testing equipmentNoise with respect to human beings, see13.140Acoustics in building, see91.120.20",ISO -> 17,ISO -> 17 -> 17.140 -> 17.140.01
+,,,,ISO -> 17 -> 17.140 -> 17.140.20
+,,,,ISO -> 17 -> 17.140 -> 17.140.30
+,,,,ISO -> 17 -> 17.140 -> 17.140.50
+,,,,ISO -> 17 -> 17.140 -> 17.140.99
+ISO -> 17 -> 17.140 -> 17.140.01,17.140.01,Acoustic measurements and noise abatement in generalIncluding acoustic insulation,ISO -> 17 -> 17.140,
+ISO -> 17 -> 17.140 -> 17.140.20,17.140.20,Noise emitted by machines and equipment,ISO -> 17 -> 17.140,
+ISO -> 17 -> 17.140 -> 17.140.30,17.140.30,"Noise emitted by means of transportIncluding road noise, railway noise, harbour noise and airport noise",ISO -> 17 -> 17.140,
+ISO -> 17 -> 17.140 -> 17.140.50,17.140.50,ElectroacousticsIncluding sound level meters,ISO -> 17 -> 17.140,
+ISO -> 17 -> 17.140 -> 17.140.99,17.140.99,Other standards related to acoustics,ISO -> 17 -> 17.140,
+ISO -> 17 -> 17.160,17.160,"Vibrations, shock and vibration measurementsIncluding measuring instruments and installationsVibration and shock with respect to human beings, see13.160Balancing and balancing machines, see21.120.40Vibration protection of buildings, see91.120.25",ISO -> 17,
+ISO -> 17 -> 17.180,17.180,Optics and optical measurements,ISO -> 17,ISO -> 17 -> 17.180 -> 17.180.01
+,,,,ISO -> 17 -> 17.180 -> 17.180.20
+,,,,ISO -> 17 -> 17.180 -> 17.180.30
+ISO -> 17 -> 17.180 -> 17.180.01,17.180.01,Optics and optical measurements in general,ISO -> 17 -> 17.180,
+ISO -> 17 -> 17.180 -> 17.180.20,17.180.20,Colours and measurement of light,ISO -> 17 -> 17.180,
+ISO -> 17 -> 17.180 -> 17.180.30,17.180.30,"Optical measuring instrumentsIncluding spectroscopes, geodetic instruments, etc.Ophthalmic optics and instruments, see11.040.70Laser equipment, see31.260Fibre optics, see33.180Optical equipment, materials and components, see37.020Photographic equipment lenses, see37.040.10",ISO -> 17 -> 17.180,
+ISO -> 17 -> 17.200,17.200,Thermodynamics and temperature measurements,ISO -> 17,ISO -> 17 -> 17.200 -> 17.200.20
+ISO -> 17 -> 17.200 -> 17.200.20,17.200.20,"Temperature-measuring instrumentsIncluding thermostatsMedical thermometers, see11.040.55",ISO -> 17 -> 17.200,
+ISO -> 17 -> 17.220,17.220,Electricity. Magnetism. Electrical and magnetic measurements,ISO -> 17,
+ISO -> 17 -> 17.240,17.240,"Radiation measurementsIncluding dosimetryRadiation protection, see13.280",ISO -> 17,
+ISO -> 19,19,Testing,ISO,ISO -> 19 -> 19.020
+,,,,ISO -> 19 -> 19.040
+,,,,ISO -> 19 -> 19.060
+,,,,ISO -> 19 -> 19.080
+,,,,ISO -> 19 -> 19.100
+,,,,ISO -> 19 -> 19.120
+ISO -> 19 -> 19.020,19.020,Test conditions and procedures in general,ISO -> 19,
+ISO -> 19 -> 19.040,19.040,Environmental testingIncluding testing equipment,ISO -> 19,
+ISO -> 19 -> 19.060,19.060,"Mechanical testingIncluding testing equipmentMechanical testing of metals, see77.040.10",ISO -> 19,
+ISO -> 19 -> 19.080,19.080,"Electrical and electronic testingIncluding testing equipmentEquipment for measuring electrical and magnetic quantities, see17.220.20",ISO -> 19,
+ISO -> 19 -> 19.100,19.100,"Non-destructive testingIncluding testing equipment: industrial apparatus for X-ray and gamma radiography, penetrant flaw detectors, etc.Non-destructive testing of welded joints, see25.160.40Industrial radiographic films, see37.040.25Non-destructive testing of metals, see77.040.20",ISO -> 19,
+ISO -> 19 -> 19.120,19.120,Particle size analysis. SievingIncluding test sieves and porosimetry,ISO -> 19,
+ISO -> 21,21,Mechanical systems and components for general use,ISO,ISO -> 21 -> 21.020
+,,,,ISO -> 21 -> 21.040
+,,,,ISO -> 21 -> 21.060
+,,,,ISO -> 21 -> 21.100
+,,,,ISO -> 21 -> 21.120
+,,,,ISO -> 21 -> 21.140
+,,,,ISO -> 21 -> 21.160
+,,,,ISO -> 21 -> 21.200
+,,,,ISO -> 21 -> 21.220
+,,,,ISO -> 21 -> 21.240
+ISO -> 21 -> 21.020,21.020,"Characteristics and design of machines, apparatus, equipmentIncluding reliability, dependability, maintainability, durability, etc.Safety of machinery, see13.110",ISO -> 21,
+ISO -> 21 -> 21.040,21.040,"Screw threadsScrew threads for aerospace construction, see49.030.10",ISO -> 21,ISO -> 21 -> 21.040 -> 21.040.01
+,,,,ISO -> 21 -> 21.040 -> 21.040.10
+,,,,ISO -> 21 -> 21.040 -> 21.040.20
+,,,,ISO -> 21 -> 21.040 -> 21.040.30
+ISO -> 21 -> 21.040 -> 21.040.01,21.040.01,Screw threads in general,ISO -> 21 -> 21.040,
+ISO -> 21 -> 21.040 -> 21.040.10,21.040.10,Metric screw threads,ISO -> 21 -> 21.040,
+ISO -> 21 -> 21.040 -> 21.040.20,21.040.20,"Inch screw threadsIncluding Whitworth screw threadsPipe threads, see21.040.30",ISO -> 21 -> 21.040,
+ISO -> 21 -> 21.040 -> 21.040.30,21.040.30,"Special screw threadsIncluding miniature screw threads, pipe threads, etc.",ISO -> 21 -> 21.040,
+ISO -> 21 -> 21.060,21.060,"FastenersFasteners related to surgery, prosthetics and orthotics, see11.040.40Fasteners for aerospace construction, see49.030",ISO -> 21,ISO -> 21 -> 21.060 -> 21.060.01
+,,,,ISO -> 21 -> 21.060 -> 21.060.10
+,,,,ISO -> 21 -> 21.060 -> 21.060.20
+,,,,ISO -> 21 -> 21.060 -> 21.060.30
+,,,,ISO -> 21 -> 21.060 -> 21.060.40
+,,,,ISO -> 21 -> 21.060 -> 21.060.50
+,,,,ISO -> 21 -> 21.060 -> 21.060.99
+ISO -> 21 -> 21.060 -> 21.060.01,21.060.01,Fasteners in general,ISO -> 21 -> 21.060,
+ISO -> 21 -> 21.060 -> 21.060.10,21.060.10,"Bolts, screws, studs",ISO -> 21 -> 21.060,
+ISO -> 21 -> 21.060 -> 21.060.20,21.060.20,Nuts,ISO -> 21 -> 21.060,
+ISO -> 21 -> 21.060 -> 21.060.30,21.060.30,"Washers, locking elements",ISO -> 21 -> 21.060,
+ISO -> 21 -> 21.060 -> 21.060.40,21.060.40,Rivets,ISO -> 21 -> 21.060,
+ISO -> 21 -> 21.060 -> 21.060.50,21.060.50,"Pins, nails",ISO -> 21 -> 21.060,
+ISO -> 21 -> 21.060 -> 21.060.99,21.060.99,Other fasteners,ISO -> 21 -> 21.060,
+ISO -> 21 -> 21.100,21.100,Bearings,ISO -> 21,ISO -> 21 -> 21.100 -> 21.100.01
+,,,,ISO -> 21 -> 21.100 -> 21.100.10
+,,,,ISO -> 21 -> 21.100 -> 21.100.20
+ISO -> 21 -> 21.100 -> 21.100.01,21.100.01,Bearings in general,ISO -> 21 -> 21.100,
+ISO -> 21 -> 21.100 -> 21.100.10,21.100.10,Plain bearings,ISO -> 21 -> 21.100,
+ISO -> 21 -> 21.100 -> 21.100.20,21.100.20,Rolling bearings,ISO -> 21 -> 21.100,
+ISO -> 21 -> 21.120,21.120,Shafts and couplings,ISO -> 21,ISO -> 21 -> 21.120 -> 21.120.10
+,,,,ISO -> 21 -> 21.120 -> 21.120.20
+,,,,ISO -> 21 -> 21.120 -> 21.120.30
+,,,,ISO -> 21 -> 21.120 -> 21.120.40
+ISO -> 21 -> 21.120 -> 21.120.10,21.120.10,Shafts,ISO -> 21 -> 21.120,
+ISO -> 21 -> 21.120 -> 21.120.20,21.120.20,Couplings,ISO -> 21 -> 21.120,
+ISO -> 21 -> 21.120 -> 21.120.30,21.120.30,"Keys and keyways, splines",ISO -> 21 -> 21.120,
+ISO -> 21 -> 21.120 -> 21.120.40,21.120.40,Balancing and balancing machines,ISO -> 21 -> 21.120,
+ISO -> 21 -> 21.140,21.140,"Seals, glandsSeals for pipe and hose assemblies, see23.040.80",ISO -> 21,
+ISO -> 21 -> 21.160,21.160,"SpringsSteels for springs, see77.140.25",ISO -> 21,
+ISO -> 21 -> 21.200,21.200,Gears,ISO -> 21,
+ISO -> 21 -> 21.220,21.220,Flexible drives and transmissions,ISO -> 21,ISO -> 21 -> 21.220 -> 21.220.01
+,,,,ISO -> 21 -> 21.220 -> 21.220.10
+,,,,ISO -> 21 -> 21.220 -> 21.220.30
+ISO -> 21 -> 21.220 -> 21.220.01,21.220.01,Flexible drives and transmissions in general,ISO -> 21 -> 21.220,
+ISO -> 21 -> 21.220 -> 21.220.10,21.220.10,Belt drives and their components,ISO -> 21 -> 21.220,
+ISO -> 21 -> 21.220 -> 21.220.30,21.220.30,Chain drives and their components,ISO -> 21 -> 21.220,
+ISO -> 21 -> 21.240,21.240,"Rotary-reciprocating mechanisms and their partsIncluding pistons, piston-rings, crankshafts, etc. for general engineering",ISO -> 21,
+ISO -> 23,23,Fluid systems and components for general use,ISO,ISO -> 23 -> 23.020
+,,,,ISO -> 23 -> 23.040
+,,,,ISO -> 23 -> 23.060
+,,,,ISO -> 23 -> 23.080
+,,,,ISO -> 23 -> 23.100
+,,,,ISO -> 23 -> 23.120
+,,,,ISO -> 23 -> 23.140
+,,,,ISO -> 23 -> 23.160
+ISO -> 23 -> 23.020,23.020,"Fluid storage devicesSmall containers for transportation of fluids and bulk materials, see55.140Storage devices for petroleum products and natural gas, see75.200",ISO -> 23,ISO -> 23 -> 23.020 -> 23.020.30
+,,,,ISO -> 23 -> 23.020 -> 23.020.35
+,,,,ISO -> 23 -> 23.020 -> 23.020.40
+ISO -> 23 -> 23.020 -> 23.020.30,23.020.30,"Pressure vesselsSteam pressure vessels, see27.060.30Steels for pressure purposes, see77.140.30",ISO -> 23 -> 23.020,
+ISO -> 23 -> 23.020 -> 23.020.35,23.020.35,Gas cylinders,ISO -> 23 -> 23.020,
+ISO -> 23 -> 23.020 -> 23.020.40,23.020.40,Cryogenic vessels,ISO -> 23 -> 23.020,
+ISO -> 23 -> 23.040,23.040,"Pipeline components and pipelinesPipeline components and pipelines for petroleum products and natural gas, see75.200",ISO -> 23,ISO -> 23 -> 23.040 -> 23.040.01
+,,,,ISO -> 23 -> 23.040 -> 23.040.10
+,,,,ISO -> 23 -> 23.040 -> 23.040.15
+,,,,ISO -> 23 -> 23.040 -> 23.040.20
+,,,,ISO -> 23 -> 23.040 -> 23.040.40
+,,,,ISO -> 23 -> 23.040 -> 23.040.45
+,,,,ISO -> 23 -> 23.040 -> 23.040.50
+,,,,ISO -> 23 -> 23.040 -> 23.040.60
+,,,,ISO -> 23 -> 23.040 -> 23.040.70
+,,,,ISO -> 23 -> 23.040 -> 23.040.80
+,,,,ISO -> 23 -> 23.040 -> 23.040.99
+ISO -> 23 -> 23.040 -> 23.040.01,23.040.01,Pipeline components and pipelines in general,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.10,23.040.10,"Iron and steel pipesSteel pipes and tubes for specific use, see77.140.75",ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.15,23.040.15,"Non-ferrous metal pipesNon-ferrous metal pipes and tubes for specific use, see77.150",ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.20,23.040.20,Plastics pipes,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.40,23.040.40,Metal fittings,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.45,23.040.45,Plastics fittings,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.50,23.040.50,Pipes and fittings of other materials,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.60,23.040.60,"Flanges, couplings and joints",ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.70,23.040.70,Hoses and hose assemblies,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.80,23.040.80,Seals for pipe and hose assemblies,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.040 -> 23.040.99,23.040.99,Other pipeline components,ISO -> 23 -> 23.040,
+ISO -> 23 -> 23.060,23.060,Valves,ISO -> 23,ISO -> 23 -> 23.060 -> 23.060.01
+,,,,ISO -> 23 -> 23.060 -> 23.060.10
+,,,,ISO -> 23 -> 23.060 -> 23.060.20
+,,,,ISO -> 23 -> 23.060 -> 23.060.30
+,,,,ISO -> 23 -> 23.060 -> 23.060.40
+,,,,ISO -> 23 -> 23.060 -> 23.060.50
+,,,,ISO -> 23 -> 23.060 -> 23.060.99
+ISO -> 23 -> 23.060 -> 23.060.01,23.060.01,Valves in general,ISO -> 23 -> 23.060,
+ISO -> 23 -> 23.060 -> 23.060.10,23.060.10,Globe valves,ISO -> 23 -> 23.060,
+ISO -> 23 -> 23.060 -> 23.060.20,23.060.20,Ball and plug valves,ISO -> 23 -> 23.060,
+ISO -> 23 -> 23.060 -> 23.060.30,23.060.30,Gate valves,ISO -> 23 -> 23.060,
+ISO -> 23 -> 23.060 -> 23.060.40,23.060.40,"Pressure regulatorsIncluding pressure-reducersProtection against excessive pressure, see13.240",ISO -> 23 -> 23.060,
+ISO -> 23 -> 23.060 -> 23.060.50,23.060.50,Check valves,ISO -> 23 -> 23.060,
+ISO -> 23 -> 23.060 -> 23.060.99,23.060.99,Other valves,ISO -> 23 -> 23.060,
+ISO -> 23 -> 23.080,23.080,"PumpsPumps for fluid power systems, see23.100.10Vacuum pumps, see23.160",ISO -> 23,
+ISO -> 23 -> 23.100,23.100,Fluid power systems,ISO -> 23,ISO -> 23 -> 23.100 -> 23.100.01
+,,,,ISO -> 23 -> 23.100 -> 23.100.10
+,,,,ISO -> 23 -> 23.100 -> 23.100.20
+,,,,ISO -> 23 -> 23.100 -> 23.100.40
+,,,,ISO -> 23 -> 23.100 -> 23.100.50
+,,,,ISO -> 23 -> 23.100 -> 23.100.60
+,,,,ISO -> 23 -> 23.100 -> 23.100.99
+ISO -> 23 -> 23.100 -> 23.100.01,23.100.01,Fluid power systems in general,ISO -> 23 -> 23.100,
+ISO -> 23 -> 23.100 -> 23.100.10,23.100.10,Pumps and motors,ISO -> 23 -> 23.100,
+ISO -> 23 -> 23.100 -> 23.100.20,23.100.20,Cylinders,ISO -> 23 -> 23.100,
+ISO -> 23 -> 23.100 -> 23.100.40,23.100.40,Piping and couplings,ISO -> 23 -> 23.100,
+ISO -> 23 -> 23.100 -> 23.100.50,23.100.50,Control componentsIncluding valves,ISO -> 23 -> 23.100,
+ISO -> 23 -> 23.100 -> 23.100.60,23.100.60,"Filters, seals and contamination of fluidsHydraulic fluids, see75.120",ISO -> 23 -> 23.100,
+ISO -> 23 -> 23.100 -> 23.100.99,23.100.99,Other fluid power system components,ISO -> 23 -> 23.100,
+ISO -> 23 -> 23.120,23.120,"Ventilators. Fans. Air-conditionersMarine ventilation and air-conditioning systems, see47.020.90Mining ventilation and air-conditioning systems, see73.100.20Ventilation and air-conditioning in buildings, see91.140.30",ISO -> 23,
+ISO -> 23 -> 23.140,23.140,"Compressors and pneumatic machinesCompressed air, see71.100.20",ISO -> 23,
+ISO -> 23 -> 23.160,23.160,Vacuum technologyIncluding vacuum pumps,ISO -> 23,
+ISO -> 25,25,Manufacturing engineering,ISO,ISO -> 25 -> 25.030
+,,,,ISO -> 25 -> 25.040
+,,,,ISO -> 25 -> 25.060
+,,,,ISO -> 25 -> 25.080
+,,,,ISO -> 25 -> 25.100
+,,,,ISO -> 25 -> 25.120
+,,,,ISO -> 25 -> 25.140
+,,,,ISO -> 25 -> 25.160
+,,,,ISO -> 25 -> 25.180
+,,,,ISO -> 25 -> 25.200
+,,,,ISO -> 25 -> 25.220
+ISO -> 25 -> 25.030,25.030,Additive manufacturing,ISO -> 25,
+ISO -> 25 -> 25.040,25.040,"Industrial automation systemsIT applications in industry, see35.240.50",ISO -> 25,ISO -> 25 -> 25.040 -> 25.040.01
+,,,,ISO -> 25 -> 25.040 -> 25.040.10
+,,,,ISO -> 25 -> 25.040 -> 25.040.20
+,,,,ISO -> 25 -> 25.040 -> 25.040.30
+,,,,ISO -> 25 -> 25.040 -> 25.040.40
+,,,,ISO -> 25 -> 25.040 -> 25.040.99
+ISO -> 25 -> 25.040 -> 25.040.01,25.040.01,Industrial automation systems in general,ISO -> 25 -> 25.040,
+ISO -> 25 -> 25.040 -> 25.040.10,25.040.10,Machining centres,ISO -> 25 -> 25.040,
+ISO -> 25 -> 25.040 -> 25.040.20,25.040.20,Numerically controlled machines,ISO -> 25 -> 25.040,
+ISO -> 25 -> 25.040 -> 25.040.30,25.040.30,Industrial robots. Manipulators,ISO -> 25 -> 25.040,
+ISO -> 25 -> 25.040 -> 25.040.40,25.040.40,Industrial process measurement and control,ISO -> 25 -> 25.040,
+ISO -> 25 -> 25.040 -> 25.040.99,25.040.99,Other industrial automation systems,ISO -> 25 -> 25.040,
+ISO -> 25 -> 25.060,25.060,Machine tool systems,ISO -> 25,ISO -> 25 -> 25.060 -> 25.060.01
+,,,,ISO -> 25 -> 25.060 -> 25.060.10
+,,,,ISO -> 25 -> 25.060 -> 25.060.20
+,,,,ISO -> 25 -> 25.060 -> 25.060.99
+ISO -> 25 -> 25.060 -> 25.060.01,25.060.01,Machine tool systems in general,ISO -> 25 -> 25.060,
+ISO -> 25 -> 25.060 -> 25.060.10,25.060.10,Modular units and other devices,ISO -> 25 -> 25.060,
+ISO -> 25 -> 25.060 -> 25.060.20,25.060.20,Dividing and tool-workpiece holding devices,ISO -> 25 -> 25.060,
+ISO -> 25 -> 25.060 -> 25.060.99,25.060.99,Other machine tool systems,ISO -> 25 -> 25.060,
+ISO -> 25 -> 25.080,25.080,"Machine toolsWoodworking machines, see79.120.10",ISO -> 25,ISO -> 25 -> 25.080 -> 25.080.01
+,,,,ISO -> 25 -> 25.080 -> 25.080.10
+,,,,ISO -> 25 -> 25.080 -> 25.080.20
+,,,,ISO -> 25 -> 25.080 -> 25.080.30
+,,,,ISO -> 25 -> 25.080 -> 25.080.40
+,,,,ISO -> 25 -> 25.080 -> 25.080.50
+,,,,ISO -> 25 -> 25.080 -> 25.080.99
+ISO -> 25 -> 25.080 -> 25.080.01,25.080.01,Machine tools in general,ISO -> 25 -> 25.080,
+ISO -> 25 -> 25.080 -> 25.080.10,25.080.10,Lathes,ISO -> 25 -> 25.080,
+ISO -> 25 -> 25.080 -> 25.080.20,25.080.20,Boring and milling machines,ISO -> 25 -> 25.080,
+ISO -> 25 -> 25.080 -> 25.080.30,25.080.30,Broaching machines,ISO -> 25 -> 25.080,
+ISO -> 25 -> 25.080 -> 25.080.40,25.080.40,Drilling machines,ISO -> 25 -> 25.080,
+ISO -> 25 -> 25.080 -> 25.080.50,25.080.50,Grinding and polishing machines,ISO -> 25 -> 25.080,
+ISO -> 25 -> 25.080 -> 25.080.99,25.080.99,Other machine tools,ISO -> 25 -> 25.080,
+ISO -> 25 -> 25.100,25.100,"Cutting toolsIncluding industrial diamondsWoodworking tools, see79.120.20",ISO -> 25,ISO -> 25 -> 25.100 -> 25.100.01
+,,,,ISO -> 25 -> 25.100 -> 25.100.10
+,,,,ISO -> 25 -> 25.100 -> 25.100.20
+,,,,ISO -> 25 -> 25.100 -> 25.100.25
+,,,,ISO -> 25 -> 25.100 -> 25.100.30
+,,,,ISO -> 25 -> 25.100 -> 25.100.40
+,,,,ISO -> 25 -> 25.100 -> 25.100.50
+,,,,ISO -> 25 -> 25.100 -> 25.100.60
+,,,,ISO -> 25 -> 25.100 -> 25.100.70
+ISO -> 25 -> 25.100 -> 25.100.01,25.100.01,Cutting tools in general,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.10,25.100.10,Turning tools,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.20,25.100.20,Milling tools,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.25,25.100.25,Tools for planing and broaching machines,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.30,25.100.30,"Drills, countersinks, reamers",ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.40,25.100.40,Saws,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.50,25.100.50,Taps and threading dies,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.60,25.100.60,Files,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.100 -> 25.100.70,25.100.70,Abrasives,ISO -> 25 -> 25.100,
+ISO -> 25 -> 25.120,25.120,Chipless working equipment,ISO -> 25,ISO -> 25 -> 25.120 -> 25.120.10
+,,,,ISO -> 25 -> 25.120 -> 25.120.20
+,,,,ISO -> 25 -> 25.120 -> 25.120.30
+,,,,ISO -> 25 -> 25.120 -> 25.120.40
+ISO -> 25 -> 25.120 -> 25.120.10,25.120.10,Forging equipment. Presses. Shears,ISO -> 25 -> 25.120,
+ISO -> 25 -> 25.120 -> 25.120.20,25.120.20,"Rolling, extruding and drawing equipment",ISO -> 25 -> 25.120,
+ISO -> 25 -> 25.120 -> 25.120.30,25.120.30,Moulding equipment,ISO -> 25 -> 25.120,
+ISO -> 25 -> 25.120 -> 25.120.40,25.120.40,Electrochemical machines,ISO -> 25 -> 25.120,
+ISO -> 25 -> 25.140,25.140,"Hand-held toolsTools for working with voltages, see13.260",ISO -> 25,ISO -> 25 -> 25.140 -> 25.140.01
+,,,,ISO -> 25 -> 25.140 -> 25.140.10
+,,,,ISO -> 25 -> 25.140 -> 25.140.30
+ISO -> 25 -> 25.140 -> 25.140.01,25.140.01,Hand-held tools in general,ISO -> 25 -> 25.140,
+ISO -> 25 -> 25.140 -> 25.140.10,25.140.10,Pneumatic tools,ISO -> 25 -> 25.140,
+ISO -> 25 -> 25.140 -> 25.140.30,25.140.30,"Hand-operated toolsIncluding wrenches, screwdrivers, pliers, nippers, hammers, etc.",ISO -> 25 -> 25.140,
+ISO -> 25 -> 25.160,25.160,"Welding, brazing and solderingIncluding gas welding, electric welding, plasma welding, electron beam welding, plasma cutting, etc.",ISO -> 25,ISO -> 25 -> 25.160 -> 25.160.01
+,,,,ISO -> 25 -> 25.160 -> 25.160.10
+,,,,ISO -> 25 -> 25.160 -> 25.160.20
+,,,,ISO -> 25 -> 25.160 -> 25.160.30
+,,,,ISO -> 25 -> 25.160 -> 25.160.40
+,,,,ISO -> 25 -> 25.160 -> 25.160.50
+ISO -> 25 -> 25.160 -> 25.160.01,25.160.01,"Welding, brazing and soldering in generalIncluding welders' qualifications",ISO -> 25 -> 25.160,
+ISO -> 25 -> 25.160 -> 25.160.10,25.160.10,Welding processesIncluding thermal cutting and cladding,ISO -> 25 -> 25.160,
+ISO -> 25 -> 25.160 -> 25.160.20,25.160.20,"Welding consumablesIncluding electrodes, filler metals, gases, etc.",ISO -> 25 -> 25.160,
+ISO -> 25 -> 25.160 -> 25.160.30,25.160.30,Welding equipmentIncluding thermal cutting equipment,ISO -> 25 -> 25.160,
+ISO -> 25 -> 25.160 -> 25.160.40,25.160.40,Welded joints and weldsIncluding welding position and mechanical and non-destructive testing of welded joints,ISO -> 25 -> 25.160,
+ISO -> 25 -> 25.160 -> 25.160.50,25.160.50,Brazing and solderingIncluding brazing and soldering alloys and equipment,ISO -> 25 -> 25.160,
+ISO -> 25 -> 25.180,25.180,Industrial furnaces,ISO -> 25,ISO -> 25 -> 25.180 -> 25.180.01
+ISO -> 25 -> 25.180 -> 25.180.01,25.180.01,Industrial furnaces in general,ISO -> 25 -> 25.180,
+ISO -> 25 -> 25.200,25.200,Heat treatment,ISO -> 25,
+ISO -> 25 -> 25.220,25.220,"Surface treatment and coatingIncluding processes and equipment for surface treatment and coatingHeat treatment, see25.200Surface treatment and coating in aerospace industry, see49.040Corrosion of metals, see77.060Paint coating, see87.020",ISO -> 25,ISO -> 25 -> 25.220 -> 25.220.01
+,,,,ISO -> 25 -> 25.220 -> 25.220.10
+,,,,ISO -> 25 -> 25.220 -> 25.220.20
+,,,,ISO -> 25 -> 25.220 -> 25.220.40
+,,,,ISO -> 25 -> 25.220 -> 25.220.50
+,,,,ISO -> 25 -> 25.220 -> 25.220.60
+,,,,ISO -> 25 -> 25.220 -> 25.220.99
+ISO -> 25 -> 25.220 -> 25.220.01,25.220.01,Surface treatment and coating in general,ISO -> 25 -> 25.220,
+ISO -> 25 -> 25.220 -> 25.220.10,25.220.10,"Surface preparationIncluding surface preparation for painting, cleaning, scouring, blasting, etc.",ISO -> 25 -> 25.220,
+ISO -> 25 -> 25.220 -> 25.220.20,25.220.20,"Surface treatmentIncluding anodization, conversion coating, thermal spraying, etc.",ISO -> 25 -> 25.220,
+ISO -> 25 -> 25.220 -> 25.220.40,25.220.40,"Metallic coatingsIncluding electrolytic depositions, cathodic coatings, autocatalytic coatings, etc.",ISO -> 25 -> 25.220,
+ISO -> 25 -> 25.220 -> 25.220.50,25.220.50,Enamels,ISO -> 25 -> 25.220,
+ISO -> 25 -> 25.220 -> 25.220.60,25.220.60,Organic coatings,ISO -> 25 -> 25.220,
+ISO -> 25 -> 25.220 -> 25.220.99,25.220.99,Other treatments and coatings,ISO -> 25 -> 25.220,
+ISO -> 27,27,Energy and heat transfer engineering,ISO,ISO -> 27 -> 27.010
+,,,,ISO -> 27 -> 27.015
+,,,,ISO -> 27 -> 27.020
+,,,,ISO -> 27 -> 27.040
+,,,,ISO -> 27 -> 27.060
+,,,,ISO -> 27 -> 27.075
+,,,,ISO -> 27 -> 27.080
+,,,,ISO -> 27 -> 27.100
+,,,,ISO -> 27 -> 27.120
+,,,,ISO -> 27 -> 27.140
+,,,,ISO -> 27 -> 27.160
+,,,,ISO -> 27 -> 27.180
+,,,,ISO -> 27 -> 27.190
+,,,,ISO -> 27 -> 27.200
+,,,,ISO -> 27 -> 27.220
+ISO -> 27 -> 27.010,27.010,Energy and heat transfer engineering in general,ISO -> 27,
+ISO -> 27 -> 27.015,27.015,"Energy efficiency. Energy conservation in generalIncluding energy auditsEnergy management systems, see03.100.70Energy efficiency of buildings, see91.120.10",ISO -> 27,
+ISO -> 27 -> 27.020,27.020,"Internal combustion enginesInternal combustion engines for current generating sets, see29.160.40Internal combustion engines for road vehicles, see43.060Marine engines, see47.020.20",ISO -> 27,
+ISO -> 27 -> 27.040,27.040,"Gas and steam turbines. Steam enginesHydraulic turbines, see27.140",ISO -> 27,
+ISO -> 27 -> 27.060,27.060,Burners. Boilers,ISO -> 27,ISO -> 27 -> 27.060 -> 27.060.10
+,,,,ISO -> 27 -> 27.060 -> 27.060.20
+,,,,ISO -> 27 -> 27.060 -> 27.060.30
+ISO -> 27 -> 27.060 -> 27.060.10,27.060.10,Liquid and solid fuel burners,ISO -> 27 -> 27.060,
+ISO -> 27 -> 27.060 -> 27.060.20,27.060.20,Gas fuel burners,ISO -> 27 -> 27.060,
+ISO -> 27 -> 27.060 -> 27.060.30,27.060.30,"Boilers and heat exchangersIncluding steam pressure vesselsHeat exchangers for medical use, see11.040.10Heat exchangers for the chemical industry, see71.120.30Heat exchangers for the petroleum and natural gas industry, see75.180.20Heating appliances for buildings, see97.100",ISO -> 27 -> 27.060,
+ISO -> 27 -> 27.075,27.075,"Hydrogen technologiesIndustrial application of gases, see71.100.20",ISO -> 27,
+ISO -> 27 -> 27.080,27.080,Heat pumps,ISO -> 27,
+ISO -> 27 -> 27.100,27.100,"Power stations in generalIncluding thermal power plantsNuclear power plants, see27.120.20Hydraulic power plants, see27.140Solar power stations, see27.160Wind turbine systems, see27.180",ISO -> 27,
+ISO -> 27 -> 27.120,27.120,Nuclear energy engineering,ISO -> 27,ISO -> 27 -> 27.120 -> 27.120.01
+,,,,ISO -> 27 -> 27.120 -> 27.120.10
+,,,,ISO -> 27 -> 27.120 -> 27.120.20
+,,,,ISO -> 27 -> 27.120 -> 27.120.30
+,,,,ISO -> 27 -> 27.120 -> 27.120.99
+ISO -> 27 -> 27.120 -> 27.120.01,27.120.01,Nuclear energy in general,ISO -> 27 -> 27.120,
+ISO -> 27 -> 27.120 -> 27.120.10,27.120.10,Reactor engineering,ISO -> 27 -> 27.120,
+ISO -> 27 -> 27.120 -> 27.120.20,27.120.20,"Nuclear power plants. SafetyRadiation protection, see13.280",ISO -> 27 -> 27.120,
+ISO -> 27 -> 27.120 -> 27.120.30,27.120.30,"Fissile materials and nuclear fuel technologyIncluding raw materialsRadioactive wastes, see13.030.30",ISO -> 27 -> 27.120,
+ISO -> 27 -> 27.120 -> 27.120.99,27.120.99,Other standards related to nuclear energy,ISO -> 27 -> 27.120,
+ISO -> 27 -> 27.140,27.140,Hydraulic energy engineeringIncluding hydraulic turbines,ISO -> 27,
+ISO -> 27 -> 27.160,27.160,Solar energy engineeringIncluding photovoltaic energy systems,ISO -> 27,
+ISO -> 27 -> 27.180,27.180,Wind turbine energy systemsIncluding generation of electrical energy,ISO -> 27,
+ISO -> 27 -> 27.190,27.190,Biological sources and alternative sources of energy,ISO -> 27,
+ISO -> 27 -> 27.200,27.200,"Refrigerating technologyAir-conditioners, see23.120Refrigerants, see71.100.45Household refrigerating appliances, see97.040.30Commercial refrigerating appliances, see97.130.20",ISO -> 27,
+ISO -> 27 -> 27.220,27.220,"Heat recovery. Thermal insulationThermal insulation of buildings, see91.120.10",ISO -> 27,
+ISO -> 29,29,Electrical engineering,ISO,ISO -> 29 -> 29.020
+,,,,ISO -> 29 -> 29.030
+,,,,ISO -> 29 -> 29.035
+,,,,ISO -> 29 -> 29.040
+,,,,ISO -> 29 -> 29.060
+,,,,ISO -> 29 -> 29.080
+,,,,ISO -> 29 -> 29.100
+,,,,ISO -> 29 -> 29.120
+,,,,ISO -> 29 -> 29.130
+,,,,ISO -> 29 -> 29.140
+,,,,ISO -> 29 -> 29.160
+,,,,ISO -> 29 -> 29.180
+,,,,ISO -> 29 -> 29.220
+,,,,ISO -> 29 -> 29.240
+,,,,ISO -> 29 -> 29.260
+,,,,ISO -> 29 -> 29.280
+ISO -> 29 -> 29.020,29.020,"Electrical engineering in generalIncluding voltages, general electrical terminology, electrical documentation, electrical tables, safety, fire hazard testing, etc.Electrical diagrams and charts, see01.100.25Electrical power stations, see27.100Electromagnetic compatibility, see33.100",ISO -> 29,
+ISO -> 29 -> 29.030,29.030,"Magnetic materialsSteels with special magnetic properties, see77.140.40",ISO -> 29,
+ISO -> 29 -> 29.035,29.035,Insulating materials,ISO -> 29,ISO -> 29 -> 29.035 -> 29.035.50
+ISO -> 29 -> 29.035 -> 29.035.50,29.035.50,Mica based materials,ISO -> 29 -> 29.035,
+ISO -> 29 -> 29.040,29.040,Insulating fluids,ISO -> 29,ISO -> 29 -> 29.040 -> 29.040.10
+ISO -> 29 -> 29.040 -> 29.040.10,29.040.10,Insulating oils,ISO -> 29 -> 29.040,
+ISO -> 29 -> 29.060,29.060,Electrical wires and cables,ISO -> 29,
+ISO -> 29 -> 29.080,29.080,"InsulationInsulating materials, see29.035Insulating fluids, see29.040",ISO -> 29,
+ISO -> 29 -> 29.100,29.100,"Components for electrical equipmentElectronic components, see31",ISO -> 29,
+ISO -> 29 -> 29.120,29.120,Electrical accessories,ISO -> 29,
+ISO -> 29 -> 29.130,29.130,Switchgear and controlgear,ISO -> 29,ISO -> 29 -> 29.130 -> 29.130.20
+ISO -> 29 -> 29.130 -> 29.130.20,29.130.20,Low voltage switchgear and controlgearIncluding switchgear and controlgear assemblies,ISO -> 29 -> 29.130,
+ISO -> 29 -> 29.140,29.140,Lamps and related equipment,ISO -> 29,ISO -> 29 -> 29.140 -> 29.140.20
+ISO -> 29 -> 29.140 -> 29.140.20,29.140.20,Incandescent lamps,ISO -> 29 -> 29.140,
+ISO -> 29 -> 29.160,29.160,Rotating machinery,ISO -> 29,ISO -> 29 -> 29.160 -> 29.160.01
+,,,,ISO -> 29 -> 29.160 -> 29.160.20
+,,,,ISO -> 29 -> 29.160 -> 29.160.30
+,,,,ISO -> 29 -> 29.160 -> 29.160.40
+,,,,ISO -> 29 -> 29.160 -> 29.160.99
+ISO -> 29 -> 29.160 -> 29.160.01,29.160.01,Rotating machinery in general,ISO -> 29 -> 29.160,
+ISO -> 29 -> 29.160 -> 29.160.20,29.160.20,Generators,ISO -> 29 -> 29.160,
+ISO -> 29 -> 29.160 -> 29.160.30,29.160.30,Motors,ISO -> 29 -> 29.160,
+ISO -> 29 -> 29.160 -> 29.160.40,29.160.40,Generating sets,ISO -> 29 -> 29.160,
+ISO -> 29 -> 29.160 -> 29.160.99,29.160.99,Other standards related to rotating machinery,ISO -> 29 -> 29.160,
+ISO -> 29 -> 29.180,29.180,"Transformers. ReactorsInstrument transformers, see17.220.20",ISO -> 29,
+ISO -> 29 -> 29.220,29.220,Galvanic cells and batteries,ISO -> 29,ISO -> 29 -> 29.220 -> 29.220.10
+,,,,ISO -> 29 -> 29.220 -> 29.220.20
+ISO -> 29 -> 29.220 -> 29.220.10,29.220.10,Primary cells and batteries,ISO -> 29 -> 29.220,
+ISO -> 29 -> 29.220 -> 29.220.20,29.220.20,Acid secondary cells and batteries,ISO -> 29 -> 29.220,
+ISO -> 29 -> 29.240,29.240,"Power transmission and distribution networksElectricity supply systems in buildings, see91.140.50",ISO -> 29,ISO -> 29 -> 29.240 -> 29.240.10
+ISO -> 29 -> 29.240 -> 29.240.10,29.240.10,Substations. Surge arresters,ISO -> 29 -> 29.240,
+ISO -> 29 -> 29.260,29.260,Electrical equipment for working in special conditions,ISO -> 29,ISO -> 29 -> 29.260 -> 29.260.20
+ISO -> 29 -> 29.260 -> 29.260.20,29.260.20,Electrical apparatus for explosive atmospheres,ISO -> 29 -> 29.260,
+ISO -> 29 -> 29.280,29.280,"Electric traction equipmentIncluding railway electric fixed installationsElectric road vehicles, see43.120Non-electric railway tractive stock, see45.060.10",ISO -> 29,
+ISO -> 31,31,Electronics,ISO,ISO -> 31 -> 31.020
+,,,,ISO -> 31 -> 31.040
+,,,,ISO -> 31 -> 31.060
+,,,,ISO -> 31 -> 31.080
+,,,,ISO -> 31 -> 31.120
+,,,,ISO -> 31 -> 31.180
+,,,,ISO -> 31 -> 31.200
+,,,,ISO -> 31 -> 31.220
+,,,,ISO -> 31 -> 31.260
+ISO -> 31 -> 31.020,31.020,"Electronic components in generalMagnetic components, see29.100.10",ISO -> 31,
+ISO -> 31 -> 31.040,31.040,Resistors,ISO -> 31,
+ISO -> 31 -> 31.060,31.060,Capacitors,ISO -> 31,
+ISO -> 31 -> 31.080,31.080,"Semiconductor devicesSemiconducting materials, see29.045",ISO -> 31,ISO -> 31 -> 31.080 -> 31.080.01
+ISO -> 31 -> 31.080 -> 31.080.01,31.080.01,Semiconductor devices in general,ISO -> 31 -> 31.080,
+ISO -> 31 -> 31.120,31.120,Electronic display devicesIncluding liquid crystal displays,ISO -> 31,
+ISO -> 31 -> 31.180,31.180,Printed circuits and boards,ISO -> 31,
+ISO -> 31 -> 31.200,31.200,"Integrated circuits. MicroelectronicsIncluding electronic chips, logical and analogue microstructuresMicroprocessors, see35.160",ISO -> 31,
+ISO -> 31 -> 31.220,31.220,Electromechanical components for electronic and telecommunications equipment,ISO -> 31,
+ISO -> 31 -> 31.260,31.260,Optoelectronics. Laser equipmentIncluding photoelectric tubes and cells,ISO -> 31,
+ISO -> 33,33,Telecommunications. Audio and video engineering,ISO,ISO -> 33 -> 33.020
+,,,,ISO -> 33 -> 33.040
+,,,,ISO -> 33 -> 33.050
+,,,,ISO -> 33 -> 33.060
+,,,,ISO -> 33 -> 33.070
+,,,,ISO -> 33 -> 33.100
+,,,,ISO -> 33 -> 33.120
+,,,,ISO -> 33 -> 33.160
+,,,,ISO -> 33 -> 33.180
+ISO -> 33 -> 33.020,33.020,Telecommunications in generalIncluding infrastructure,ISO -> 33,
+ISO -> 33 -> 33.040,33.040,Telecommunication systemsIncluding network (system) aspects,ISO -> 33,ISO -> 33 -> 33.040 -> 33.040.35
+,,,,ISO -> 33 -> 33.040 -> 33.040.40
+ISO -> 33 -> 33.040 -> 33.040.35,33.040.35,"Telephone networksIncluding Public Switched Telephone Networks (PSTN), Private Telecommunication Networks (PTN) and Private Integrated Service Networks (PISN)",ISO -> 33 -> 33.040,
+ISO -> 33 -> 33.040 -> 33.040.40,33.040.40,"Data communication networksIncluding Packet Switched Public Data Networks (PSPDN) and EthernetISDN, see33.080OSI local, wide and metropolitan area networks, see35.110Modems, see35.180",ISO -> 33 -> 33.040,
+ISO -> 33 -> 33.050,33.050,Telecommunication terminal equipment,ISO -> 33,ISO -> 33 -> 33.050 -> 33.050.30
+ISO -> 33 -> 33.050 -> 33.050.30,33.050.30,"Equipment for telex, teletext, telefaxModems, see35.180",ISO -> 33 -> 33.050,
+ISO -> 33 -> 33.060,33.060,Radiocommunications,ISO -> 33,
+ISO -> 33 -> 33.070,33.070,Mobile services,ISO -> 33,
+ISO -> 33 -> 33.100,33.100,Electromagnetic compatibility (EMC)Including radio interference,ISO -> 33,ISO -> 33 -> 33.100 -> 33.100.01
+,,,,ISO -> 33 -> 33.100 -> 33.100.20
+ISO -> 33 -> 33.100 -> 33.100.01,33.100.01,Electromagnetic compatibility in general,ISO -> 33 -> 33.100,
+ISO -> 33 -> 33.100 -> 33.100.20,33.100.20,Immunity,ISO -> 33 -> 33.100,
+ISO -> 33 -> 33.120,33.120,"Components and accessories for telecommunications equipmentPlug-and-socket devices, connectors, see31.220.10Switches, see31.220.20",ISO -> 33,ISO -> 33 -> 33.120 -> 33.120.30
+ISO -> 33 -> 33.120 -> 33.120.30,33.120.30,RF connectors,ISO -> 33 -> 33.120,
+ISO -> 33 -> 33.160,33.160,"Audio, video and audiovisual engineering",ISO -> 33,ISO -> 33 -> 33.160 -> 33.160.50
+ISO -> 33 -> 33.160 -> 33.160.50,33.160.50,"AccessoriesIncluding headphones, loudspeakers, microphones, etc.",ISO -> 33 -> 33.160,
+ISO -> 33 -> 33.180,33.180,Fibre optic communications,ISO -> 33,
+ISO -> 35,35,Information technology,ISO,ISO -> 35 -> 35.020
+,,,,ISO -> 35 -> 35.030
+,,,,ISO -> 35 -> 35.040
+,,,,ISO -> 35 -> 35.060
+,,,,ISO -> 35 -> 35.080
+,,,,ISO -> 35 -> 35.100
+,,,,ISO -> 35 -> 35.110
+,,,,ISO -> 35 -> 35.140
+,,,,ISO -> 35 -> 35.160
+,,,,ISO -> 35 -> 35.180
+,,,,ISO -> 35 -> 35.200
+,,,,ISO -> 35 -> 35.210
+,,,,ISO -> 35 -> 35.220
+,,,,ISO -> 35 -> 35.240
+,,,,ISO -> 35 -> 35.260
+ISO -> 35 -> 35.020,35.020,Information technology (IT) in generalIncluding general aspects of IT equipment,ISO -> 35,
+ISO -> 35 -> 35.030,35.030,IT SecurityIncluding encryption,ISO -> 35,
+ISO -> 35 -> 35.040,35.040,"Information codingIncluding coding of audio, picture, multimedia and hypermedia information, bar coding, etc.IT security techniques, see35.030",ISO -> 35,ISO -> 35 -> 35.040 -> 35.040.01
+,,,,ISO -> 35 -> 35.040 -> 35.040.10
+,,,,ISO -> 35 -> 35.040 -> 35.040.30
+,,,,ISO -> 35 -> 35.040 -> 35.040.40
+,,,,ISO -> 35 -> 35.040 -> 35.040.50
+,,,,ISO -> 35 -> 35.040 -> 35.040.99
+ISO -> 35 -> 35.040 -> 35.040.01,35.040.01,Information coding in general,ISO -> 35 -> 35.040,
+ISO -> 35 -> 35.040 -> 35.040.10,35.040.10,Coding of character sets,ISO -> 35 -> 35.040,
+ISO -> 35 -> 35.040 -> 35.040.30,35.040.30,Coding of graphical and photographical information,ISO -> 35 -> 35.040,
+ISO -> 35 -> 35.040 -> 35.040.40,35.040.40,"Coding of audio, video, multimedia and hypermedia information",ISO -> 35 -> 35.040,
+ISO -> 35 -> 35.040 -> 35.040.50,35.040.50,"Automatic identification and data capture techniquesIncluding RFID, OCR, bar coding, etc.",ISO -> 35 -> 35.040,
+ISO -> 35 -> 35.040 -> 35.040.99,35.040.99,Other standards related to information coding,ISO -> 35 -> 35.040,
+ISO -> 35 -> 35.060,35.060,Languages used in information technology,ISO -> 35,
+ISO -> 35 -> 35.080,35.080,"SoftwareIncluding software development, documentation and useInternet applications, see35.240.95",ISO -> 35,
+ISO -> 35 -> 35.100,35.100,Open systems interconnection (OSI),ISO -> 35,ISO -> 35 -> 35.100 -> 35.100.01
+,,,,ISO -> 35 -> 35.100 -> 35.100.05
+,,,,ISO -> 35 -> 35.100 -> 35.100.10
+,,,,ISO -> 35 -> 35.100 -> 35.100.20
+,,,,ISO -> 35 -> 35.100 -> 35.100.30
+,,,,ISO -> 35 -> 35.100 -> 35.100.40
+,,,,ISO -> 35 -> 35.100 -> 35.100.50
+,,,,ISO -> 35 -> 35.100 -> 35.100.60
+,,,,ISO -> 35 -> 35.100 -> 35.100.70
+ISO -> 35 -> 35.100 -> 35.100.01,35.100.01,Open systems interconnection in general,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.05,35.100.05,Multilayer applicationsIncluding International Standardized Profiles,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.10,35.100.10,Physical layer,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.20,35.100.20,Data link layer,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.30,35.100.30,Network layer,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.40,35.100.40,Transport layer,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.50,35.100.50,Session layer,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.60,35.100.60,Presentation layer,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.100 -> 35.100.70,35.100.70,Application layer,ISO -> 35 -> 35.100,
+ISO -> 35 -> 35.110,35.110,"NetworkingIncluding local area networks (LAN), metropolitan area networks (MAN), wide area networks (WAN), etc.Private Integrated Services Network (PISN), see33.040.35Integrated Services Digital Network (ISDN), see33.080",ISO -> 35,
+ISO -> 35 -> 35.140,35.140,Computer graphics,ISO -> 35,
+ISO -> 35 -> 35.160,35.160,"Microprocessor systemsIncluding PCs, calculators, etc.Integrated circuits, see31.200",ISO -> 35,
+ISO -> 35 -> 35.180,35.180,IT terminal and other peripheral equipmentIncluding modems,ISO -> 35,
+ISO -> 35 -> 35.200,35.200,Interface and interconnection equipment,ISO -> 35,
+ISO -> 35 -> 35.210,35.210,Cloud computing,ISO -> 35,
+ISO -> 35 -> 35.220,35.220,Data storage devices,ISO -> 35,ISO -> 35 -> 35.220 -> 35.220.01
+,,,,ISO -> 35 -> 35.220 -> 35.220.10
+,,,,ISO -> 35 -> 35.220 -> 35.220.20
+,,,,ISO -> 35 -> 35.220 -> 35.220.21
+,,,,ISO -> 35 -> 35.220 -> 35.220.22
+,,,,ISO -> 35 -> 35.220 -> 35.220.23
+,,,,ISO -> 35 -> 35.220 -> 35.220.30
+ISO -> 35 -> 35.220 -> 35.220.01,35.220.01,Data storage devices in general,ISO -> 35 -> 35.220,
+ISO -> 35 -> 35.220 -> 35.220.10,35.220.10,Paper cards and tapes,ISO -> 35 -> 35.220,
+ISO -> 35 -> 35.220 -> 35.220.20,35.220.20,Magnetic storage devices in general,ISO -> 35 -> 35.220,
+ISO -> 35 -> 35.220 -> 35.220.21,35.220.21,"Magnetic disksIncluding flexible disks, diskettes, disk packs, disk cartridges, etc.",ISO -> 35 -> 35.220,
+ISO -> 35 -> 35.220 -> 35.220.22,35.220.22,Magnetic tapes,ISO -> 35 -> 35.220,
+ISO -> 35 -> 35.220 -> 35.220.23,35.220.23,Cassettes and cartridges for magnetic tapes,ISO -> 35 -> 35.220,
+ISO -> 35 -> 35.220 -> 35.220.30,35.220.30,Optical storage devicesIncluding CD and magneto-optical devices (MO),ISO -> 35 -> 35.220,
+ISO -> 35 -> 35.240,35.240,Applications of information technology,ISO -> 35,ISO -> 35 -> 35.240 -> 35.240.01
+,,,,ISO -> 35 -> 35.240 -> 35.240.10
+,,,,ISO -> 35 -> 35.240 -> 35.240.15
+,,,,ISO -> 35 -> 35.240 -> 35.240.20
+,,,,ISO -> 35 -> 35.240 -> 35.240.30
+,,,,ISO -> 35 -> 35.240 -> 35.240.40
+,,,,ISO -> 35 -> 35.240 -> 35.240.50
+,,,,ISO -> 35 -> 35.240 -> 35.240.60
+,,,,ISO -> 35 -> 35.240 -> 35.240.63
+,,,,ISO -> 35 -> 35.240 -> 35.240.67
+,,,,ISO -> 35 -> 35.240 -> 35.240.68
+,,,,ISO -> 35 -> 35.240 -> 35.240.70
+,,,,ISO -> 35 -> 35.240 -> 35.240.80
+,,,,ISO -> 35 -> 35.240 -> 35.240.90
+,,,,ISO -> 35 -> 35.240 -> 35.240.95
+,,,,ISO -> 35 -> 35.240 -> 35.240.99
+ISO -> 35 -> 35.240 -> 35.240.01,35.240.01,Application of information technology in general,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.10,35.240.10,Computer-aided design (CAD),ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.15,35.240.15,"Identification cards. Chip cards. BiometricsIncluding application of cards for banking, trade, telecommunications, transport, etc.",ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.20,35.240.20,"IT applications in office workIncluding text processing systems, text communication, text presentation, Office Document Architecture (ODA), etc.",ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.30,35.240.30,"IT applications in information, documentation and publishingIncluding Standard Generalized Markup Language (SGML), Extensible Markup Language (XML), automatic translation machines, etc.",ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.40,35.240.40,"IT applications in bankingIncluding automatic banking facilitiesIdentification cards for banking purposes, see35.240.15",ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.50,35.240.50,IT applications in industryIncluding design automation,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.60,35.240.60,IT applications in transport,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.63,35.240.63,IT applications in tradeIncluding EDIFACT and e-commerce,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.67,35.240.67,"IT applications in building and construction industryIncluding building information modelling, Home and Building Electronic Systems (HBES)",ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.68,35.240.68,IT applications in agriculture,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.70,35.240.70,IT applications in scienceIncluding digital geographic information,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.80,35.240.80,IT applications in health care technologyIncluding computer tomography,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.90,35.240.90,IT applications in educationIncluding e-learning,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.95,35.240.95,Internet applications,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.240 -> 35.240.99,35.240.99,IT applications in other fields,ISO -> 35 -> 35.240,
+ISO -> 35 -> 35.260,35.260,"Office machinesIncluding typewriters, dictation equipment, addressing machines, letter opening machines, letter folding machines, postal franking machines, their ribbons and other accessories, etc.Telephones, see33.050.10Telex and telefax, see33.050.30Copying machines, see37.100.10Wrapping and packaging equipment, see55.200Paper based stationery, see85.080Office furniture, see97.140Non-paper based stationery, see97.180",ISO -> 35,
+ISO -> 37,37,Image technology,ISO,ISO -> 37 -> 37.020
+,,,,ISO -> 37 -> 37.040
+,,,,ISO -> 37 -> 37.060
+,,,,ISO -> 37 -> 37.080
+,,,,ISO -> 37 -> 37.100
+ISO -> 37 -> 37.020,37.020,"Optical equipmentIncluding microscopes, telescopes, binoculars, optical materials, optical components and optical systemsOphthalmic equipment, see11.040.70Optical measuring instruments, see17.180.30Photographic equipment lenses, see37.040.10",ISO -> 37,
+ISO -> 37 -> 37.040,37.040,"PhotographyPhotographic studios, see97.200.10",ISO -> 37,ISO -> 37 -> 37.040 -> 37.040.01
+,,,,ISO -> 37 -> 37.040 -> 37.040.10
+,,,,ISO -> 37 -> 37.040 -> 37.040.20
+,,,,ISO -> 37 -> 37.040 -> 37.040.25
+,,,,ISO -> 37 -> 37.040 -> 37.040.30
+,,,,ISO -> 37 -> 37.040 -> 37.040.99
+ISO -> 37 -> 37.040 -> 37.040.01,37.040.01,Photography in general,ISO -> 37 -> 37.040,
+ISO -> 37 -> 37.040 -> 37.040.10,37.040.10,Photographic equipment. Projectors,ISO -> 37 -> 37.040,
+ISO -> 37 -> 37.040 -> 37.040.20,37.040.20,"Photographic paper, films and plates. Cartridges",ISO -> 37 -> 37.040,
+ISO -> 37 -> 37.040 -> 37.040.25,37.040.25,"Radiographic filmsIncluding dental, medical and industrial radiographic films",ISO -> 37 -> 37.040,
+ISO -> 37 -> 37.040 -> 37.040.30,37.040.30,Photographic chemicals,ISO -> 37 -> 37.040,
+ISO -> 37 -> 37.040 -> 37.040.99,37.040.99,Other standards related to photography,ISO -> 37 -> 37.040,
+ISO -> 37 -> 37.060,37.060,"CinematographyCinematographic studios, see97.200.10",ISO -> 37,ISO -> 37 -> 37.060 -> 37.060.01
+,,,,ISO -> 37 -> 37.060 -> 37.060.10
+,,,,ISO -> 37 -> 37.060 -> 37.060.20
+,,,,ISO -> 37 -> 37.060 -> 37.060.99
+ISO -> 37 -> 37.060 -> 37.060.01,37.060.01,Cinematography in general,ISO -> 37 -> 37.060,
+ISO -> 37 -> 37.060 -> 37.060.10,37.060.10,Motion picture equipment,ISO -> 37 -> 37.060,
+ISO -> 37 -> 37.060 -> 37.060.20,37.060.20,Motion picture films. Cartridges,ISO -> 37 -> 37.060,
+ISO -> 37 -> 37.060 -> 37.060.99,37.060.99,Other standards related to cinematography,ISO -> 37 -> 37.060,
+ISO -> 37 -> 37.080,37.080,"Document imaging applicationsIncluding micrographic, electronic and optical applicationsOptical storage devices, see35.220.30",ISO -> 37,
+ISO -> 37 -> 37.100,37.100,Graphic technology,ISO -> 37,ISO -> 37 -> 37.100 -> 37.100.01
+,,,,ISO -> 37 -> 37.100 -> 37.100.10
+,,,,ISO -> 37 -> 37.100 -> 37.100.20
+,,,,ISO -> 37 -> 37.100 -> 37.100.99
+ISO -> 37 -> 37.100 -> 37.100.01,37.100.01,Graphic technology in generalIncluding proof corrections,ISO -> 37 -> 37.100,
+ISO -> 37 -> 37.100 -> 37.100.10,37.100.10,"Reproduction equipmentIncluding printing, copying and duplicating machines, bookbinding equipment, etc.",ISO -> 37 -> 37.100,
+ISO -> 37 -> 37.100 -> 37.100.20,37.100.20,"Materials for graphic technologyInks, see87.080",ISO -> 37 -> 37.100,
+ISO -> 37 -> 37.100 -> 37.100.99,37.100.99,Other standards related to graphic technology,ISO -> 37 -> 37.100,
+ISO -> 39,39,Precision mechanics. Jewellery,ISO,ISO -> 39 -> 39.040
+,,,,ISO -> 39 -> 39.060
+ISO -> 39 -> 39.040,39.040,Horology,ISO -> 39,ISO -> 39 -> 39.040 -> 39.040.01
+,,,,ISO -> 39 -> 39.040 -> 39.040.10
+,,,,ISO -> 39 -> 39.040 -> 39.040.20
+,,,,ISO -> 39 -> 39.040 -> 39.040.99
+ISO -> 39 -> 39.040 -> 39.040.01,39.040.01,Horology in general,ISO -> 39 -> 39.040,
+ISO -> 39 -> 39.040 -> 39.040.10,39.040.10,Watches,ISO -> 39 -> 39.040,
+ISO -> 39 -> 39.040 -> 39.040.20,39.040.20,Clocks,ISO -> 39 -> 39.040,
+ISO -> 39 -> 39.040 -> 39.040.99,39.040.99,Other time-measuring instruments,ISO -> 39 -> 39.040,
+ISO -> 39 -> 39.060,39.060,"JewelleryIncluding precious metals, precious and semi-precious stonesIndustrial diamonds, see25.100",ISO -> 39,
+ISO -> 43,43,Road vehicles engineering,ISO,ISO -> 43 -> 43.020
+,,,,ISO -> 43 -> 43.040
+,,,,ISO -> 43 -> 43.060
+,,,,ISO -> 43 -> 43.080
+,,,,ISO -> 43 -> 43.100
+,,,,ISO -> 43 -> 43.120
+,,,,ISO -> 43 -> 43.140
+,,,,ISO -> 43 -> 43.150
+,,,,ISO -> 43 -> 43.160
+,,,,ISO -> 43 -> 43.180
+ISO -> 43 -> 43.020,43.020,"Road vehicles in generalIncluding testing and recycling of road vehiclesRoad transport, see03.220.20Transport exhaust emissions, see13.040.50",ISO -> 43,
+ISO -> 43 -> 43.040,43.040,"Road vehicle systemsElectric road vehicle systems, see43.120Motorcycle and moped systems, see43.140Cycle systems, see43.150",ISO -> 43,ISO -> 43 -> 43.040 -> 43.040.01
+,,,,ISO -> 43 -> 43.040 -> 43.040.10
+,,,,ISO -> 43 -> 43.040 -> 43.040.15
+,,,,ISO -> 43 -> 43.040 -> 43.040.20
+,,,,ISO -> 43 -> 43.040 -> 43.040.30
+,,,,ISO -> 43 -> 43.040 -> 43.040.40
+,,,,ISO -> 43 -> 43.040 -> 43.040.50
+,,,,ISO -> 43 -> 43.040 -> 43.040.60
+,,,,ISO -> 43 -> 43.040 -> 43.040.65
+,,,,ISO -> 43 -> 43.040 -> 43.040.70
+,,,,ISO -> 43 -> 43.040 -> 43.040.80
+,,,,ISO -> 43 -> 43.040 -> 43.040.99
+ISO -> 43 -> 43.040 -> 43.040.01,43.040.01,Road vehicle systems in general,ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.10,43.040.10,Electrical and electronic equipment,ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.15,43.040.15,"Car informatics. On board computer systemsIncluding navigation systems, car radio, etc.",ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.20,43.040.20,"Lighting, signalling and warning devices",ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.30,43.040.30,Indicating and control devices,ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.40,43.040.40,Braking systems,ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.50,43.040.50,"Transmissions, suspensionsIncluding clutches, gearboxes, power-steering systems, cardan shafts, differentials, wheels, rims, etc.Tyres for road vehicles, see83.160.10",ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.60,43.040.60,"Bodies and body componentsIncluding vehicle frame and structure, heating devices, air-conditioning systems for passenger/driver compartments, roof load carriers, etc.Loading compartments, see43.080.10",ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.65,43.040.65,"Glazing and wiper systemsIncluding cleaning, defrosting and demisting devices, mirrors, etc.",ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.70,43.040.70,CouplingsIncluding towing attachments and fifth wheel assemblies,ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.80,43.040.80,"Crash protection and restraint systemsIncluding airbags, safety belts, traffic accident issues and safety enhancement matters",ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.040 -> 43.040.99,43.040.99,Other road vehicle systems,ISO -> 43 -> 43.040,
+ISO -> 43 -> 43.060,43.060,"Internal combustion engines for road vehiclesStandards for internal combustion engines for general use, see27.020",ISO -> 43,ISO -> 43 -> 43.060 -> 43.060.01
+,,,,ISO -> 43 -> 43.060 -> 43.060.10
+,,,,ISO -> 43 -> 43.060 -> 43.060.20
+,,,,ISO -> 43 -> 43.060 -> 43.060.30
+,,,,ISO -> 43 -> 43.060 -> 43.060.40
+,,,,ISO -> 43 -> 43.060 -> 43.060.50
+ISO -> 43 -> 43.060 -> 43.060.01,43.060.01,Internal combustion engines for road vehicles in general,ISO -> 43 -> 43.060,
+ISO -> 43 -> 43.060 -> 43.060.10,43.060.10,Engine block and internal components,ISO -> 43 -> 43.060,
+ISO -> 43 -> 43.060 -> 43.060.20,43.060.20,Pressure charging and air/exhaust gas ducting systems,ISO -> 43 -> 43.060,
+ISO -> 43 -> 43.060 -> 43.060.30,43.060.30,"Cooling systems. Lubricating systemsAntifreezes, see71.100.45Lubricants, see75.100",ISO -> 43 -> 43.060,
+ISO -> 43 -> 43.060 -> 43.060.40,43.060.40,Fuel systems,ISO -> 43 -> 43.060,
+ISO -> 43 -> 43.060 -> 43.060.50,43.060.50,Electrical and electronic equipment. Control systemsIncluding ignition systems and starter motors,ISO -> 43 -> 43.060,
+ISO -> 43 -> 43.080,43.080,"Commercial vehiclesRoad vehicle systems, see43.040Tyres for road vehicles, see83.160.10",ISO -> 43,ISO -> 43 -> 43.080 -> 43.080.01
+,,,,ISO -> 43 -> 43.080 -> 43.080.20
+ISO -> 43 -> 43.080 -> 43.080.01,43.080.01,Commercial vehicles in general,ISO -> 43 -> 43.080,
+ISO -> 43 -> 43.080 -> 43.080.20,43.080.20,Buses,ISO -> 43 -> 43.080,
+ISO -> 43 -> 43.100,43.100,"Passenger cars. Caravans and light trailersRoad vehicle systems, see43.040Tyres for road vehicles, see83.160.10Camping equipment, see97.200.30",ISO -> 43,
+ISO -> 43 -> 43.120,43.120,"Electric road vehiclesIncluding their components and systemsTyres for road vehicles, see83.160.10",ISO -> 43,
+ISO -> 43 -> 43.140,43.140,"Motorcycles and mopedsIncluding their components and systemsTyres for road vehicles, see83.160.10",ISO -> 43,
+ISO -> 43 -> 43.150,43.150,"CyclesIncluding their components and systemsTyres for road vehicles, see83.160.10",ISO -> 43,
+ISO -> 43 -> 43.160,43.160,"Special purpose vehiclesIncluding waste collection vehicles and components and systems for special purpose vehiclesFire-fighting vehicles, see13.220.10Mobile cranes, see53.020.20Earth-moving machinery, see53.100Agricultural tractors and trailed vehicles, see65.060.10",ISO -> 43,
+ISO -> 43 -> 43.180,43.180,"Diagnostic, maintenance and test equipmentIncluding repairing facilitiesPetrol stations, see75.200",ISO -> 43,
+ISO -> 45,45,Railway engineering,ISO,ISO -> 45 -> 45.020
+,,,,ISO -> 45 -> 45.060
+,,,,ISO -> 45 -> 45.080
+,,,,ISO -> 45 -> 45.120
+ISO -> 45 -> 45.020,45.020,"Railway engineering in generalRailway traffic, see03.220.30Construction of railways, see93.100",ISO -> 45,
+ISO -> 45 -> 45.060,45.060,"Railway rolling stockIncluding materials, components, electric and electronic equipment for railway rolling stock",ISO -> 45,ISO -> 45 -> 45.060 -> 45.060.01
+ISO -> 45 -> 45.060 -> 45.060.01,45.060.01,Railway rolling stock in general,ISO -> 45 -> 45.060,
+ISO -> 45 -> 45.080,45.080,Rails and railway componentsIncluding track components,ISO -> 45,
+ISO -> 45 -> 45.120,45.120,Equipment for railway/cableway construction and maintenance,ISO -> 45,
+ISO -> 47,47,Shipbuilding and marine structures,ISO,ISO -> 47 -> 47.020
+,,,,ISO -> 47 -> 47.040
+,,,,ISO -> 47 -> 47.060
+,,,,ISO -> 47 -> 47.080
+ISO -> 47 -> 47.020,47.020,"Shipbuilding and marine structures in generalIncluding offshore structures, except offshore structures for petroleum and natural gas industries, and seabed miningWater transport, see03.220.40Offshore structures for seabed mining, see73.100.30Offshore structures for petroleum and natural gas industries, see75.180.10",ISO -> 47,ISO -> 47 -> 47.020 -> 47.020.01
+,,,,ISO -> 47 -> 47.020 -> 47.020.05
+,,,,ISO -> 47 -> 47.020 -> 47.020.10
+,,,,ISO -> 47 -> 47.020 -> 47.020.20
+,,,,ISO -> 47 -> 47.020 -> 47.020.30
+,,,,ISO -> 47 -> 47.020 -> 47.020.40
+,,,,ISO -> 47 -> 47.020 -> 47.020.50
+,,,,ISO -> 47 -> 47.020 -> 47.020.60
+,,,,ISO -> 47 -> 47.020 -> 47.020.70
+,,,,ISO -> 47 -> 47.020 -> 47.020.80
+,,,,ISO -> 47 -> 47.020 -> 47.020.85
+,,,,ISO -> 47 -> 47.020 -> 47.020.90
+,,,,ISO -> 47 -> 47.020 -> 47.020.99
+ISO -> 47 -> 47.020 -> 47.020.01,47.020.01,General standards related to shipbuilding and marine structures,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.05,47.020.05,Materials and components for shipbuilding,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.10,47.020.10,Hulls and their structure elements,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.20,47.020.20,"Marine engines and propulsion systemsStandards for internal combustion engines for general use, see27.020",ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.30,47.020.30,Piping systems,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.40,47.020.40,Lifting and cargo handling equipment,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.50,47.020.50,Deck equipment and installations,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.60,47.020.60,Electrical equipment of ships and of marine structures,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.70,47.020.70,"Navigation and control equipmentRadiocommunications equipment, see33.060",ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.80,47.020.80,Accommodation spaces,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.85,47.020.85,Cargo spacesIncluding tanks and tankers,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.90,47.020.90,"Marine ventilation, air conditioning and heating systems",ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.020 -> 47.020.99,47.020.99,Other standards related to shipbuilding and marine structures,ISO -> 47 -> 47.020,
+ISO -> 47 -> 47.040,47.040,Seagoing vesselsIncluding their systems and components,ISO -> 47,
+ISO -> 47 -> 47.060,47.060,Inland navigation vesselsIncluding their systems and components,ISO -> 47,
+ISO -> 47 -> 47.080,47.080,"Small craftIncluding small craft systems and components, and life-saving appliancesPersonal flotation devices (life jackets), see13.340.70",ISO -> 47,
+ISO -> 49,49,Aircraft and space vehicle engineering,ISO,ISO -> 49 -> 49.020
+,,,,ISO -> 49 -> 49.025
+,,,,ISO -> 49 -> 49.030
+,,,,ISO -> 49 -> 49.035
+,,,,ISO -> 49 -> 49.040
+,,,,ISO -> 49 -> 49.045
+,,,,ISO -> 49 -> 49.050
+,,,,ISO -> 49 -> 49.060
+,,,,ISO -> 49 -> 49.080
+,,,,ISO -> 49 -> 49.090
+,,,,ISO -> 49 -> 49.095
+,,,,ISO -> 49 -> 49.100
+,,,,ISO -> 49 -> 49.120
+,,,,ISO -> 49 -> 49.140
+ISO -> 49 -> 49.020,49.020,"Aircraft and space vehicles in generalIncluding aircraft performance, flight dynamics, etc.Air transport, see03.220.50",ISO -> 49,
+ISO -> 49 -> 49.025,49.025,Materials for aerospace construction,ISO -> 49,ISO -> 49 -> 49.025 -> 49.025.01
+,,,,ISO -> 49 -> 49.025 -> 49.025.20
+ISO -> 49 -> 49.025 -> 49.025.01,49.025.01,Materials for aerospace construction in general,ISO -> 49 -> 49.025,
+ISO -> 49 -> 49.025 -> 49.025.20,49.025.20,Aluminium,ISO -> 49 -> 49.025,
+ISO -> 49 -> 49.030,49.030,"Fasteners for aerospace constructionFasteners for general use, see21.060",ISO -> 49,ISO -> 49 -> 49.030 -> 49.030.01
+,,,,ISO -> 49 -> 49.030 -> 49.030.10
+,,,,ISO -> 49 -> 49.030 -> 49.030.20
+,,,,ISO -> 49 -> 49.030 -> 49.030.30
+,,,,ISO -> 49 -> 49.030 -> 49.030.50
+,,,,ISO -> 49 -> 49.030 -> 49.030.60
+,,,,ISO -> 49 -> 49.030 -> 49.030.99
+ISO -> 49 -> 49.030 -> 49.030.01,49.030.01,Fasteners in general,ISO -> 49 -> 49.030,
+ISO -> 49 -> 49.030 -> 49.030.10,49.030.10,"Screw threadsScrew threads for general use, see21.040",ISO -> 49 -> 49.030,
+ISO -> 49 -> 49.030 -> 49.030.20,49.030.20,"Bolts, screws, studs",ISO -> 49 -> 49.030,
+ISO -> 49 -> 49.030 -> 49.030.30,49.030.30,Nuts,ISO -> 49 -> 49.030,
+ISO -> 49 -> 49.030 -> 49.030.50,49.030.50,Washers and other locking elements,ISO -> 49 -> 49.030,
+ISO -> 49 -> 49.030 -> 49.030.60,49.030.60,Rivets,ISO -> 49 -> 49.030,
+ISO -> 49 -> 49.030 -> 49.030.99,49.030.99,Other fasteners,ISO -> 49 -> 49.030,
+ISO -> 49 -> 49.035,49.035,"Components for aerospace constructionIncluding bearings, rod ends and other mechanical componentsTyres for aircraft, see83.160.20",ISO -> 49,
+ISO -> 49 -> 49.040,49.040,"Coatings and related processes used in aerospace industryCoatings for general use, see25.220",ISO -> 49,
+ISO -> 49 -> 49.045,49.045,Structure and structure elements,ISO -> 49,
+ISO -> 49 -> 49.050,49.050,Aerospace engines and propulsion systemsIncluding fuel systems,ISO -> 49,
+ISO -> 49 -> 49.060,49.060,Aerospace electric equipment and systemsIncluding Avionics,ISO -> 49,
+ISO -> 49 -> 49.080,49.080,Aerospace fluid systems and components,ISO -> 49,
+ISO -> 49 -> 49.090,49.090,On-board equipment and instrumentsIncluding navigation instruments and telecommunications equipment,ISO -> 49,
+ISO -> 49 -> 49.095,49.095,Passenger and cabin equipment,ISO -> 49,
+ISO -> 49 -> 49.100,49.100,Ground service and maintenance equipment,ISO -> 49,
+ISO -> 49 -> 49.120,49.120,"Cargo equipmentAir mode containers, pallets and nets, see55.180.30",ISO -> 49,
+ISO -> 49 -> 49.140,49.140,"Space systems and operationsIncluding space data and information transfer systems, and ground support equipment for launch site operations",ISO -> 49,
+ISO -> 53,53,Materials handling equipment,ISO,ISO -> 53 -> 53.020
+,,,,ISO -> 53 -> 53.040
+,,,,ISO -> 53 -> 53.060
+,,,,ISO -> 53 -> 53.080
+,,,,ISO -> 53 -> 53.100
+ISO -> 53 -> 53.020,53.020,"Lifting equipmentLifting equipment for shipbuilding, see47.020.40Lifts and escalators, see91.140.90",ISO -> 53,ISO -> 53 -> 53.020 -> 53.020.01
+,,,,ISO -> 53 -> 53.020 -> 53.020.20
+,,,,ISO -> 53 -> 53.020 -> 53.020.30
+,,,,ISO -> 53 -> 53.020 -> 53.020.99
+ISO -> 53 -> 53.020 -> 53.020.01,53.020.01,"Lifting appliances in generalLifting platforms for disabled people, see11.180.10",ISO -> 53 -> 53.020,
+ISO -> 53 -> 53.020 -> 53.020.20,53.020.20,"CranesIncluding mobile cranes, tower cranes, jib cranes, bridge cranes, etc.",ISO -> 53 -> 53.020,
+ISO -> 53 -> 53.020 -> 53.020.30,53.020.30,"Accessories for lifting equipmentIncluding lifting hooks, shackles, link chains, wire ropes, etc.Wire ropes and link chains for general use, see77.140.65",ISO -> 53 -> 53.020,
+ISO -> 53 -> 53.020 -> 53.020.99,53.020.99,Other lifting equipmentIncluding elevating work platforms,ISO -> 53 -> 53.020,
+ISO -> 53 -> 53.040,53.040,Continuous handling equipment,ISO -> 53,ISO -> 53 -> 53.040 -> 53.040.01
+,,,,ISO -> 53 -> 53.040 -> 53.040.10
+,,,,ISO -> 53 -> 53.040 -> 53.040.20
+,,,,ISO -> 53 -> 53.040 -> 53.040.30
+,,,,ISO -> 53 -> 53.040 -> 53.040.99
+ISO -> 53 -> 53.040 -> 53.040.01,53.040.01,Continuous handling equipment in general,ISO -> 53 -> 53.040,
+ISO -> 53 -> 53.040 -> 53.040.10,53.040.10,Conveyors,ISO -> 53 -> 53.040,
+ISO -> 53 -> 53.040 -> 53.040.20,53.040.20,"Components for conveyorsIncluding conveyor belts, chains, chain wheels, etc.",ISO -> 53 -> 53.040,
+ISO -> 53 -> 53.040 -> 53.040.30,53.040.30,Pneumatic transport and its components,ISO -> 53 -> 53.040,
+ISO -> 53 -> 53.040 -> 53.040.99,53.040.99,Other continuous handling equipment,ISO -> 53 -> 53.040,
+ISO -> 53 -> 53.060,53.060,"Industrial trucksIncluding fork-lift trucks, sliding platforms, etc.Trucks and trailers, see43.080.10",ISO -> 53,
+ISO -> 53 -> 53.080,53.080,"Storage equipmentIncluding loading devices, shelves, etc.Storing and warehousing, see55.220Installations for storage of agricultural produce, see65.040.20Shelving for shops, see97.130.10",ISO -> 53,
+ISO -> 53 -> 53.100,53.100,"Earth-moving machineryIncluding tractors, excavators, loaders, graders, etc.",ISO -> 53,
+ISO -> 55,55,Packaging and distribution of goods,ISO,ISO -> 55 -> 55.020
+,,,,ISO -> 55 -> 55.040
+,,,,ISO -> 55 -> 55.080
+,,,,ISO -> 55 -> 55.100
+,,,,ISO -> 55 -> 55.120
+,,,,ISO -> 55 -> 55.130
+,,,,ISO -> 55 -> 55.140
+,,,,ISO -> 55 -> 55.180
+ISO -> 55 -> 55.020,55.020,Packaging and distribution of goods in general,ISO -> 55,
+ISO -> 55 -> 55.040,55.040,"Packaging materials and accessoriesIncluding wrappers, paper, films, foils, cords, sealing devices, cushioning, etc.Adhesive tapes for general purposes, see83.180",ISO -> 55,
+ISO -> 55 -> 55.080,55.080,"Sacks. BagsIncluding sachets, envelopes",ISO -> 55,
+ISO -> 55 -> 55.100,55.100,"Bottles. Pots. JarsSmall containers for liquids and their closuresContainers for transfusion use, see11.040.20Containers for pharmaceutical preparations, see11.120.99",ISO -> 55,
+ISO -> 55 -> 55.120,55.120,Cans. Tins. TubesLight gauge metal and plastics containers,ISO -> 55,
+ISO -> 55 -> 55.130,55.130,Aerosol containers,ISO -> 55,
+ISO -> 55 -> 55.140,55.140,"Barrels. Drums. CanistersContainers mainly for transportation of fluids, including also casks, pails, large tin cans for shipping materials, etc.Fluid storage devices, see23.020",ISO -> 55,
+ISO -> 55 -> 55.180,55.180,Freight distribution of goods,ISO -> 55,ISO -> 55 -> 55.180 -> 55.180.01
+,,,,ISO -> 55 -> 55.180 -> 55.180.10
+,,,,ISO -> 55 -> 55.180 -> 55.180.20
+,,,,ISO -> 55 -> 55.180 -> 55.180.30
+,,,,ISO -> 55 -> 55.180 -> 55.180.40
+,,,,ISO -> 55 -> 55.180 -> 55.180.99
+ISO -> 55 -> 55.180 -> 55.180.01,55.180.01,Freight distribution of goods in general,ISO -> 55 -> 55.180,
+ISO -> 55 -> 55.180 -> 55.180.10,55.180.10,General purpose containers,ISO -> 55 -> 55.180,
+ISO -> 55 -> 55.180 -> 55.180.20,55.180.20,General purpose pallets,ISO -> 55 -> 55.180,
+ISO -> 55 -> 55.180 -> 55.180.30,55.180.30,"Air mode containers, pallets and nets",ISO -> 55 -> 55.180,
+ISO -> 55 -> 55.180 -> 55.180.40,55.180.40,"Complete, filled transport packagesIncluding reusable packages and unit loads",ISO -> 55 -> 55.180,
+ISO -> 55 -> 55.180 -> 55.180.99,55.180.99,Other standards related to freight distribution of goodsIncluding intermediate bulk containers,ISO -> 55 -> 55.180,
+ISO -> 59,59,Textile and leather technology,ISO,ISO -> 59 -> 59.020
+,,,,ISO -> 59 -> 59.060
+,,,,ISO -> 59 -> 59.080
+,,,,ISO -> 59 -> 59.100
+,,,,ISO -> 59 -> 59.120
+,,,,ISO -> 59 -> 59.140
+ISO -> 59 -> 59.020,59.020,Processes of the textile industry,ISO -> 59,
+ISO -> 59 -> 59.060,59.060,Textile fibres,ISO -> 59,ISO -> 59 -> 59.060 -> 59.060.01
+,,,,ISO -> 59 -> 59.060 -> 59.060.10
+,,,,ISO -> 59 -> 59.060 -> 59.060.20
+ISO -> 59 -> 59.060 -> 59.060.01,59.060.01,Textile fibres in generalIncluding mixtures of fibres,ISO -> 59 -> 59.060,
+ISO -> 59 -> 59.060 -> 59.060.10,59.060.10,Natural fibres,ISO -> 59 -> 59.060,
+ISO -> 59 -> 59.060 -> 59.060.20,59.060.20,Man-made fibres,ISO -> 59 -> 59.060,
+ISO -> 59 -> 59.080,59.080,"Products of the textile industryMaterials for the reinforcement of composites, see59.100Fishing nets, see65.150Upholstery, see97.140Textile floor coverings, see97.150Home textiles and linen, see97.160",ISO -> 59,ISO -> 59 -> 59.080 -> 59.080.01
+,,,,ISO -> 59 -> 59.080 -> 59.080.20
+,,,,ISO -> 59 -> 59.080 -> 59.080.30
+,,,,ISO -> 59 -> 59.080 -> 59.080.40
+,,,,ISO -> 59 -> 59.080 -> 59.080.50
+,,,,ISO -> 59 -> 59.080 -> 59.080.70
+ISO -> 59 -> 59.080 -> 59.080.01,59.080.01,Textiles in generalIncluding colour fastness of textiles,ISO -> 59 -> 59.080,
+ISO -> 59 -> 59.080 -> 59.080.20,59.080.20,"YarnsIncluding plied yarns, textured yarns, threads",ISO -> 59 -> 59.080,
+ISO -> 59 -> 59.080 -> 59.080.30,59.080.30,"Textile fabricsIncluding nonwovens, felts, lace, etc.",ISO -> 59 -> 59.080,
+ISO -> 59 -> 59.080 -> 59.080.40,59.080.40,Coated fabrics,ISO -> 59 -> 59.080,
+ISO -> 59 -> 59.080 -> 59.080.50,59.080.50,"RopesIncluding strings, straps, bandsWire ropes for lifting, see53.020.30Steel wire ropes, see77.140.65",ISO -> 59 -> 59.080,
+ISO -> 59 -> 59.080 -> 59.080.70,59.080.70,GeotextilesIncluding geosynthetics,ISO -> 59 -> 59.080,
+ISO -> 59 -> 59.100,59.100,Materials for the reinforcement of composites,ISO -> 59,ISO -> 59 -> 59.100 -> 59.100.01
+,,,,ISO -> 59 -> 59.100 -> 59.100.10
+,,,,ISO -> 59 -> 59.100 -> 59.100.20
+ISO -> 59 -> 59.100 -> 59.100.01,59.100.01,Materials for the reinforcement of composites in general,ISO -> 59 -> 59.100,
+ISO -> 59 -> 59.100 -> 59.100.10,59.100.10,Textile glass materials,ISO -> 59 -> 59.100,
+ISO -> 59 -> 59.100 -> 59.100.20,59.100.20,Carbon materials,ISO -> 59 -> 59.100,
+ISO -> 59 -> 59.120,59.120,Textile machinery,ISO -> 59,ISO -> 59 -> 59.120 -> 59.120.01
+,,,,ISO -> 59 -> 59.120 -> 59.120.10
+,,,,ISO -> 59 -> 59.120 -> 59.120.20
+,,,,ISO -> 59 -> 59.120 -> 59.120.30
+,,,,ISO -> 59 -> 59.120 -> 59.120.40
+,,,,ISO -> 59 -> 59.120 -> 59.120.50
+,,,,ISO -> 59 -> 59.120 -> 59.120.99
+ISO -> 59 -> 59.120 -> 59.120.01,59.120.01,Textile machinery in general,ISO -> 59 -> 59.120,
+ISO -> 59 -> 59.120 -> 59.120.10,59.120.10,"Spinning, twisting and texturing machinesIncluding machines and equipment for manufacturing man-made filaments and fibres and for preparing fibres for spinning",ISO -> 59 -> 59.120,
+ISO -> 59 -> 59.120 -> 59.120.20,59.120.20,"Winding machines and equipmentIncluding machines and equipment for reeling, balling, warping, sizing, beaming, etc. of yarns",ISO -> 59 -> 59.120,
+ISO -> 59 -> 59.120 -> 59.120.30,59.120.30,Looms. Weaving machines,ISO -> 59 -> 59.120,
+ISO -> 59 -> 59.120 -> 59.120.40,59.120.40,Knitting machinesIncluding household knitting machines,ISO -> 59 -> 59.120,
+ISO -> 59 -> 59.120 -> 59.120.50,59.120.50,"Dyeing and finishing equipmentLaundry appliances, see97.060",ISO -> 59 -> 59.120,
+ISO -> 59 -> 59.120 -> 59.120.99,59.120.99,Other textile machinery,ISO -> 59 -> 59.120,
+ISO -> 59 -> 59.140,59.140,"Leather technologyIncluding fur and imitation leatherFootwear, see61.060Sewing machines and machines for footwear production, see61.080",ISO -> 59,ISO -> 59 -> 59.140 -> 59.140.01
+,,,,ISO -> 59 -> 59.140 -> 59.140.20
+,,,,ISO -> 59 -> 59.140 -> 59.140.30
+,,,,ISO -> 59 -> 59.140 -> 59.140.35
+,,,,ISO -> 59 -> 59.140 -> 59.140.99
+ISO -> 59 -> 59.140 -> 59.140.01,59.140.01,Leather technology in general,ISO -> 59 -> 59.140,
+ISO -> 59 -> 59.140 -> 59.140.20,59.140.20,"Raw skins, hides and pelts",ISO -> 59 -> 59.140,
+ISO -> 59 -> 59.140 -> 59.140.30,59.140.30,Leather and furs,ISO -> 59 -> 59.140,
+ISO -> 59 -> 59.140 -> 59.140.35,59.140.35,"Leather productsIncluding trunks, suitcases, handbags, purses, wallets, dog-collars, etc. made of materials other than leatherProducts of the clothing industry, see61",ISO -> 59 -> 59.140,
+ISO -> 59 -> 59.140 -> 59.140.99,59.140.99,Other standards related to leather technology,ISO -> 59 -> 59.140,
+ISO -> 61,61,Clothing industry,ISO,ISO -> 61 -> 61.020
+,,,,ISO -> 61 -> 61.040
+,,,,ISO -> 61 -> 61.060
+,,,,ISO -> 61 -> 61.080
+ISO -> 61 -> 61.020,61.020,"ClothesIncluding underwear, nightwear, knitwear, military clothing, hosiery, etc. and their labelling and size coding schemesMedical garments, see11.140Protective clothing, see13.340.10",ISO -> 61,
+ISO -> 61 -> 61.040,61.040,"Headgear. Clothing accessories. Fastening of clothingIncluding ties, gloves, scarves, handkerchiefs, belts, braces, buttons, zip-fasteners, umbrellas, etc.Protective headgear, see13.340.20Protective gloves, see13.340.40",ISO -> 61,
+ISO -> 61 -> 61.060,61.060,"FootwearIncluding shoelacesProtective footwear, see13.340.50",ISO -> 61,
+ISO -> 61 -> 61.080,61.080,"Sewing machines and other equipment for the clothing industryIncluding household sewing machinesWashing machines, driers, ironing and pressing appliances, see97.060",ISO -> 61,
+ISO -> 65,65,Agriculture,ISO,ISO -> 65 -> 65.020
+,,,,ISO -> 65 -> 65.040
+,,,,ISO -> 65 -> 65.060
+,,,,ISO -> 65 -> 65.080
+,,,,ISO -> 65 -> 65.100
+,,,,ISO -> 65 -> 65.120
+,,,,ISO -> 65 -> 65.140
+,,,,ISO -> 65 -> 65.145
+,,,,ISO -> 65 -> 65.150
+,,,,ISO -> 65 -> 65.160
+ISO -> 65 -> 65.020,65.020,"Farming and forestryPedology, soil analysis, see13.080Logging, see79.020",ISO -> 65,ISO -> 65 -> 65.020 -> 65.020.01
+,,,,ISO -> 65 -> 65.020 -> 65.020.20
+,,,,ISO -> 65 -> 65.020 -> 65.020.30
+,,,,ISO -> 65 -> 65.020 -> 65.020.40
+ISO -> 65 -> 65.020 -> 65.020.01,65.020.01,Farming and forestry in general,ISO -> 65 -> 65.020,
+ISO -> 65 -> 65.020 -> 65.020.20,65.020.20,"Plant growingIncluding horticulture, floriculture, seeds, plant diseases",ISO -> 65 -> 65.020,
+ISO -> 65 -> 65.020 -> 65.020.30,65.020.30,"Animal husbandry and breedingIncluding sanitary inspectionVeterinary medicine, see11.220",ISO -> 65 -> 65.020,
+ISO -> 65 -> 65.020 -> 65.020.40,65.020.40,Landscaping and silviculture,ISO -> 65 -> 65.020,
+ISO -> 65 -> 65.040,65.040,"Farm buildings, structures and installations",ISO -> 65,ISO -> 65 -> 65.040 -> 65.040.10
+,,,,ISO -> 65 -> 65.040 -> 65.040.20
+,,,,ISO -> 65 -> 65.040 -> 65.040.99
+ISO -> 65 -> 65.040 -> 65.040.10,65.040.10,"Livestock buildings, installations and equipmentIncluding milking machines",ISO -> 65 -> 65.040,
+ISO -> 65 -> 65.040 -> 65.040.20,65.040.20,Buildings and installations for processing and storage of agricultural produceIncluding slaughterhouses and related equipment,ISO -> 65 -> 65.040,
+ISO -> 65 -> 65.040 -> 65.040.99,65.040.99,Other standards related to farm buildings and installations,ISO -> 65 -> 65.040,
+ISO -> 65 -> 65.060,65.060,"Agricultural machines, implements and equipmentTyres for agricultural machinery, see83.160.30",ISO -> 65,ISO -> 65 -> 65.060 -> 65.060.01
+,,,,ISO -> 65 -> 65.060 -> 65.060.10
+,,,,ISO -> 65 -> 65.060 -> 65.060.20
+,,,,ISO -> 65 -> 65.060 -> 65.060.25
+,,,,ISO -> 65 -> 65.060 -> 65.060.30
+,,,,ISO -> 65 -> 65.060 -> 65.060.35
+,,,,ISO -> 65 -> 65.060 -> 65.060.40
+,,,,ISO -> 65 -> 65.060 -> 65.060.50
+,,,,ISO -> 65 -> 65.060 -> 65.060.60
+,,,,ISO -> 65 -> 65.060 -> 65.060.70
+,,,,ISO -> 65 -> 65.060 -> 65.060.80
+,,,,ISO -> 65 -> 65.060 -> 65.060.99
+ISO -> 65 -> 65.060 -> 65.060.01,65.060.01,Agricultural machines and equipment in general,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.10,65.060.10,Agricultural tractors and trailed vehicles,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.20,65.060.20,Soil-working equipment,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.25,65.060.25,"Equipment for storage, preparation and distribution of fertilizers",ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.30,65.060.30,Sowing and planting equipment,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.35,65.060.35,Irrigation and drainage equipment,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.40,65.060.40,Plant care equipment,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.50,65.060.50,Harvesting equipment,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.60,65.060.60,Viticultural and wine-making equipment,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.70,65.060.70,"Horticultural equipmentIncluding lawnmowers, equipment for olive cultivation and olive production",ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.80,65.060.80,Forestry equipmentIncluding chain- and brush-saws,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.060 -> 65.060.99,65.060.99,Other agricultural machines and equipment,ISO -> 65 -> 65.060,
+ISO -> 65 -> 65.080,65.080,FertilizersIncluding soil conditioners and culture medium,ISO -> 65,
+ISO -> 65 -> 65.100,65.100,Pesticides and other agrochemicals,ISO -> 65,ISO -> 65 -> 65.100 -> 65.100.01
+ISO -> 65 -> 65.100 -> 65.100.01,65.100.01,Pesticides and other agrochemicals in general,ISO -> 65 -> 65.100,
+ISO -> 65 -> 65.120,65.120,"Animal feeding stuffsMicrobiology of animal feeding stuffs, see07.100.30",ISO -> 65,
+ISO -> 65 -> 65.140,65.140,"BeekeepingIncluding equipment and installations for beekeepingHoney, see67.180.10",ISO -> 65,
+ISO -> 65 -> 65.145,65.145,HuntingIncluding equipment and installations for hunting,ISO -> 65,
+ISO -> 65 -> 65.150,65.150,"Fishing and fish breedingIncluding hunting of marine mammals and reptiles, collection and breeding of aquatic molluscs and other marine products, equipment and installations for fishing and fish breeding, etc.Water for fish breeding, see13.060.25Fish and fishery products, see67.120.30",ISO -> 65,
+ISO -> 65 -> 65.160,65.160,"Tobacco, tobacco products and related equipment",ISO -> 65,
+ISO -> 67,67,Food technology,ISO,ISO -> 67 -> 67.020
+,,,,ISO -> 67 -> 67.040
+,,,,ISO -> 67 -> 67.050
+,,,,ISO -> 67 -> 67.060
+,,,,ISO -> 67 -> 67.080
+,,,,ISO -> 67 -> 67.100
+,,,,ISO -> 67 -> 67.120
+,,,,ISO -> 67 -> 67.140
+,,,,ISO -> 67 -> 67.160
+,,,,ISO -> 67 -> 67.180
+,,,,ISO -> 67 -> 67.190
+,,,,ISO -> 67 -> 67.200
+,,,,ISO -> 67 -> 67.220
+,,,,ISO -> 67 -> 67.240
+,,,,ISO -> 67 -> 67.250
+,,,,ISO -> 67 -> 67.260
+ISO -> 67 -> 67.020,67.020,Processes in the food industryIncluding food hygiene and food safety,ISO -> 67,
+ISO -> 67 -> 67.040,67.040,Food products in general,ISO -> 67,
+ISO -> 67 -> 67.050,67.050,"General methods of tests and analysis for food productsFood microbiology, see07.100.30Sensory analysis, see67.240",ISO -> 67,
+ISO -> 67 -> 67.060,67.060,"Cereals, pulses and derived productsIncluding grains, corn, flours, baked products, etc.",ISO -> 67,
+ISO -> 67 -> 67.080,67.080,"Fruits. VegetablesIncluding canned, dried and quick-frozen fruits and vegetablesFruit and vegetable juices and nectars, see67.160.20",ISO -> 67,ISO -> 67 -> 67.080 -> 67.080.01
+,,,,ISO -> 67 -> 67.080 -> 67.080.10
+,,,,ISO -> 67 -> 67.080 -> 67.080.20
+ISO -> 67 -> 67.080 -> 67.080.01,67.080.01,"Fruits, vegetables and derived products in general",ISO -> 67 -> 67.080,
+ISO -> 67 -> 67.080 -> 67.080.10,67.080.10,Fruits and derived productsIncluding nuts,ISO -> 67 -> 67.080,
+ISO -> 67 -> 67.080 -> 67.080.20,67.080.20,"Vegetables and derived productsIncluding tomato concentrates, ketchup, etc.",ISO -> 67 -> 67.080,
+ISO -> 67 -> 67.100,67.100,Milk and milk products,ISO -> 67,ISO -> 67 -> 67.100 -> 67.100.01
+,,,,ISO -> 67 -> 67.100 -> 67.100.10
+,,,,ISO -> 67 -> 67.100 -> 67.100.20
+,,,,ISO -> 67 -> 67.100 -> 67.100.30
+,,,,ISO -> 67 -> 67.100 -> 67.100.40
+,,,,ISO -> 67 -> 67.100 -> 67.100.99
+ISO -> 67 -> 67.100 -> 67.100.01,67.100.01,Milk and milk products in general,ISO -> 67 -> 67.100,
+ISO -> 67 -> 67.100 -> 67.100.10,67.100.10,"Milk and processed milk productsIncluding dried milk, condensed milk and evaporated milk",ISO -> 67 -> 67.100,
+ISO -> 67 -> 67.100 -> 67.100.20,67.100.20,Butter,ISO -> 67 -> 67.100,
+ISO -> 67 -> 67.100 -> 67.100.30,67.100.30,"CheeseIncluding cottage cheese, whey cheese",ISO -> 67 -> 67.100,
+ISO -> 67 -> 67.100 -> 67.100.40,67.100.40,Ice cream and ice confectioneryIncluding sorbets,ISO -> 67 -> 67.100,
+ISO -> 67 -> 67.100 -> 67.100.99,67.100.99,Other milk products,ISO -> 67 -> 67.100,
+ISO -> 67 -> 67.120,67.120,"Meat, meat products and other animal produceIncluding frozen products",ISO -> 67,ISO -> 67 -> 67.120 -> 67.120.10
+,,,,ISO -> 67 -> 67.120 -> 67.120.20
+,,,,ISO -> 67 -> 67.120 -> 67.120.30
+ISO -> 67 -> 67.120 -> 67.120.10,67.120.10,Meat and meat products,ISO -> 67 -> 67.120,
+ISO -> 67 -> 67.120 -> 67.120.20,67.120.20,Poultry and eggs,ISO -> 67 -> 67.120,
+ISO -> 67 -> 67.120 -> 67.120.30,67.120.30,Fish and fishery productsIncluding aquatic molluscs and other marine products,ISO -> 67 -> 67.120,
+ISO -> 67 -> 67.140,67.140,Tea. Coffee. Cocoa,ISO -> 67,ISO -> 67 -> 67.140 -> 67.140.10
+,,,,ISO -> 67 -> 67.140 -> 67.140.20
+,,,,ISO -> 67 -> 67.140 -> 67.140.30
+ISO -> 67 -> 67.140 -> 67.140.10,67.140.10,TeaIncluding herb teas,ISO -> 67 -> 67.140,
+ISO -> 67 -> 67.140 -> 67.140.20,67.140.20,Coffee and coffee substitutes,ISO -> 67 -> 67.140,
+ISO -> 67 -> 67.140 -> 67.140.30,67.140.30,Cocoa,ISO -> 67 -> 67.140,
+ISO -> 67 -> 67.160,67.160,Beverages,ISO -> 67,ISO -> 67 -> 67.160 -> 67.160.20
+ISO -> 67 -> 67.160 -> 67.160.20,67.160.20,"Non-alcoholic beveragesIncluding juices, nectars, mineral waters, lemonades, root beer, cola drinks, etc.Tea, coffee, cocoa, see67.140",ISO -> 67 -> 67.160,
+ISO -> 67 -> 67.180,67.180,Sugar. Sugar products. Starch,ISO -> 67,ISO -> 67 -> 67.180 -> 67.180.10
+,,,,ISO -> 67 -> 67.180 -> 67.180.20
+ISO -> 67 -> 67.180 -> 67.180.10,67.180.10,"Sugar and sugar productsIncluding molasses, sweets, sugar confectionary, honey, etc.",ISO -> 67 -> 67.180,
+ISO -> 67 -> 67.180 -> 67.180.20,67.180.20,"Starch and derived productsIncluding glucose syrups, etc.",ISO -> 67 -> 67.180,
+ISO -> 67 -> 67.190,67.190,Chocolate,ISO -> 67,
+ISO -> 67 -> 67.200,67.200,Edible oils and fats. Oilseeds,ISO -> 67,ISO -> 67 -> 67.200 -> 67.200.10
+,,,,ISO -> 67 -> 67.200 -> 67.200.20
+ISO -> 67 -> 67.200 -> 67.200.10,67.200.10,"Animal and vegetable fats and oilsButter, see67.100.20",ISO -> 67 -> 67.200,
+ISO -> 67 -> 67.200 -> 67.200.20,67.200.20,Oilseeds,ISO -> 67 -> 67.200,
+ISO -> 67 -> 67.220,67.220,Spices and condiments. Food additives,ISO -> 67,ISO -> 67 -> 67.220 -> 67.220.10
+,,,,ISO -> 67 -> 67.220 -> 67.220.20
+ISO -> 67 -> 67.220 -> 67.220.10,67.220.10,Spices and condiments,ISO -> 67 -> 67.220,
+ISO -> 67 -> 67.220 -> 67.220.20,67.220.20,"Food additivesIncluding salt, vinegar, food preservation additives, etc.",ISO -> 67 -> 67.220,
+ISO -> 67 -> 67.240,67.240,Sensory analysis,ISO -> 67,
+ISO -> 67 -> 67.250,67.250,"Materials and articles in contact with foodstuffsIncluding catering containers, and materials and articles in contact with drinking water",ISO -> 67,
+ISO -> 67 -> 67.260,67.260,"Plants and equipment for the food industryRefrigerating equipment, see27.200Cold rooms, see97.130.20",ISO -> 67,
+ISO -> 71,71,Chemical technology,ISO,ISO -> 71 -> 71.020
+,,,,ISO -> 71 -> 71.040
+,,,,ISO -> 71 -> 71.060
+,,,,ISO -> 71 -> 71.080
+,,,,ISO -> 71 -> 71.100
+,,,,ISO -> 71 -> 71.120
+ISO -> 71 -> 71.020,71.020,"Production in the chemical industryIncluding plant layout and services, process design and control, processing operations, security measures, etc.",ISO -> 71,
+ISO -> 71 -> 71.040,71.040,Analytical chemistry,ISO -> 71,ISO -> 71 -> 71.040 -> 71.040.10
+,,,,ISO -> 71 -> 71.040 -> 71.040.20
+,,,,ISO -> 71 -> 71.040 -> 71.040.30
+,,,,ISO -> 71 -> 71.040 -> 71.040.40
+,,,,ISO -> 71 -> 71.040 -> 71.040.50
+,,,,ISO -> 71 -> 71.040 -> 71.040.99
+ISO -> 71 -> 71.040 -> 71.040.10,71.040.10,"Chemical laboratories. Laboratory equipmentIncluding hydrometers, alcoholometers, etc.Apparatus for measurement of volume, mass, density, viscosity, see17.060Spectroscopes, see17.180.30Temperature-measuring instruments, see17.200.20Laboratory ware, see71.040.20",ISO -> 71 -> 71.040,
+ISO -> 71 -> 71.040 -> 71.040.20,71.040.20,Laboratory ware and related apparatus,ISO -> 71 -> 71.040,
+ISO -> 71 -> 71.040 -> 71.040.30,71.040.30,Chemical reagentsIncluding reference materials,ISO -> 71 -> 71.040,
+ISO -> 71 -> 71.040 -> 71.040.40,71.040.40,Chemical analysisIncluding analysis of gases and surface chemical analysis,ISO -> 71 -> 71.040,
+ISO -> 71 -> 71.040 -> 71.040.50,71.040.50,Physicochemical methods of analysisIncluding spectrophotometric and chromatographic analysis,ISO -> 71 -> 71.040,
+ISO -> 71 -> 71.040 -> 71.040.99,71.040.99,Other standards related to analytical chemistry,ISO -> 71 -> 71.040,
+ISO -> 71 -> 71.060,71.060,Inorganic chemicals,ISO -> 71,ISO -> 71 -> 71.060 -> 71.060.01
+,,,,ISO -> 71 -> 71.060 -> 71.060.10
+,,,,ISO -> 71 -> 71.060 -> 71.060.20
+,,,,ISO -> 71 -> 71.060 -> 71.060.30
+,,,,ISO -> 71 -> 71.060 -> 71.060.40
+,,,,ISO -> 71 -> 71.060 -> 71.060.50
+,,,,ISO -> 71 -> 71.060 -> 71.060.99
+ISO -> 71 -> 71.060 -> 71.060.01,71.060.01,Inorganic chemicals in general,ISO -> 71 -> 71.060,
+ISO -> 71 -> 71.060 -> 71.060.10,71.060.10,Chemical elements,ISO -> 71 -> 71.060,
+ISO -> 71 -> 71.060 -> 71.060.20,71.060.20,"OxidesIncluding dioxides, peroxides, etc.",ISO -> 71 -> 71.060,
+ISO -> 71 -> 71.060 -> 71.060.30,71.060.30,Acids,ISO -> 71 -> 71.060,
+ISO -> 71 -> 71.060 -> 71.060.40,71.060.40,Bases,ISO -> 71 -> 71.060,
+ISO -> 71 -> 71.060 -> 71.060.50,71.060.50,Salts,ISO -> 71 -> 71.060,
+ISO -> 71 -> 71.060 -> 71.060.99,71.060.99,Other inorganic chemicals,ISO -> 71 -> 71.060,
+ISO -> 71 -> 71.080,71.080,Organic chemicals,ISO -> 71,ISO -> 71 -> 71.080 -> 71.080.01
+,,,,ISO -> 71 -> 71.080 -> 71.080.10
+,,,,ISO -> 71 -> 71.080 -> 71.080.15
+,,,,ISO -> 71 -> 71.080 -> 71.080.20
+,,,,ISO -> 71 -> 71.080 -> 71.080.30
+,,,,ISO -> 71 -> 71.080 -> 71.080.40
+,,,,ISO -> 71 -> 71.080 -> 71.080.50
+,,,,ISO -> 71 -> 71.080 -> 71.080.60
+,,,,ISO -> 71 -> 71.080 -> 71.080.70
+,,,,ISO -> 71 -> 71.080 -> 71.080.80
+,,,,ISO -> 71 -> 71.080 -> 71.080.90
+ISO -> 71 -> 71.080 -> 71.080.01,71.080.01,Organic chemicals in general,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.10,71.080.10,Aliphatic hydrocarbons,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.15,71.080.15,Aromatic hydrocarbons,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.20,71.080.20,Halogenated hydrocarbons,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.30,71.080.30,Organic nitrogen compounds,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.40,71.080.40,Organic acids,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.50,71.080.50,Anhydrides,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.60,71.080.60,Alcohols. Ethers,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.70,71.080.70,Esters,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.80,71.080.80,Aldehydes and ketones,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.080 -> 71.080.90,71.080.90,Phenols,ISO -> 71 -> 71.080,
+ISO -> 71 -> 71.100,71.100,"Products of the chemical industryPhotographic chemicals, see37.040.30Raw materials for rubber and plastics, see83.040Paints and varnishes, see87.040Inks, see87.080",ISO -> 71,ISO -> 71 -> 71.100 -> 71.100.01
+,,,,ISO -> 71 -> 71.100 -> 71.100.10
+,,,,ISO -> 71 -> 71.100 -> 71.100.20
+,,,,ISO -> 71 -> 71.100 -> 71.100.30
+,,,,ISO -> 71 -> 71.100 -> 71.100.40
+,,,,ISO -> 71 -> 71.100 -> 71.100.45
+,,,,ISO -> 71 -> 71.100 -> 71.100.50
+,,,,ISO -> 71 -> 71.100 -> 71.100.60
+,,,,ISO -> 71 -> 71.100 -> 71.100.70
+ISO -> 71 -> 71.100 -> 71.100.01,71.100.01,Products of the chemical industry in general,ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.10,71.100.10,Materials for aluminium production,ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.20,71.100.20,"Gases for industrial applicationIncluding compressed air and hydrogenHydrogen technologies, see27.075Liquefied petroleum gases, see75.160.30",ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.30,71.100.30,Explosives. Pyrotechnics and fireworks,ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.40,71.100.40,Surface active agents,ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.45,71.100.45,Refrigerants and antifreezes,ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.50,71.100.50,Wood-protecting chemicals,ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.60,71.100.60,Essential oils,ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.100 -> 71.100.70,71.100.70,"Cosmetics. ToiletriesCosmetics microbiology, see07.100.40",ISO -> 71 -> 71.100,
+ISO -> 71 -> 71.120,71.120,"Equipment for the chemical industryTransport of dangerous chemicals, see13.300",ISO -> 71,ISO -> 71 -> 71.120 -> 71.120.30
+,,,,ISO -> 71 -> 71.120 -> 71.120.99
+ISO -> 71 -> 71.120 -> 71.120.30,71.120.30,Heat exchangers,ISO -> 71 -> 71.120,
+ISO -> 71 -> 71.120 -> 71.120.99,71.120.99,Other equipment for the chemical industry,ISO -> 71 -> 71.120,
+ISO -> 73,73,Mining and minerals,ISO,ISO -> 73 -> 73.020
+,,,,ISO -> 73 -> 73.040
+,,,,ISO -> 73 -> 73.060
+,,,,ISO -> 73 -> 73.080
+,,,,ISO -> 73 -> 73.100
+,,,,ISO -> 73 -> 73.120
+ISO -> 73 -> 73.020,73.020,"Mining and quarryingIncluding exploration, opening-up, development, working of mineral deposits, drilling, construction of mines, mining operations, processing of minerals, etc.",ISO -> 73,
+ISO -> 73 -> 73.040,73.040,"CoalsIncluding lignitesCoal products, see75.160.10",ISO -> 73,
+ISO -> 73 -> 73.060,73.060,"Metalliferous minerals and their concentratesUranium-containing minerals, see27.120.30",ISO -> 73,ISO -> 73 -> 73.060 -> 73.060.01
+,,,,ISO -> 73 -> 73.060 -> 73.060.10
+,,,,ISO -> 73 -> 73.060 -> 73.060.20
+,,,,ISO -> 73 -> 73.060 -> 73.060.30
+,,,,ISO -> 73 -> 73.060 -> 73.060.40
+,,,,ISO -> 73 -> 73.060 -> 73.060.99
+ISO -> 73 -> 73.060 -> 73.060.01,73.060.01,Metalliferous minerals in general,ISO -> 73 -> 73.060,
+ISO -> 73 -> 73.060 -> 73.060.10,73.060.10,Iron ores,ISO -> 73 -> 73.060,
+ISO -> 73 -> 73.060 -> 73.060.20,73.060.20,Manganese ores,ISO -> 73 -> 73.060,
+ISO -> 73 -> 73.060 -> 73.060.30,73.060.30,Chromium ores,ISO -> 73 -> 73.060,
+ISO -> 73 -> 73.060 -> 73.060.40,73.060.40,Aluminium ores,ISO -> 73 -> 73.060,
+ISO -> 73 -> 73.060 -> 73.060.99,73.060.99,Other metalliferous minerals,ISO -> 73 -> 73.060,
+ISO -> 73 -> 73.080,73.080,"Non-metalliferous mineralsIncluding mica, fluorspar, etc.Industrial diamonds, see25.100Precious and semi-precious stones, see39.060",ISO -> 73,
+ISO -> 73 -> 73.100,73.100,"Mining equipmentElectrical apparatus for explosive atmospheres, see29.260.20",ISO -> 73,ISO -> 73 -> 73.100 -> 73.100.30
+,,,,ISO -> 73 -> 73.100 -> 73.100.40
+,,,,ISO -> 73 -> 73.100 -> 73.100.99
+ISO -> 73 -> 73.100 -> 73.100.30,73.100.30,"Equipment for drilling and mine excavationIncluding equipment for seabed miningDrilling equipment for the petroleum industry, see75.180.10",ISO -> 73 -> 73.100,
+ISO -> 73 -> 73.100 -> 73.100.40,73.100.40,Haulage and hoisting equipment,ISO -> 73 -> 73.100,
+ISO -> 73 -> 73.100 -> 73.100.99,73.100.99,Other mining equipment,ISO -> 73 -> 73.100,
+ISO -> 73 -> 73.120,73.120,"Equipment for processing of mineralsIncluding equipment for milling, sizing, separation, flotation, concentration, etc.",ISO -> 73,
+ISO -> 75,75,Petroleum and related technologies,ISO,ISO -> 75 -> 75.020
+,,,,ISO -> 75 -> 75.040
+,,,,ISO -> 75 -> 75.060
+,,,,ISO -> 75 -> 75.080
+,,,,ISO -> 75 -> 75.100
+,,,,ISO -> 75 -> 75.120
+,,,,ISO -> 75 -> 75.140
+,,,,ISO -> 75 -> 75.160
+,,,,ISO -> 75 -> 75.180
+,,,,ISO -> 75 -> 75.200
+ISO -> 75 -> 75.020,75.020,Extraction and processing of petroleum and natural gas,ISO -> 75,
+ISO -> 75 -> 75.040,75.040,Crude petroleum,ISO -> 75,
+ISO -> 75 -> 75.060,75.060,Natural gas,ISO -> 75,
+ISO -> 75 -> 75.080,75.080,Petroleum products in general,ISO -> 75,
+ISO -> 75 -> 75.100,75.100,"Lubricants, industrial oils and related productsIncluding mineral oils, fluids for metal working and for temporary protection against corrosionLubrication systems, see21.260Insulating oils, see29.040.10",ISO -> 75,
+ISO -> 75 -> 75.120,75.120,"Hydraulic fluidsFluid power systems, see23.100",ISO -> 75,
+ISO -> 75 -> 75.140,75.140,"Waxes, bituminous materials and other petroleum productsAsphalts for building, see91.100.50Asphalts for road construction, see93.080.20",ISO -> 75,
+ISO -> 75 -> 75.160,75.160,Fuels,ISO -> 75,ISO -> 75 -> 75.160 -> 75.160.10
+,,,,ISO -> 75 -> 75.160 -> 75.160.20
+,,,,ISO -> 75 -> 75.160 -> 75.160.30
+,,,,ISO -> 75 -> 75.160 -> 75.160.40
+ISO -> 75 -> 75.160 -> 75.160.10,75.160.10,"Solid fuelsIncluding coal products, coke, peat, wood, derivatives of coal pyrolysis, etc.Coals, see73.040Solid biofuels, see75.160.40",ISO -> 75 -> 75.160,
+ISO -> 75 -> 75.160 -> 75.160.20,75.160.20,"Liquid fuelsIncluding gasoline, diesel, kerosene, etc.Liquid biofuels, see75.160.40",ISO -> 75 -> 75.160,
+ISO -> 75 -> 75.160 -> 75.160.30,75.160.30,"Gaseous fuelsIncluding liquefied petroleum gasesHydrogen, see71.100.20Natural gas, see75.060Biogas, see75.160.40",ISO -> 75 -> 75.160,
+ISO -> 75 -> 75.160 -> 75.160.40,75.160.40,"BiofuelsIncluding solid biofuels, liquid biofuels and biogas",ISO -> 75 -> 75.160,
+ISO -> 75 -> 75.180,75.180,Equipment for petroleum and natural gas industries,ISO -> 75,ISO -> 75 -> 75.180 -> 75.180.01
+,,,,ISO -> 75 -> 75.180 -> 75.180.10
+,,,,ISO -> 75 -> 75.180 -> 75.180.20
+,,,,ISO -> 75 -> 75.180 -> 75.180.30
+ISO -> 75 -> 75.180 -> 75.180.01,75.180.01,Equipment for petroleum and natural gas industries in general,ISO -> 75 -> 75.180,
+ISO -> 75 -> 75.180 -> 75.180.10,75.180.10,"Exploratory, drilling and extraction equipmentIncluding offshore structures",ISO -> 75 -> 75.180,
+ISO -> 75 -> 75.180 -> 75.180.20,75.180.20,Processing equipment,ISO -> 75 -> 75.180,
+ISO -> 75 -> 75.180 -> 75.180.30,75.180.30,Volumetric equipment and measurements,ISO -> 75 -> 75.180,
+ISO -> 75 -> 75.200,75.200,"Petroleum products and natural gas handling equipmentIncluding petroleum and natural gas storage devices, distribution systems, pipelines, petrol stations, dispensing devices, etc.",ISO -> 75,
+ISO -> 77,77,Metallurgy,ISO,ISO -> 77 -> 77.020
+,,,,ISO -> 77 -> 77.040
+,,,,ISO -> 77 -> 77.060
+,,,,ISO -> 77 -> 77.080
+,,,,ISO -> 77 -> 77.100
+,,,,ISO -> 77 -> 77.120
+,,,,ISO -> 77 -> 77.140
+,,,,ISO -> 77 -> 77.150
+,,,,ISO -> 77 -> 77.160
+,,,,ISO -> 77 -> 77.180
+ISO -> 77 -> 77.020,77.020,Production of metals,ISO -> 77,
+ISO -> 77 -> 77.040,77.040,Testing of metals,ISO -> 77,ISO -> 77 -> 77.040 -> 77.040.10
+,,,,ISO -> 77 -> 77.040 -> 77.040.20
+,,,,ISO -> 77 -> 77.040 -> 77.040.30
+,,,,ISO -> 77 -> 77.040 -> 77.040.99
+ISO -> 77 -> 77.040 -> 77.040.10,77.040.10,"Mechanical testing of metalsMechanical testing in general, see19.060Mechanical testing of welded joints, see25.160.40",ISO -> 77 -> 77.040,
+ISO -> 77 -> 77.040 -> 77.040.20,77.040.20,"Non-destructive testing of metalsNon-destructive testing in general, see19.100Non-destructive testing of welded joints, see25.160.40",ISO -> 77 -> 77.040,
+ISO -> 77 -> 77.040 -> 77.040.30,77.040.30,"Chemical analysis of metalsChemical analysis in general, see71.040.40Chemical analysis of ferrous metals, see77.080Chemical analysis of ferroalloys, see77.100Chemical analysis of non-ferrous metals, see77.120Chemical analysis of sintered metals and hard metals, see77.160",ISO -> 77 -> 77.040,
+ISO -> 77 -> 77.040 -> 77.040.99,77.040.99,Other methods of testing of metals,ISO -> 77 -> 77.040,
+ISO -> 77 -> 77.060,77.060,"Corrosion of metalsSurface treatment and coating, see25.220",ISO -> 77,
+ISO -> 77 -> 77.080,77.080,"Ferrous metalsIncluding classification, designation, sampling, chemical analysis, etc.Dimensions and quality grades of iron and steel products, see77.140",ISO -> 77,ISO -> 77 -> 77.080 -> 77.080.01
+,,,,ISO -> 77 -> 77.080 -> 77.080.10
+,,,,ISO -> 77 -> 77.080 -> 77.080.20
+ISO -> 77 -> 77.080 -> 77.080.01,77.080.01,Ferrous metals in general,ISO -> 77 -> 77.080,
+ISO -> 77 -> 77.080 -> 77.080.10,77.080.10,Irons,ISO -> 77 -> 77.080,
+ISO -> 77 -> 77.080 -> 77.080.20,77.080.20,Steels,ISO -> 77 -> 77.080,
+ISO -> 77 -> 77.100,77.100,"FerroalloysIncluding classification, designation, sampling, chemical analysis, etc.",ISO -> 77,
+ISO -> 77 -> 77.120,77.120,"Non-ferrous metalsIncluding classification, designation, sampling, chemical analysis, etc.Precious metals for dentistry, see11.060.10Precious metals for jewellery, see39.060Dimensions and quality grades of non-ferrous metal products, see77.150",ISO -> 77,ISO -> 77 -> 77.120 -> 77.120.01
+,,,,ISO -> 77 -> 77.120 -> 77.120.10
+,,,,ISO -> 77 -> 77.120 -> 77.120.20
+,,,,ISO -> 77 -> 77.120 -> 77.120.30
+,,,,ISO -> 77 -> 77.120 -> 77.120.40
+,,,,ISO -> 77 -> 77.120 -> 77.120.50
+,,,,ISO -> 77 -> 77.120 -> 77.120.60
+,,,,ISO -> 77 -> 77.120 -> 77.120.99
+ISO -> 77 -> 77.120 -> 77.120.01,77.120.01,Non-ferrous metals in general,ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.120 -> 77.120.10,77.120.10,Aluminium and aluminium alloys,ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.120 -> 77.120.20,77.120.20,Magnesium and magnesium alloys,ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.120 -> 77.120.30,77.120.30,Copper and copper alloys,ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.120 -> 77.120.40,77.120.40,"Nickel, chromium and their alloys",ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.120 -> 77.120.50,77.120.50,Titanium and titanium alloys,ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.120 -> 77.120.60,77.120.60,"Lead, zinc, tin and their alloys",ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.120 -> 77.120.99,77.120.99,Other non-ferrous metals and their alloys,ISO -> 77 -> 77.120,
+ISO -> 77 -> 77.140,77.140,"Iron and steel productsSteel products for aerospace construction, see49.025.10",ISO -> 77,ISO -> 77 -> 77.140 -> 77.140.01
+,,,,ISO -> 77 -> 77.140 -> 77.140.10
+,,,,ISO -> 77 -> 77.140 -> 77.140.15
+,,,,ISO -> 77 -> 77.140 -> 77.140.20
+,,,,ISO -> 77 -> 77.140 -> 77.140.25
+,,,,ISO -> 77 -> 77.140 -> 77.140.30
+,,,,ISO -> 77 -> 77.140 -> 77.140.35
+,,,,ISO -> 77 -> 77.140 -> 77.140.45
+,,,,ISO -> 77 -> 77.140 -> 77.140.50
+,,,,ISO -> 77 -> 77.140 -> 77.140.60
+,,,,ISO -> 77 -> 77.140 -> 77.140.65
+,,,,ISO -> 77 -> 77.140 -> 77.140.70
+,,,,ISO -> 77 -> 77.140 -> 77.140.75
+,,,,ISO -> 77 -> 77.140 -> 77.140.80
+,,,,ISO -> 77 -> 77.140 -> 77.140.85
+,,,,ISO -> 77 -> 77.140 -> 77.140.99
+ISO -> 77 -> 77.140 -> 77.140.01,77.140.01,Iron and steel products in general,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.10,77.140.10,Heat-treatable steels,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.15,77.140.15,Steels for reinforcement of concrete,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.20,77.140.20,"Stainless steelsIncluding alloyed steels, corrosion-resistant steels, heat-resisting steels, etc.",ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.25,77.140.25,Spring steels,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.30,77.140.30,"Steels for pressure purposesSteels for pressure pipes and tubes for specific use, see77.140.75",ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.35,77.140.35,Tool steels,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.45,77.140.45,Non-alloyed steels,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.50,77.140.50,"Flat steel products and semi-productsIncluding plate, sheet and stripSteel strips for springs, see77.140.25",ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.60,77.140.60,Steel bars and rods,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.65,77.140.65,"Steel wire, wire ropes and link chainsLifting link chains and wire ropes, see53.020.30Steel wire for springs, see77.140.25",ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.70,77.140.70,Steel profilesIncluding sections,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.75,77.140.75,"Steel pipes and tubes for specific useIncluding hollow steel bars and sections for constructionSteel pipes for conducting fluids, see23.040.10",ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.80,77.140.80,Iron and steel castings,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.85,77.140.85,Iron and steel forgings,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.140 -> 77.140.99,77.140.99,Other iron and steel products,ISO -> 77 -> 77.140,
+ISO -> 77 -> 77.150,77.150,"Products of non-ferrous metalsIncluding products of non-ferrous metal alloysProducts of non-ferrous metals for aerospace construction, see49.025",ISO -> 77,ISO -> 77 -> 77.150 -> 77.150.01
+,,,,ISO -> 77 -> 77.150 -> 77.150.10
+,,,,ISO -> 77 -> 77.150 -> 77.150.20
+,,,,ISO -> 77 -> 77.150 -> 77.150.30
+,,,,ISO -> 77 -> 77.150 -> 77.150.40
+,,,,ISO -> 77 -> 77.150 -> 77.150.50
+,,,,ISO -> 77 -> 77.150 -> 77.150.60
+ISO -> 77 -> 77.150 -> 77.150.01,77.150.01,Products of non-ferrous metals in general,ISO -> 77 -> 77.150,
+ISO -> 77 -> 77.150 -> 77.150.10,77.150.10,Aluminium products,ISO -> 77 -> 77.150,
+ISO -> 77 -> 77.150 -> 77.150.20,77.150.20,Magnesium products,ISO -> 77 -> 77.150,
+ISO -> 77 -> 77.150 -> 77.150.30,77.150.30,Copper products,ISO -> 77 -> 77.150,
+ISO -> 77 -> 77.150 -> 77.150.40,77.150.40,Nickel and chromium products,ISO -> 77 -> 77.150,
+ISO -> 77 -> 77.150 -> 77.150.50,77.150.50,Titanium products,ISO -> 77 -> 77.150,
+ISO -> 77 -> 77.150 -> 77.150.60,77.150.60,"Lead, zinc and tin products",ISO -> 77 -> 77.150,
+ISO -> 77 -> 77.160,77.160,Powder metallurgyIncluding sintered metal materials and hard metals,ISO -> 77,
+ISO -> 77 -> 77.180,77.180,Equipment for the metallurgical industry,ISO -> 77,
+ISO -> 79,79,Wood technology,ISO,ISO -> 79 -> 79.020
+,,,,ISO -> 79 -> 79.040
+,,,,ISO -> 79 -> 79.060
+,,,,ISO -> 79 -> 79.080
+,,,,ISO -> 79 -> 79.100
+,,,,ISO -> 79 -> 79.120
+ISO -> 79 -> 79.020,79.020,"Wood technology processesIncluding logging and wood treatmentWood-protecting chemicals, see71.100.50",ISO -> 79,
+ISO -> 79 -> 79.040,79.040,"Wood, sawlogs and sawn timber",ISO -> 79,
+ISO -> 79 -> 79.060,79.060,Wood-based panels,ISO -> 79,ISO -> 79 -> 79.060 -> 79.060.01
+,,,,ISO -> 79 -> 79.060 -> 79.060.10
+,,,,ISO -> 79 -> 79.060 -> 79.060.20
+,,,,ISO -> 79 -> 79.060 -> 79.060.99
+ISO -> 79 -> 79.060 -> 79.060.01,79.060.01,Wood-based panels in general,ISO -> 79 -> 79.060,
+ISO -> 79 -> 79.060 -> 79.060.10,79.060.10,Plywood,ISO -> 79 -> 79.060,
+ISO -> 79 -> 79.060 -> 79.060.20,79.060.20,Fibre and particle boards,ISO -> 79 -> 79.060,
+ISO -> 79 -> 79.060 -> 79.060.99,79.060.99,Other wood-based panels,ISO -> 79 -> 79.060,
+ISO -> 79 -> 79.080,79.080,"Semi-manufactures of timberIncluding parquet, wood paving, handles, etc.",ISO -> 79,
+ISO -> 79 -> 79.100,79.100,Cork and cork products,ISO -> 79,
+ISO -> 79 -> 79.120,79.120,Woodworking equipment,ISO -> 79,ISO -> 79 -> 79.120 -> 79.120.10
+,,,,ISO -> 79 -> 79.120 -> 79.120.20
+ISO -> 79 -> 79.120 -> 79.120.10,79.120.10,"Woodworking machinesChain- and brush-saws, see65.060.80",ISO -> 79 -> 79.120,
+ISO -> 79 -> 79.120 -> 79.120.20,79.120.20,Woodworking tools,ISO -> 79 -> 79.120,
+ISO -> 81,81,Glass and ceramics industries,ISO,ISO -> 81 -> 81.040
+,,,,ISO -> 81 -> 81.060
+,,,,ISO -> 81 -> 81.080
+ISO -> 81 -> 81.040,81.040,Glass,ISO -> 81,ISO -> 81 -> 81.040 -> 81.040.01
+,,,,ISO -> 81 -> 81.040 -> 81.040.10
+,,,,ISO -> 81 -> 81.040 -> 81.040.20
+,,,,ISO -> 81 -> 81.040 -> 81.040.30
+ISO -> 81 -> 81.040 -> 81.040.01,81.040.01,Glass in general,ISO -> 81 -> 81.040,
+ISO -> 81 -> 81.040 -> 81.040.10,81.040.10,Raw materials and raw glass,ISO -> 81 -> 81.040,
+ISO -> 81 -> 81.040 -> 81.040.20,81.040.20,Glass in building,ISO -> 81 -> 81.040,
+ISO -> 81 -> 81.040 -> 81.040.30,81.040.30,"Glass productsBottles, pots, jars, see55.100Laboratory glassware, see71.040.20",ISO -> 81 -> 81.040,
+ISO -> 81 -> 81.060,81.060,CeramicsIncluding glass-ceramics,ISO -> 81,ISO -> 81 -> 81.060 -> 81.060.01
+,,,,ISO -> 81 -> 81.060 -> 81.060.10
+,,,,ISO -> 81 -> 81.060 -> 81.060.20
+,,,,ISO -> 81 -> 81.060 -> 81.060.30
+ISO -> 81 -> 81.060 -> 81.060.01,81.060.01,Ceramics in general,ISO -> 81 -> 81.060,
+ISO -> 81 -> 81.060 -> 81.060.10,81.060.10,Raw materials,ISO -> 81 -> 81.060,
+ISO -> 81 -> 81.060 -> 81.060.20,81.060.20,"Ceramic productsCeramic tiles, see91.100.23Ceramic building products, see91.100.25Sanitary ceramic products, see91.140.70",ISO -> 81 -> 81.060,
+ISO -> 81 -> 81.060 -> 81.060.30,81.060.30,Advanced ceramics,ISO -> 81 -> 81.060,
+ISO -> 81 -> 81.080,81.080,RefractoriesIncluding ceramic refractories,ISO -> 81,
+ISO -> 83,83,Rubber and plastic industries,ISO,ISO -> 83 -> 83.020
+,,,,ISO -> 83 -> 83.040
+,,,,ISO -> 83 -> 83.060
+,,,,ISO -> 83 -> 83.080
+,,,,ISO -> 83 -> 83.100
+,,,,ISO -> 83 -> 83.120
+,,,,ISO -> 83 -> 83.140
+,,,,ISO -> 83 -> 83.160
+,,,,ISO -> 83 -> 83.180
+,,,,ISO -> 83 -> 83.200
+ISO -> 83 -> 83.020,83.020,Manufacturing processes in the rubber and plastics industries,ISO -> 83,
+ISO -> 83 -> 83.040,83.040,Raw materials for rubber and plastics,ISO -> 83,ISO -> 83 -> 83.040 -> 83.040.01
+,,,,ISO -> 83 -> 83.040 -> 83.040.10
+,,,,ISO -> 83 -> 83.040 -> 83.040.20
+,,,,ISO -> 83 -> 83.040 -> 83.040.30
+ISO -> 83 -> 83.040 -> 83.040.01,83.040.01,Raw materials for rubber and plastics in general,ISO -> 83 -> 83.040,
+ISO -> 83 -> 83.040 -> 83.040.10,83.040.10,Latex and raw rubber,ISO -> 83 -> 83.040,
+ISO -> 83 -> 83.040 -> 83.040.20,83.040.20,"Rubber compounding ingredientsIncluding carbon black, kaolin clay, etc.",ISO -> 83 -> 83.040,
+ISO -> 83 -> 83.040 -> 83.040.30,83.040.30,"Auxiliary materials and additives for plasticsIncluding fillers, extenders, hardeners, pigments, plasticizers, etc.",ISO -> 83 -> 83.040,
+ISO -> 83 -> 83.060,83.060,"RubberRaw rubber, see83.040.10",ISO -> 83,
+ISO -> 83 -> 83.080,83.080,Plastics,ISO -> 83,ISO -> 83 -> 83.080 -> 83.080.01
+,,,,ISO -> 83 -> 83.080 -> 83.080.10
+,,,,ISO -> 83 -> 83.080 -> 83.080.20
+ISO -> 83 -> 83.080 -> 83.080.01,83.080.01,Plastics in general,ISO -> 83 -> 83.080,
+ISO -> 83 -> 83.080 -> 83.080.10,83.080.10,"Thermosetting materialsIncluding eboniteSilicones, see71.100.55",ISO -> 83 -> 83.080,
+ISO -> 83 -> 83.080 -> 83.080.20,83.080.20,Thermoplastic materials,ISO -> 83 -> 83.080,
+ISO -> 83 -> 83.100,83.100,Cellular materials,ISO -> 83,
+ISO -> 83 -> 83.120,83.120,"Reinforced plasticsMaterials for the reinforcement of plastics, see59.100",ISO -> 83,
+ISO -> 83 -> 83.140,83.140,"Rubber and plastics productsTransmission belts, see21.220.10Conveyor belts, see53.040.20Rubber and plastics coated fabrics, see59.080.40Footwear, see61.060Tyres, see83.160",ISO -> 83,ISO -> 83 -> 83.140 -> 83.140.01
+,,,,ISO -> 83 -> 83.140 -> 83.140.10
+,,,,ISO -> 83 -> 83.140 -> 83.140.20
+,,,,ISO -> 83 -> 83.140 -> 83.140.30
+,,,,ISO -> 83 -> 83.140 -> 83.140.40
+,,,,ISO -> 83 -> 83.140 -> 83.140.50
+,,,,ISO -> 83 -> 83.140 -> 83.140.99
+ISO -> 83 -> 83.140 -> 83.140.01,83.140.01,Rubber and plastics products in general,ISO -> 83 -> 83.140,
+ISO -> 83 -> 83.140 -> 83.140.10,83.140.10,Films and sheetsIncluding plates,ISO -> 83 -> 83.140,
+ISO -> 83 -> 83.140 -> 83.140.20,83.140.20,Laminated sheets,ISO -> 83 -> 83.140,
+ISO -> 83 -> 83.140 -> 83.140.30,83.140.30,"Plastics pipes and fittings for non fluid usePlastics pipes, fittings and valves for general use, see23.040.20Plastics pipes, fittings and valves for general use, see23.040.45Plastics pipes, fittings and valves for general use, see23.060",ISO -> 83 -> 83.140,
+ISO -> 83 -> 83.140 -> 83.140.40,83.140.40,"HosesHoses for general use, see23.040.70",ISO -> 83 -> 83.140,
+ISO -> 83 -> 83.140 -> 83.140.50,83.140.50,"SealsSeals for general use, see21.140Seals for general use, see23.040.80",ISO -> 83 -> 83.140,
+ISO -> 83 -> 83.140 -> 83.140.99,83.140.99,Other rubber and plastics products,ISO -> 83 -> 83.140,
+ISO -> 83 -> 83.160,83.160,TyresIncluding tubes and valves,ISO -> 83,ISO -> 83 -> 83.160 -> 83.160.01
+,,,,ISO -> 83 -> 83.160 -> 83.160.10
+,,,,ISO -> 83 -> 83.160 -> 83.160.20
+,,,,ISO -> 83 -> 83.160 -> 83.160.30
+,,,,ISO -> 83 -> 83.160 -> 83.160.99
+ISO -> 83 -> 83.160 -> 83.160.01,83.160.01,Tyres in general,ISO -> 83 -> 83.160,
+ISO -> 83 -> 83.160 -> 83.160.10,83.160.10,"Road vehicle tyresIncluding cycle tyres, and tyre retreading and repair processes",ISO -> 83 -> 83.160,
+ISO -> 83 -> 83.160 -> 83.160.20,83.160.20,Aircraft tyres,ISO -> 83 -> 83.160,
+ISO -> 83 -> 83.160 -> 83.160.30,83.160.30,Tyres for agricultural machinery,ISO -> 83 -> 83.160,
+ISO -> 83 -> 83.160 -> 83.160.99,83.160.99,Other tyres,ISO -> 83 -> 83.160,
+ISO -> 83 -> 83.180,83.180,"AdhesivesIncluding adhesive tapesAdhesive tapes for electrical insulation purposes, see29.035.20",ISO -> 83,
+ISO -> 83 -> 83.200,83.200,Equipment for the rubber and plastics industries,ISO -> 83,
+ISO -> 85,85,Paper technology,ISO,ISO -> 85 -> 85.020
+,,,,ISO -> 85 -> 85.040
+,,,,ISO -> 85 -> 85.060
+,,,,ISO -> 85 -> 85.080
+,,,,ISO -> 85 -> 85.100
+ISO -> 85 -> 85.020,85.020,Paper production processesIncluding paper recycling,ISO -> 85,
+ISO -> 85 -> 85.040,85.040,Pulps,ISO -> 85,
+ISO -> 85 -> 85.060,85.060,Paper and board,ISO -> 85,
+ISO -> 85 -> 85.080,85.080,"Paper productsIncluding paper based stationeryOther forms of stationery (non-paper based), see35.260Other forms of stationery (non-paper based), see97.180",ISO -> 85,ISO -> 85 -> 85.080 -> 85.080.01
+,,,,ISO -> 85 -> 85.080 -> 85.080.10
+,,,,ISO -> 85 -> 85.080 -> 85.080.20
+,,,,ISO -> 85 -> 85.080 -> 85.080.30
+,,,,ISO -> 85 -> 85.080 -> 85.080.99
+ISO -> 85 -> 85.080 -> 85.080.01,85.080.01,Paper products in general,ISO -> 85 -> 85.080,
+ISO -> 85 -> 85.080 -> 85.080.10,85.080.10,Office paper,ISO -> 85 -> 85.080,
+ISO -> 85 -> 85.080 -> 85.080.20,85.080.20,Tissue paper,ISO -> 85 -> 85.080,
+ISO -> 85 -> 85.080 -> 85.080.30,85.080.30,"CardboardIncluding corrugated fibreboardPaper for packaging, see55.040",ISO -> 85 -> 85.080,
+ISO -> 85 -> 85.080 -> 85.080.99,85.080.99,Other paper products,ISO -> 85 -> 85.080,
+ISO -> 85 -> 85.100,85.100,Equipment for the paper industry,ISO -> 85,
+ISO -> 87,87,Paint and colour industries,ISO,ISO -> 87 -> 87.020
+,,,,ISO -> 87 -> 87.040
+,,,,ISO -> 87 -> 87.060
+,,,,ISO -> 87 -> 87.080
+,,,,ISO -> 87 -> 87.100
+ISO -> 87 -> 87.020,87.020,"Paint coating processesSurface preparation for painting, see25.220.10",ISO -> 87,
+ISO -> 87 -> 87.040,87.040,"Paints and varnishesIncluding coating powders, paint coatings and protective paint systems",ISO -> 87,
+ISO -> 87 -> 87.060,87.060,Paint ingredients,ISO -> 87,ISO -> 87 -> 87.060 -> 87.060.01
+,,,,ISO -> 87 -> 87.060 -> 87.060.10
+,,,,ISO -> 87 -> 87.060 -> 87.060.20
+,,,,ISO -> 87 -> 87.060 -> 87.060.30
+,,,,ISO -> 87 -> 87.060 -> 87.060.99
+ISO -> 87 -> 87.060 -> 87.060.01,87.060.01,Paint ingredients in general,ISO -> 87 -> 87.060,
+ISO -> 87 -> 87.060 -> 87.060.10,87.060.10,Pigments and extenders,ISO -> 87 -> 87.060,
+ISO -> 87 -> 87.060 -> 87.060.20,87.060.20,Binders,ISO -> 87 -> 87.060,
+ISO -> 87 -> 87.060 -> 87.060.30,87.060.30,Solvents,ISO -> 87 -> 87.060,
+ISO -> 87 -> 87.060 -> 87.060.99,87.060.99,Other paint ingredients,ISO -> 87 -> 87.060,
+ISO -> 87 -> 87.080,87.080,"Inks. Printing inksMaterials for graphic technology, see37.100.20",ISO -> 87,
+ISO -> 87 -> 87.100,87.100,Paint coating equipment,ISO -> 87,
+ISO -> 91,91,Construction materials and building,ISO,ISO -> 91 -> 91.010
+,,,,ISO -> 91 -> 91.040
+,,,,ISO -> 91 -> 91.060
+,,,,ISO -> 91 -> 91.080
+,,,,ISO -> 91 -> 91.090
+,,,,ISO -> 91 -> 91.100
+,,,,ISO -> 91 -> 91.120
+,,,,ISO -> 91 -> 91.140
+,,,,ISO -> 91 -> 91.160
+,,,,ISO -> 91 -> 91.200
+,,,,ISO -> 91 -> 91.220
+ISO -> 91 -> 91.010,91.010,Construction industry,ISO -> 91,ISO -> 91 -> 91.010 -> 91.010.01
+,,,,ISO -> 91 -> 91.010 -> 91.010.20
+,,,,ISO -> 91 -> 91.010 -> 91.010.30
+ISO -> 91 -> 91.010 -> 91.010.01,91.010.01,"Construction industry in generalBuilding information modelling, see35.240.67",ISO -> 91 -> 91.010,
+ISO -> 91 -> 91.010 -> 91.010.20,91.010.20,Contractual aspectsIncluding construction procurement,ISO -> 91 -> 91.010,
+ISO -> 91 -> 91.010 -> 91.010.30,91.010.30,"Technical aspectsIncluding tolerances, modular coordination, etc.Construction drawings, see01.100.30",ISO -> 91 -> 91.010,
+ISO -> 91 -> 91.040,91.040,Buildings,ISO -> 91,ISO -> 91 -> 91.040 -> 91.040.01
+,,,,ISO -> 91 -> 91.040 -> 91.040.10
+,,,,ISO -> 91 -> 91.040 -> 91.040.99
+ISO -> 91 -> 91.040 -> 91.040.01,91.040.01,"Buildings in generalIncluding building environment design and service life planningBuilding materials, see91.100Cultural property and heritage, see97.195",ISO -> 91 -> 91.040,
+ISO -> 91 -> 91.040 -> 91.040.10,91.040.10,Public buildingsIncluding ecclesiastical buildings and hospitals,ISO -> 91 -> 91.040,
+ISO -> 91 -> 91.040 -> 91.040.99,91.040.99,Other buildings,ISO -> 91 -> 91.040,
+ISO -> 91 -> 91.060,91.060,"Elements of buildingsFoundations, see93.020",ISO -> 91,ISO -> 91 -> 91.060 -> 91.060.01
+,,,,ISO -> 91 -> 91.060 -> 91.060.10
+,,,,ISO -> 91 -> 91.060 -> 91.060.20
+,,,,ISO -> 91 -> 91.060 -> 91.060.30
+,,,,ISO -> 91 -> 91.060 -> 91.060.40
+,,,,ISO -> 91 -> 91.060 -> 91.060.50
+,,,,ISO -> 91 -> 91.060 -> 91.060.99
+ISO -> 91 -> 91.060 -> 91.060.01,91.060.01,Elements of buildings in general,ISO -> 91 -> 91.060,
+ISO -> 91 -> 91.060 -> 91.060.10,91.060.10,Walls. Partitions. Fa�ades,ISO -> 91 -> 91.060,
+ISO -> 91 -> 91.060 -> 91.060.20,91.060.20,"RoofsIncluding related elements (gutters, etc.)",ISO -> 91 -> 91.060,
+ISO -> 91 -> 91.060 -> 91.060.30,91.060.30,"Ceilings. Floors. StairsIncluding screeds, ramps, etc.",ISO -> 91 -> 91.060,
+ISO -> 91 -> 91.060 -> 91.060.40,91.060.40,"Chimneys, shafts, ductsIncluding flues and flue pipes",ISO -> 91 -> 91.060,
+ISO -> 91 -> 91.060 -> 91.060.50,91.060.50,"Doors and windowsIncluding doorsets, their components, blinds, shuttersDoor and window hardware, see91.190",ISO -> 91 -> 91.060,
+ISO -> 91 -> 91.060 -> 91.060.99,91.060.99,Other elements of buildings,ISO -> 91 -> 91.060,
+ISO -> 91 -> 91.080,91.080,"Structures of buildingsIncluding design, loading on and calculation of structures",ISO -> 91,ISO -> 91 -> 91.080 -> 91.080.01
+,,,,ISO -> 91 -> 91.080 -> 91.080.10
+,,,,ISO -> 91 -> 91.080 -> 91.080.13
+,,,,ISO -> 91 -> 91.080 -> 91.080.20
+,,,,ISO -> 91 -> 91.080 -> 91.080.30
+,,,,ISO -> 91 -> 91.080 -> 91.080.40
+,,,,ISO -> 91 -> 91.080 -> 91.080.99
+ISO -> 91 -> 91.080 -> 91.080.01,91.080.01,Structures of buildings in general,ISO -> 91 -> 91.080,
+ISO -> 91 -> 91.080 -> 91.080.10,91.080.10,Metal structures,ISO -> 91 -> 91.080,
+ISO -> 91 -> 91.080 -> 91.080.13,91.080.13,Steel structures,ISO -> 91 -> 91.080,
+ISO -> 91 -> 91.080 -> 91.080.20,91.080.20,Timber structures,ISO -> 91 -> 91.080,
+ISO -> 91 -> 91.080 -> 91.080.30,91.080.30,Masonry,ISO -> 91 -> 91.080,
+ISO -> 91 -> 91.080 -> 91.080.40,91.080.40,Concrete structuresIncluding the repair and protection of concrete products and structures,ISO -> 91 -> 91.080,
+ISO -> 91 -> 91.080 -> 91.080.99,91.080.99,Other structures,ISO -> 91 -> 91.080,
+ISO -> 91 -> 91.090,91.090,"External structuresIncluding fences, gates, arches, sheds, garages, etc.",ISO -> 91,
+ISO -> 91 -> 91.100,91.100,"Construction materialsIncluding sustainability of construction materialsIron and steel products, see77.140Products of non-ferrous metals, see77.150Sawn timber, see79.040Wood-based panels, see79.060Glass, see81.040.20Plastics products, see83.140",ISO -> 91,ISO -> 91 -> 91.100 -> 91.100.01
+,,,,ISO -> 91 -> 91.100 -> 91.100.10
+,,,,ISO -> 91 -> 91.100 -> 91.100.23
+,,,,ISO -> 91 -> 91.100 -> 91.100.30
+,,,,ISO -> 91 -> 91.100 -> 91.100.40
+,,,,ISO -> 91 -> 91.100 -> 91.100.50
+,,,,ISO -> 91 -> 91.100 -> 91.100.60
+ISO -> 91 -> 91.100 -> 91.100.01,91.100.01,Construction materials in general,ISO -> 91 -> 91.100,
+ISO -> 91 -> 91.100 -> 91.100.10,91.100.10,Cement. Gypsum. Lime. Mortar,ISO -> 91 -> 91.100,
+ISO -> 91 -> 91.100 -> 91.100.23,91.100.23,Ceramic tiles,ISO -> 91 -> 91.100,
+ISO -> 91 -> 91.100 -> 91.100.30,91.100.30,Concrete and concrete productsIncluding admixtures,ISO -> 91 -> 91.100,
+ISO -> 91 -> 91.100 -> 91.100.40,91.100.40,Products in fibre-reinforced cement,ISO -> 91 -> 91.100,
+ISO -> 91 -> 91.100 -> 91.100.50,91.100.50,"Binders. Sealing materialsIncluding geomembranes, asphalts for buildings, etc.",ISO -> 91 -> 91.100,
+ISO -> 91 -> 91.100 -> 91.100.60,91.100.60,Thermal and sound insulating materials,ISO -> 91 -> 91.100,
+ISO -> 91 -> 91.120,91.120,"Protection of and in buildingsEmergencies in buildings, see13.200Fire protection, see13.220.20Fire resistance of building materials and elements, see13.220.50Alarm and warning systems, see13.320",ISO -> 91,ISO -> 91 -> 91.120 -> 91.120.10
+,,,,ISO -> 91 -> 91.120 -> 91.120.20
+,,,,ISO -> 91 -> 91.120 -> 91.120.25
+ISO -> 91 -> 91.120 -> 91.120.10,91.120.10,"Thermal insulation of buildingsIncluding energy efficiency of buildingsEnergy efficiency in general, see27.015Thermal insulation in general, see27.220Thermal insulating materials, see91.100.60",ISO -> 91 -> 91.120,
+ISO -> 91 -> 91.120 -> 91.120.20,91.120.20,"Acoustics in building. Sound insulationAcoustic measurements and noise abatement in general, see17.140.01Sound insulating materials, see91.100.60",ISO -> 91 -> 91.120,
+ISO -> 91 -> 91.120 -> 91.120.25,91.120.25,"Seismic and vibration protectionVibrations and vibration measurements, see17.160",ISO -> 91 -> 91.120,
+ISO -> 91 -> 91.140,91.140,"Installations in buildingsBurners and boilers for industrial purposes, see27.060Heat pumps, see27.080",ISO -> 91,ISO -> 91 -> 91.140 -> 91.140.01
+,,,,ISO -> 91 -> 91.140 -> 91.140.10
+,,,,ISO -> 91 -> 91.140 -> 91.140.30
+,,,,ISO -> 91 -> 91.140 -> 91.140.40
+,,,,ISO -> 91 -> 91.140 -> 91.140.60
+,,,,ISO -> 91 -> 91.140 -> 91.140.70
+,,,,ISO -> 91 -> 91.140 -> 91.140.80
+,,,,ISO -> 91 -> 91.140 -> 91.140.90
+ISO -> 91 -> 91.140 -> 91.140.01,91.140.01,Installations in buildings in general,ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.140 -> 91.140.10,91.140.10,"Central heating systemsIncluding burners and boilers for central heating systemsPipelines and its parts for district heat, see23.040.07Heating appliances, see97.100",ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.140 -> 91.140.30,91.140.30,"Ventilation and air-conditioning systemsIncluding ventilation ductsVentilators and air-conditioners, see23.120",ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.140 -> 91.140.40,91.140.40,Gas supply systemsIncluding gas meters in buildings,ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.140 -> 91.140.60,91.140.60,"Water supply systemsIncluding water meters in buildingsPipelines and its parts for external water conveyance systems, see23.040.03External water conveyance systems, see93.025",ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.140 -> 91.140.70,91.140.70,"Sanitary installationsIncluding bidets, kitchen sinks, baths, waste chutes, etc.",ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.140 -> 91.140.80,91.140.80,"Drainage systemsSewage water disposal and treatment, see13.060.30Drainage systems for rainwater, see91.060.20External sewage systems, see93.030",ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.140 -> 91.140.90,91.140.90,Lifts. Escalators,ISO -> 91 -> 91.140,
+ISO -> 91 -> 91.160,91.160,"LightingIncluding oil and gas lampsTheatre, stage and studio lighting equipment, see97.200.10",ISO -> 91,ISO -> 91 -> 91.160 -> 91.160.01
+,,,,ISO -> 91 -> 91.160 -> 91.160.10
+ISO -> 91 -> 91.160 -> 91.160.01,91.160.01,Lighting in general,ISO -> 91 -> 91.160,
+ISO -> 91 -> 91.160 -> 91.160.10,91.160.10,"Interior lightingIncluding workplace lighting, emergency and safety lighting",ISO -> 91 -> 91.160,
+ISO -> 91 -> 91.200,91.200,"Construction technologyIncluding measuring methods, construction sites, demolition of structures, etc.",ISO -> 91,
+ISO -> 91 -> 91.220,91.220,"Construction equipmentIncluding scaffolding, mixers for concrete and mortar, etc.Lifting equipment, see53.020Earth-moving machinery, see53.100",ISO -> 91,
+ISO -> 93,93,Civil engineering,ISO,ISO -> 93 -> 93.010
+,,,,ISO -> 93 -> 93.020
+,,,,ISO -> 93 -> 93.025
+,,,,ISO -> 93 -> 93.030
+,,,,ISO -> 93 -> 93.040
+,,,,ISO -> 93 -> 93.060
+,,,,ISO -> 93 -> 93.080
+,,,,ISO -> 93 -> 93.100
+ISO -> 93 -> 93.010,93.010,"Civil engineering in generalConstruction drawings, see01.100.30",ISO -> 93,
+ISO -> 93 -> 93.020,93.020,"Earthworks. Excavations. Foundation construction. Underground worksIncluding geotechnicsEarth-moving machinery, see53.100",ISO -> 93,
+ISO -> 93 -> 93.025,93.025,"External water conveyance systemsIncluding buried and above ground installationsPipelines and its parts for external water conveyance systems, see23.040.03Internal water supply systems, see91.140.60",ISO -> 93,
+ISO -> 93 -> 93.030,93.030,"External sewage systemsSewage water disposal and treatment, see13.060.30Pipelines and its parts for external sewage systems, see23.040.05Internal drainage systems, see91.140.80",ISO -> 93,
+ISO -> 93 -> 93.040,93.040,Bridge construction,ISO -> 93,
+ISO -> 93 -> 93.060,93.060,Tunnel construction,ISO -> 93,
+ISO -> 93 -> 93.080,93.080,Road engineering,ISO -> 93,ISO -> 93 -> 93.080 -> 93.080.10
+,,,,ISO -> 93 -> 93.080 -> 93.080.20
+,,,,ISO -> 93 -> 93.080 -> 93.080.30
+ISO -> 93 -> 93.080 -> 93.080.10,93.080.10,Road constructionIncluding road maintenance equipment and road construction equipment,ISO -> 93 -> 93.080,
+ISO -> 93 -> 93.080 -> 93.080.20,93.080.20,"Road construction materialsIncluding asphalts, road pavements, etc.",ISO -> 93 -> 93.080,
+ISO -> 93 -> 93.080 -> 93.080.30,93.080.30,"Road equipment and installationsIncluding road traffic warning and control systems, devices and installations (speed controls, traffic signal installations, vehicle loop detectors, pavement markers, manholes, etc.)",ISO -> 93 -> 93.080,
+ISO -> 93 -> 93.100,93.100,"Construction of railwaysIncluding the construction of tramways, funicular railways, cableways, rail traffic control equipment and installations, etc.Rails and railway components, including track, see45.080Equipment for railway/cableway construction and maintenance, see45.120",ISO -> 93,
+ISO -> 95,95,Military affairs. Military engineering. Weapons,ISO,ISO -> 95 -> 95.020
+ISO -> 95 -> 95.020,95.020,"Military in generalIncluding defense procurement, defense standardization, etc.Military clothing, see61.020",ISO -> 95,
+ISO -> 97,97,Domestic and commercial equipment. Entertainment. Sports,ISO,ISO -> 97 -> 97.020
+,,,,ISO -> 97 -> 97.040
+,,,,ISO -> 97 -> 97.060
+,,,,ISO -> 97 -> 97.100
+,,,,ISO -> 97 -> 97.120
+,,,,ISO -> 97 -> 97.130
+,,,,ISO -> 97 -> 97.140
+,,,,ISO -> 97 -> 97.145
+,,,,ISO -> 97 -> 97.150
+,,,,ISO -> 97 -> 97.160
+,,,,ISO -> 97 -> 97.170
+,,,,ISO -> 97 -> 97.180
+,,,,ISO -> 97 -> 97.190
+,,,,ISO -> 97 -> 97.195
+,,,,ISO -> 97 -> 97.200
+,,,,ISO -> 97 -> 97.220
+ISO -> 97 -> 97.020,97.020,"Home economics in generalIncluding consumer informationWashing, cleaning and removal services, see03.080.30Ventilators, air-conditioners, see23.120Hand-held electric tools, see25.140.20Household electronic appliances, see33.160Clocks and watches, see39.040Household sewing machines, see61.080",ISO -> 97,
+ISO -> 97 -> 97.040,97.040,Kitchen equipment,ISO -> 97,ISO -> 97 -> 97.040 -> 97.040.01
+,,,,ISO -> 97 -> 97.040 -> 97.040.10
+,,,,ISO -> 97 -> 97.040 -> 97.040.20
+,,,,ISO -> 97 -> 97.040 -> 97.040.30
+,,,,ISO -> 97 -> 97.040 -> 97.040.40
+,,,,ISO -> 97 -> 97.040 -> 97.040.60
+ISO -> 97 -> 97.040 -> 97.040.01,97.040.01,Kitchen equipment in general,ISO -> 97 -> 97.040,
+ISO -> 97 -> 97.040 -> 97.040.10,97.040.10,"Kitchen furnitureKitchen sinks, see91.140.70",ISO -> 97 -> 97.040,
+ISO -> 97 -> 97.040 -> 97.040.20,97.040.20,"Cooking ranges, working tables, ovens and similar appliancesIncluding microwave ovens and stove hoods",ISO -> 97 -> 97.040,
+ISO -> 97 -> 97.040 -> 97.040.30,97.040.30,"Domestic refrigerating appliancesRefrigerating technology, see27.200Refrigerated display cabinets and cold rooms, see97.130.20",ISO -> 97 -> 97.040,
+ISO -> 97 -> 97.040 -> 97.040.40,97.040.40,Dishwashers,ISO -> 97 -> 97.040,
+ISO -> 97 -> 97.040 -> 97.040.60,97.040.60,"Cookware, cutlery and flatwareIncluding table cutlery and table ware",ISO -> 97 -> 97.040,
+ISO -> 97 -> 97.060,97.060,"Laundry appliancesIncluding washing-machines, dry-cleaners, driers, ironing and pressing appliances, etc.",ISO -> 97,
+ISO -> 97 -> 97.100,97.100,"Domestic, commercial and industrial heating appliancesIncluding thermal storage room heating appliancesBurners and boilers, see27.060Central heating systems, see91.140.10",ISO -> 97,ISO -> 97 -> 97.100 -> 97.100.01
+,,,,ISO -> 97 -> 97.100 -> 97.100.30
+,,,,ISO -> 97 -> 97.100 -> 97.100.99
+ISO -> 97 -> 97.100 -> 97.100.01,97.100.01,Heating appliances in general,ISO -> 97 -> 97.100,
+ISO -> 97 -> 97.100 -> 97.100.30,97.100.30,Solid fuel heaters,ISO -> 97 -> 97.100,
+ISO -> 97 -> 97.100 -> 97.100.99,97.100.99,Heaters using other sources of energy,ISO -> 97 -> 97.100,
+ISO -> 97 -> 97.120,97.120,Automatic controls for household use,ISO -> 97,
+ISO -> 97 -> 97.130,97.130,Shop fittings,ISO -> 97,ISO -> 97 -> 97.130 -> 97.130.20
+ISO -> 97 -> 97.130 -> 97.130.20,97.130.20,"Commercial refrigerating appliancesIncluding refrigerated display cabinets, cold rooms, etc.",ISO -> 97 -> 97.130,
+ISO -> 97 -> 97.140,97.140,"FurnitureIncluding upholstery, mattresses, office furniture, school furniture, etc.",ISO -> 97,
+ISO -> 97 -> 97.145,97.145,Ladders,ISO -> 97,
+ISO -> 97 -> 97.150,97.150,Floor coverings,ISO -> 97,
+ISO -> 97 -> 97.160,97.160,"Home textiles. LinenIncluding duvets, blankets, beddingElectric blankets, see97.030",ISO -> 97,
+ISO -> 97 -> 97.170,97.170,"Body care equipmentIncluding hair-driers, razors, shavers, toothbrushes, massage appliances, radiation skin treatment appliances, etc.",ISO -> 97,
+ISO -> 97 -> 97.180,97.180,"Miscellaneous domestic and commercial equipmentIncluding scissors, aquarium equipment, articles for domestic animals, battery chargers, mops, insect electrocutors, lighters, matches, paper clips, pens, pencils, etc.",ISO -> 97,
+ISO -> 97 -> 97.190,97.190,"Equipment for childrenIncluding child safety requirements for other household equipmentChildren's furniture, see97.140Playgrounds, see97.200.40Toys, see97.200.50",ISO -> 97,
+ISO -> 97 -> 97.195,97.195,Items of art and handicrafts. Cultural property and heritageIncluding conservation of collections and equipment and materials for creating items of art and handicrafts,ISO -> 97,
+ISO -> 97 -> 97.200,97.200,"Equipment for entertainmentAudio and video systems, see33.160Photography, see37.040Cinematography, see37.060",ISO -> 97,ISO -> 97 -> 97.200 -> 97.200.10
+,,,,ISO -> 97 -> 97.200 -> 97.200.30
+,,,,ISO -> 97 -> 97.200 -> 97.200.40
+,,,,ISO -> 97 -> 97.200 -> 97.200.50
+,,,,ISO -> 97 -> 97.200 -> 97.200.99
+ISO -> 97 -> 97.200 -> 97.200.10,97.200.10,"Theatre, stage and studio equipmentIncluding lighting equipment",ISO -> 97 -> 97.200,
+ISO -> 97 -> 97.200 -> 97.200.30,97.200.30,"Camping equipment and camp-sitesCaravans, see43.100",ISO -> 97 -> 97.200,
+ISO -> 97 -> 97.200 -> 97.200.40,97.200.40,PlaygroundsIncluding amusement rides and devices,ISO -> 97 -> 97.200,
+ISO -> 97 -> 97.200 -> 97.200.50,97.200.50,ToysIncluding safety of toys,ISO -> 97 -> 97.200,
+ISO -> 97 -> 97.200 -> 97.200.99,97.200.99,Other equipment for entertainment,ISO -> 97 -> 97.200,
+ISO -> 97 -> 97.220,97.220,"Sports equipment and facilitiesLeisure and tourism services, see03.200Motorcycles, see43.140Cycles, see43.150",ISO -> 97,ISO -> 97 -> 97.220 -> 97.220.01
+,,,,ISO -> 97 -> 97.220 -> 97.220.10
+,,,,ISO -> 97 -> 97.220 -> 97.220.20
+,,,,ISO -> 97 -> 97.220 -> 97.220.30
+,,,,ISO -> 97 -> 97.220 -> 97.220.40
+,,,,ISO -> 97 -> 97.220 -> 97.220.99
+ISO -> 97 -> 97.220 -> 97.220.01,97.220.01,Sports equipment and facilities in general,ISO -> 97 -> 97.220,
+ISO -> 97 -> 97.220 -> 97.220.10,97.220.10,"Sports facilitiesIncluding swimming-pools, spas, solaria, sports fields, running-tracks, spectator facilities for sports, etc.",ISO -> 97 -> 97.220,
+ISO -> 97 -> 97.220 -> 97.220.20,97.220.20,"Winter sports equipmentIncluding ice hockey, snowboard, and ski equipment",ISO -> 97 -> 97.220,
+ISO -> 97 -> 97.220 -> 97.220.30,97.220.30,"Indoor sports equipmentIncluding equipment for gymnastics, volleyball, basketball, handball, home sports trainers, etc.",ISO -> 97 -> 97.220,
+ISO -> 97 -> 97.220 -> 97.220.40,97.220.40,"Outdoor and water sports equipmentIncluding equipment for mountaineering, football, tennis, swimming, diving, etc.Recreational diving services, see03.200.99Personal flotation devices (life jackets), see13.340.70Small craft, see47.080",ISO -> 97 -> 97.220,
+ISO -> 97 -> 97.220 -> 97.220.99,97.220.99,Other sports equipment and facilities,ISO -> 97 -> 97.220,
+ITU-R,ITU-R,ITU-R ROOT,,ITU-R -> BO 
+,,,,ITU-R -> BR 
+,,,,ITU-R -> BS 
+,,,,ITU-R -> BT 
+,,,,ITU-R -> F 
+,,,,ITU-R -> M 
+,,,,ITU-R -> P 
+,,,,ITU-R -> RA 
+,,,,ITU-R -> RS 
+,,,,ITU-R -> S 
+,,,,ITU-R -> SA 
+,,,,ITU-R -> SF 
+,,,,ITU-R -> SM 
+,,,,ITU-R -> SNG 
+,,,,ITU-R -> TF 
+,,,,ITU-R -> V 
+ITU-R -> BO ,BO ,Satellite delivery,ITU-R,
+ITU-R -> BR ,BR ,"Recording for production, archival and play-out; film for television",ITU-R,
+ITU-R -> BS ,BS ,Broadcasting service (sound),ITU-R,
+ITU-R -> BT ,BT ,Broadcasting service (television),ITU-R,
+ITU-R -> F ,F ,Fixed service,ITU-R,
+ITU-R -> M ,M ,"Mobile, radiodetermination, amateur and related satellite services",ITU-R,
+ITU-R -> P ,P ,Radiowave propagation,ITU-R,
+ITU-R -> RA ,RA ,Radio astronomy,ITU-R,
+ITU-R -> RS ,RS ,Remote sensing systems,ITU-R,
+ITU-R -> S ,S ,Fixed-satellite service,ITU-R,
+ITU-R -> SA ,SA ,Space applications and meteorology,ITU-R,
+ITU-R -> SF ,SF ,Frequency sharing and coordination between fixed-satellite and fixed service systems,ITU-R,
+ITU-R -> SM ,SM ,Spectrum management,ITU-R,
+ITU-R -> SNG ,SNG ,Satellite news gathering,ITU-R,
+ITU-R -> TF ,TF ,Time signals and frequency standards emissions,ITU-R,
+ITU-R -> V ,V ,Vocabulary and related subjects,ITU-R,
+ITU-T,ITU-T,ITU-T ROOT,,ITU-T -> A
+,,,,ITU-T -> D
+,,,,ITU-T -> E
+,,,,ITU-T -> F
+,,,,ITU-T -> G
+,,,,ITU-T -> H
+,,,,ITU-T -> I
+,,,,ITU-T -> J
+,,,,ITU-T -> K
+,,,,ITU-T -> L
+,,,,ITU-T -> M
+,,,,ITU-T -> N
+,,,,ITU-T -> O
+,,,,ITU-T -> P
+,,,,ITU-T -> Q
+,,,,ITU-T -> R
+,,,,ITU-T -> S
+,,,,ITU-T -> T
+,,,,ITU-T -> U
+,,,,ITU-T -> V
+,,,,ITU-T -> X
+,,,,ITU-T -> Y
+,,,,ITU-T -> Z
+ITU-T -> A,A,A series: Organization of the work of ITU-T,ITU-T,
+ITU-T -> D,D,D series: Tariff and accounting principles and international telecommunication/ICT economic and policy issues,ITU-T,
+ITU-T -> E,E,"E series: Overall network operation, telephone service, service operation and human factors",ITU-T,
+ITU-T -> F,F,F series: Non-telephone telecommunication services,ITU-T,
+ITU-T -> G,G,"G series: Transmission systems and media, digital systems and networks",ITU-T,
+ITU-T -> H,H,H series: Audiovisual and multimedia systems,ITU-T,
+ITU-T -> I,I,I series: Integrated services digital network,ITU-T,
+ITU-T -> J,J,"J series: Cable networks and transmission of television, sound programme and other multimedia signals",ITU-T,
+ITU-T -> K,K,K series: Protection against interference,ITU-T,
+ITU-T -> L,L,"L series: Environment and ICTs, climate change, e-waste, energy efficiency; construction, installation and protection of cables and other elements of outside plant",ITU-T,
+ITU-T -> M,M,"M series: Telecommunication management, including TMN and network maintenance",ITU-T,
+ITU-T -> N,N,N series: Maintenance: international sound programme and television-transmission circuits,ITU-T,
+ITU-T -> O,O,O series: Specifications of measuring equipment,ITU-T,
+ITU-T -> P,P,"P series: Telephone transmission quality, telephone installations, local line networks",ITU-T,
+ITU-T -> Q,Q,"Q series: Switching and signalling, and associated measurements and tests",ITU-T,
+ITU-T -> R,R,R series: Telegraph transmission,ITU-T,
+ITU-T -> S,S,S series: Telegraph services terminal equipment,ITU-T,
+ITU-T -> T,T,T series: Terminals for telematic services,ITU-T,
+ITU-T -> U,U,U series: Telegraph switching,ITU-T,
+ITU-T -> V,V,V series: Data communication over the telephone network,ITU-T,
+ITU-T -> X,X,"X series: Data networks, open system communications and security",ITU-T,
+ITU-T -> Y,Y,"Y series: Global information infrastructure, Internet protocol aspects, next-generation networks, Internet of Things and smart cities",ITU-T,
+ITU-T -> Z,Z,Z series: Languages and general software aspects for telecommunication systems,ITU-T,
+demo,demo,,,

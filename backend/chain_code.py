@@ -247,36 +247,28 @@ def normalize_replace_abbreviation_text(text):
     return text.lower()
 
 
-df2 = pd.read_excel("./data/Phan Cap (phan_cap)(1).xlsx")
+df2 = pd.read_csv("./data/Phan Cap (phan_cap) 18102024.csv", encoding='ISO-8859-1', sep=",")
 
+def search_standard_name(text):
+    res = df2.loc[df2['name'].str.fullmatch(text, na=False)].to_json(orient='records')
+    res = json.loads(res)
+
+    if len(res):
+        return res[0]
+    else:
+        return {'display_name': text, 'name': text, 'description': text, 'parrent': None, 'children': []}
 
 def paser_standard(res):
+    print(res)
     res = res
-    full_name = res["full_name"].split("->")
-    full_name = [i.strip() for i in full_name]
-
-    list_data = []
+    full_name = res["display_name"].split("->")
+    full_name = [search_standard_name(i.strip()) for i in full_name]
+    # [print(i) for i in full_name]
     if len(full_name) > 1:
-        for i in range(len(full_name)):
-            tmp = res.copy()
-            # print(full_name[i])
-            st = f"Cha "
-            for j in range(i + 1):
-                if j == 0:
-                    st += f"1"
-                elif j != i - 1:
-                    st += f".1"
-                else:
-                    if tmp["description"] is not None:
-                        st = tmp["description"]
-                    else:
-                        st += f".1"
-            tmp.update({"name": st})
-            list_data.append(tmp)
-
         for i in range(len(full_name) - 1):
-            list_data[i]["children"] = [list_data[i + 1]]
-    return list_data[0]
+            full_name[i]["children"] = [full_name[i + 1]]
+
+    return full_name[0]
 
 
 def search_standard(docs):
@@ -297,13 +289,25 @@ def search_standard(docs):
     # },
     for index in range(len(docs)):
         # print(docs[index].metadata["branch"])
-        res = df2.loc[
-            df2["full_name"].str.contains(str(docs[index].metadata["branch"]), na=False)
-        ].to_json(orient="records")
-        res = json.loads(res)
+        docs[index].metadata["tree"] = {}
+        if docs[index].metadata["branch"] != "" and docs[index].metadata["branch"] != None:
+            print(docs[index].metadata["branch"])
+            res = df2.loc[
+                df2["display_name"].str.contains(str(docs[index].metadata["branch"]), na=False)
+            ].to_json(orient="records")
+            res = json.loads(res)
 
-        # # res[0]
-        docs[index].metadata["tree"] = paser_standard(res[0])
+            # print(res)
+            tmp = {}
+            if len(res) > 0:
+                tmp = res[0]
+            else:
+                tmp = {
+                    "display_name": str(docs[index].metadata["branch"])
+                }
+            print(tmp)
+            # paser_standard(tmp)
+            docs[index].metadata["tree"] = paser_standard(tmp)
     return docs
 
 
