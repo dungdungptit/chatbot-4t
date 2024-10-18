@@ -357,7 +357,12 @@ vectorstore = FAISS.load_local(
     allow_dangerous_deserialization=True,
 )
 
-retriever = vectorstore.as_retriever(search_kwargs={"k": 5, "threshold": 0.5})
+retriever = vectorstore.as_retriever(
+    search_kwargs={
+        "k": 5,
+        # "threshold": 0.5
+    }
+)
 
 template_vietnamese_fusion = """Bạn là một tư vấn viên chuyên nghiệp và là người giải quyết vấn đề, được giao nhiệm vụ trả lời bất kỳ câu hỏi nào \
 về các thông tin về các standarzation.

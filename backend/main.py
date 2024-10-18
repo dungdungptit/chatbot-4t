@@ -132,7 +132,7 @@ async def search_results(question: str):
                 # print(k, v[0])
                 res[index].metadata[k] = v[0]
     res = search_standard(res)
-    print(res)
+    # print(res)
     return {"result": "preprocessed successfully", "code": 200, "res": res}
 
 
