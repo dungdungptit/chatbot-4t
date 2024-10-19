@@ -4,7 +4,7 @@ import asyncio
 from typing import Optional, Union
 from uuid import UUID
 from typing import Dict, List, Optional, Sequence, Tuple
-
+import json
 import langsmith
 
 # from chain import ChatRequest, answer_chain
@@ -16,6 +16,7 @@ from pydantic import BaseModel
 from chain_code import (
     get_answer,
     get_results,
+    standard_name,
     search_standard,
     final_rag_chain,
     ChatRequest,
@@ -176,7 +177,61 @@ async def get_answer_code(
     #     return {"result": "error", "status": 500, "output": res}
 
 
-import json
+def insert_into_tree(tree, path):
+    current = tree
+    for part in path:
+        part = part + f" ({standard_name(part)['description']})"
+        if part not in current:
+            current[part] = {}
+            # current[part] = {"display": search_standard(part)}
+        current = current[part]
+
+@app.post("/chain_code_tree")
+async def get_answer_code(
+    body: ChatRequest = Body(
+        examples=[
+            {
+                "question": "Standard involved in Machine Learning",
+                "chat_history": [],
+                "organization": "vu_khoa_hoc_cong_nghe",
+            }
+        ],
+    )
+):
+    question = body.question
+    chat_history = body.chat_history
+    organization = body.organization
+    # return body
+    # print(body)
+    res = get_answer(question, chat_history, organization)
+    print(res)
+    sources = get_results(question)
+    # print(sources)
+    sources = [i for i in sources if i.metadata["name_en"] in res["response"]]
+    for index in range(len(sources)):
+        for k, v in sources[index].metadata.items():
+            if type(v) is list:
+                # print(k, v[0])
+                sources[index].metadata[k] = v[0]
+    sources = search_standard(sources)
+    data = [[j.strip() for j in i.metadata['branch'].split("->")] for i in sources]
+    tree = {}
+    for entry in data:
+        insert_into_tree(tree, entry)
+
+    print(json.dumps(tree, indent=4))
+
+    return {
+        "result": "successfully",
+        "status": 200,
+        "output": res,
+        "sources": sources,
+        "tree": json.dumps(tree, indent=4)
+    }
+    # try:
+    # except:
+    #     res = "Hmm, tôi không chắc."
+    #     return {"result": "error", "status": 500, "output": res}
 
 
 @app.get("/chain_sql")

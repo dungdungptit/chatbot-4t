@@ -249,6 +249,15 @@ def normalize_replace_abbreviation_text(text):
 
 df2 = pd.read_csv("./data/Phan Cap (phan_cap) 18102024.csv", encoding='ISO-8859-1', sep=",")
 
+def standard_name(text):
+    res = df2.loc[df2['name'].str.fullmatch(text, na=False)].to_json(orient='records')
+    res = json.loads(res)
+
+    if len(res):
+        return {'name': res[0]['name'], 'description': res[0]['description']}
+    else:
+        return {'name': text, 'description': text}
+
 def search_standard_name(text):
     res = df2.loc[df2['name'].str.fullmatch(text, na=False)].to_json(orient='records')
     res = json.loads(res)
