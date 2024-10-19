@@ -124,7 +124,7 @@ class GetTraceBody(BaseModel):
 @app.get("/search_results")
 async def search_results(question: str):
     res = get_results(question)
-    res = [i[0] for i in res]
+    # res = [i[0] for i in res]
     # print(res)
     for index in range(len(res)):
         for k, v in res[index].metadata.items():
@@ -152,13 +152,18 @@ async def get_answer_code(
     chat_history = body.chat_history
     organization = body.organization
     # return body
-    print(body)
+    # print(body)
     res = get_answer(question, chat_history, organization)
     print(res)
     sources = get_results(question)
-    sources = [i[0] for i in sources]
-    print(sources)
+    # print(sources)
     sources = [i for i in sources if i.metadata["name_en"] in res["response"]]
+    for index in range(len(sources)):
+        for k, v in sources[index].metadata.items():
+            if type(v) is list:
+                # print(k, v[0])
+                sources[index].metadata[k] = v[0]
+    sources = search_standard(sources)
     return {
         "result": "successfully",
         "status": 200,

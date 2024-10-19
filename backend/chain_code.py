@@ -363,7 +363,7 @@ vectorstore = FAISS.load_local(
 
 retriever = vectorstore.as_retriever(
     search_kwargs={
-        "k": 5,
+        "k": 15,
         # "threshold": 0.5
     }
 )
@@ -436,12 +436,12 @@ def remove_duplicate_words(text: str):
 
 def get_results(question: str):
     question = normalize_replace_abbreviation_text(question)
-    docs = retrieval_chain_rag_fusion.invoke({"question": question})
+    # docs = retrieval_chain_rag_fusion.invoke({"question": question})
     question = translate(question=question)
     docs1 = retriever.get_relevant_documents(question)
-    docs.append(docs1)
-    docs = reciprocal_rank_fusion(docs)
-    return docs
+    # docs.append(docs1)
+    # docs = reciprocal_rank_fusion(docs)
+    return docs1
 
 
 def translate(question: str):
