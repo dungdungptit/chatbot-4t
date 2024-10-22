@@ -8,6 +8,22 @@ start:
 	pip freeze > requirements.txt
 	pip install -r requirements.txt
 
+	
+	Pydantic upgrade
+
+	Upgrade pydantic to the latest version
+
+		pip install pydantic --force-reinstall
+
+	Upgrade FastAPI to the latest version or version above 0.100.2 to fix the issue with pydantic that is related to fastapi
+
+		pip install fastapi --force-reinstall
+
+	Install bump-pydantic and run it via bump.sh script to convert all pydantic models to the latest version
+
+		pip install bump-pydantic
+		./bump.sh
+
 .PHONY: format
 format:
 	poetry run ruff format .

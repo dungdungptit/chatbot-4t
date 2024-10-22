@@ -1,0 +1,372 @@
+{
+    "ITU": {
+        "metadata": {
+            "name": "ITU",
+            "display_name": "ITU",
+            "description": "ITU",
+            "parrent": null
+        },
+        "children": {
+            "F": {
+                "metadata": {
+                    "name": "F",
+                    "display_name": "ITU-T -> F",
+                    "description": "F series: Non-telephone telecommunication services",
+                    "parrent": "ITU-T"
+                },
+                "children": {
+                    "F.700-F.799": {
+                        "metadata": {
+                            "name": "F.700-F.799",
+                            "display_name": "F.700-F.799",
+                            "description": "F.700-F.799",
+                            "parrent": null,
+                            "source": "http://www.itu.int/itu-t/recommendations/rec.aspx?id=14681",
+                            "seq_num": 8935,
+                            "domain": null,
+                            "id": "F.748.12 (06/2021)",
+                            "branch": "ITU -> F -> F.700-F.799",
+                            "year_public": "NaT",
+                            "status": "C\u00f2n hi\u1ec7u l\u1ef1c",
+                            "name_en": "Deep learning software framework evaluation methodology",
+                            "name_vn": null,
+                            "tree": {
+                                "display_name": "ITU",
+                                "name": "ITU",
+                                "description": "ITU",
+                                "parrent": null,
+                                "children": [
+                                    {
+                                        "display_name": "ITU-T -> F",
+                                        "name": "F",
+                                        "description": "F series: Non-telephone telecommunication services",
+                                        "parrent": "ITU-T",
+                                        "children": [
+                                            {
+                                                "display_name": "F.700-F.799",
+                                                "name": "F.700-F.799",
+                                                "description": "F.700-F.799",
+                                                "parrent": null,
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "children": {},
+                        "leaf_count": 1
+                    }
+                },
+                "leaf_count": 1
+            },
+            "M": {
+                "metadata": {
+                    "name": "M",
+                    "display_name": "ITU-T -> M",
+                    "description": "M series: Telecommunication management, including TMN and network maintenance",
+                    "parrent": "ITU-T"
+                },
+                "children": {
+                    "M.3000-M.3599": {
+                        "metadata": {
+                            "name": "M.3000-M.3599",
+                            "display_name": "M.3000-M.3599",
+                            "description": "M.3000-M.3599",
+                            "parrent": null,
+                            "source": "http://www.itu.int/itu-t/recommendations/rec.aspx?id=15786",
+                            "seq_num": 7060,
+                            "domain": null,
+                            "id": "M.3387 (03/2024)",
+                            "branch": "ITU -> M -> M.3000-M.3599",
+                            "year_public": "NaT",
+                            "status": "C\u00f2n hi\u1ec7u l\u1ef1c",
+                            "name_en": "Management requirements for federated machine learning systems",
+                            "name_vn": null,
+                            "tree": {
+                                "display_name": "ITU",
+                                "name": "ITU",
+                                "description": "ITU",
+                                "parrent": null,
+                                "children": [
+                                    {
+                                        "display_name": "ITU-T -> M",
+                                        "name": "M",
+                                        "description": "M series: Telecommunication management, including TMN and network maintenance",
+                                        "parrent": "ITU-T",
+                                        "children": [
+                                            {
+                                                "display_name": "M.3000-M.3599",
+                                                "name": "M.3000-M.3599",
+                                                "description": "M.3000-M.3599",
+                                                "parrent": null,
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "children": {},
+                        "leaf_count": 1
+                    }
+                },
+                "leaf_count": 1
+            },
+            "Y": {
+                "metadata": {
+                    "name": "Y",
+                    "display_name": "ITU-T -> Y",
+                    "description": "Y series: Global information infrastructure, Internet protocol aspects, next-generation networks, Internet of Things and smart cities",
+                    "parrent": "ITU-T"
+                },
+                "children": {
+                    "Y.3000-Y.3499": {
+                        "metadata": {
+                            "name": "Y.3000-Y.3499",
+                            "display_name": "Y.3000-Y.3499",
+                            "description": "Y.3000-Y.3499",
+                            "parrent": null,
+                            "source": "http://www.itu.int/itu-t/recommendations/rec.aspx?id=15058",
+                            "seq_num": 6444,
+                            "domain": null,
+                            "id": "Y.3181 (09/2022)",
+                            "branch": "ITU -> Y -> Y.3000-Y.3499",
+                            "year_public": "NaT",
+                            "status": "C\u00f2n hi\u1ec7u l\u1ef1c",
+                            "name_en": "Architectural framework for machine learning sandbox in future networks including IMT-2020",
+                            "name_vn": null,
+                            "tree": {
+                                "display_name": "ITU",
+                                "name": "ITU",
+                                "description": "ITU",
+                                "parrent": null,
+                                "children": [
+                                    {
+                                        "display_name": "ITU-T -> Y",
+                                        "name": "Y",
+                                        "description": "Y series: Global information infrastructure, Internet protocol aspects, next-generation networks, Internet of Things and smart cities",
+                                        "parrent": "ITU-T",
+                                        "children": [
+                                            {
+                                                "display_name": "Y.3000-Y.3499",
+                                                "name": "Y.3000-Y.3499",
+                                                "description": "Y.3000-Y.3499",
+                                                "parrent": null,
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "children": {},
+                        "leaf_count": 1
+                    }
+                },
+                "leaf_count": 1
+            }
+        },
+        "leaf_count": 3
+    },
+    "3GPP": {
+        "metadata": {
+            "name": "3GPP",
+            "display_name": "3GPP",
+            "description": "3GPP ROOT",
+            "parrent": null
+        },
+        "children": {
+            "TSG SA": {
+                "metadata": {
+                    "name": "TSG SA",
+                    "display_name": "3GPP -> TSG SA",
+                    "description": "Service & System Aspects",
+                    "parrent": "3GPP"
+                },
+                "children": {
+                    "SA WG2": {
+                        "metadata": {
+                            "name": "SA WG2",
+                            "display_name": "3GPP -> TSG SA -> SA WG2",
+                            "description": "System Architecture and Services",
+                            "parrent": "3GPP -> TSG SA",
+                            "source": null,
+                            "seq_num": 38581,
+                            "domain": null,
+                            "id": "23.700-84",
+                            "branch": "3GPP -> TSG SA -> SA WG2",
+                            "year_public": "NaT",
+                            "status": "C\u00f2n hi\u1ec7u l\u1ef1c",
+                            "name_en": "Study on Core Network Enhanced Support for Artificial Intelligence (AI) / Machine Learning (ML)",
+                            "name_vn": null,
+                            "tree": {
+                                "display_name": "3GPP",
+                                "name": "3GPP",
+                                "description": "3GPP ROOT",
+                                "parrent": null,
+                                "children": [
+                                    {
+                                        "display_name": "3GPP -> TSG SA",
+                                        "name": "TSG SA",
+                                        "description": "Service & System Aspects",
+                                        "parrent": "3GPP",
+                                        "children": [
+                                            {
+                                                "display_name": "3GPP -> TSG SA -> SA WG2",
+                                                "name": "SA WG2",
+                                                "description": "System Architecture and Services",
+                                                "parrent": "3GPP -> TSG SA",
+                                                "children": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "children": {},
+                        "leaf_count": 1
+                    }
+                },
+                "leaf_count": 1
+            }
+        },
+        "leaf_count": 1
+    },
+    "ISO": {
+        "metadata": {
+            "name": "ISO",
+            "display_name": "ISO",
+            "description": "ISO ROOT",
+            "parrent": null
+        },
+        "children": {
+            "35": {
+                "metadata": {
+                    "name": "35",
+                    "display_name": "ISO -> 35",
+                    "description": "Information technology",
+                    "parrent": "ISO"
+                },
+                "children": {
+                    "35.020": {
+                        "metadata": {
+                            "name": "35.020",
+                            "display_name": "ISO -> 35 -> 35.020",
+                            "description": "Information technology (IT) in generalIncluding general aspects of IT equipment",
+                            "parrent": "ISO -> 35",
+                            "source": "https://www.iso.org/standard/81093.html?browse=ics",
+                            "seq_num": 28452,
+                            "domain": null,
+                            "id": "ISO/IEC 5259-4:2024",
+                            "branch": "ISO -> 35 -> 35.020",
+                            "year_public": "NaT",
+                            "status": "C\u00f2n hi\u1ec7u l\u1ef1c",
+                            "name_en": "Artificial intelligence \u2014 Data quality for analytics and machine learning (ML)",
+                            "name_vn": null,
+                            "tree": {
+                                "display_name": "ISO",
+                                "name": "ISO",
+                                "description": "ISO ROOT",
+                                "parrent": null,
+                                "children": [
+                                    {
+                                        "display_name": "ISO -> 35",
+                                        "name": "35",
+                                        "description": "Information technology",
+                                        "parrent": "ISO",
+                                        "children": [
+                                            {
+                                                "display_name": "ISO -> 35 -> 35.020",
+                                                "name": "35.020",
+                                                "description": "Information technology (IT) in generalIncluding general aspects of IT equipment",
+                                                "parrent": "ISO -> 35",
+                                                "children": null
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        },
+                        "children": {},
+                        "leaf_count": 1
+                    }
+                },
+                "leaf_count": 1
+            },
+            "01": {
+                "metadata": {
+                    "name": "01",
+                    "display_name": "ISO -> 01",
+                    "description": "Generalities. Terminology. Standardization. Documentation",
+                    "parrent": "ISO"
+                },
+                "children": {
+                    "01.040": {
+                        "metadata": {
+                            "name": "01.040",
+                            "display_name": "ISO -> 01 -> 01.040",
+                            "description": "Vocabularies",
+                            "parrent": "ISO -> 01"
+                        },
+                        "children": {
+                            "01.040.35": {
+                                "metadata": {
+                                    "name": "01.040.35",
+                                    "display_name": "ISO -> 01 -> 01.040 -> 01.040.35",
+                                    "description": "Information technology (Vocabularies)",
+                                    "parrent": "ISO -> 01 -> 01.040",
+                                    "source": "https://www.iso.org/standard/81088.html?browse=ics",
+                                    "seq_num": 28448,
+                                    "domain": null,
+                                    "id": "ISO/IEC 5259-1:2024",
+                                    "branch": "ISO -> 01 -> 01.040 -> 01.040.35",
+                                    "year_public": "NaT",
+                                    "status": "C\u00f2n hi\u1ec7u l\u1ef1c",
+                                    "name_en": "Artificial intelligence \u2014 Data quality for analytics and machine learning (ML)",
+                                    "name_vn": null,
+                                    "tree": {
+                                        "display_name": "ISO",
+                                        "name": "ISO",
+                                        "description": "ISO ROOT",
+                                        "parrent": null,
+                                        "children": [
+                                            {
+                                                "display_name": "ISO -> 01",
+                                                "name": "01",
+                                                "description": "Generalities. Terminology. Standardization. Documentation",
+                                                "parrent": "ISO",
+                                                "children": [
+                                                    {
+                                                        "display_name": "ISO -> 01 -> 01.040",
+                                                        "name": "01.040",
+                                                        "description": "Vocabularies",
+                                                        "parrent": "ISO -> 01",
+                                                        "children": [
+                                                            {
+                                                                "display_name": "ISO -> 01 -> 01.040 -> 01.040.35",
+                                                                "name": "01.040.35",
+                                                                "description": "Information technology (Vocabularies)",
+                                                                "parrent": "ISO -> 01 -> 01.040",
+                                                                "children": null
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                },
+                                "children": {},
+                                "leaf_count": 1
+                            }
+                        },
+                        "leaf_count": 1
+                    }
+                },
+                "leaf_count": 1
+            }
+        },
+        "leaf_count": 2
+    }
+}

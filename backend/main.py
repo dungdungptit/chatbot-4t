@@ -177,14 +177,53 @@ async def get_answer_code(
     #     return {"result": "error", "status": 500, "output": res}
 
 
-def insert_into_tree(tree, path):
+def insert_tree_node(tree, node, metadata):
+    """
+    Hàm đệ quy để chèn một node từ cấu trúc 'tree' vào cây chính.
+    Node cha cũng sẽ chứa metadata từ cây con trong metadata.
+    """
     current = tree
-    for part in path:
-        part = part + f" ({standard_name(part)['description']})"
-        if part not in current:
-            current[part] = {}
-            # current[part] = {"display": search_standard(part)}
-        current = current[part]
+    name = node['name']
+    
+    # Nếu node đã tồn tại, tiếp tục đi sâu vào cây con
+    if name not in current:
+        current[name] = {
+            'metadata': {
+                'name': node['name'],
+                'display_name': node.get('display_name'),
+                'description': node.get('description'),
+                'parrent': node.get('parrent')
+            },
+            'children': {},
+            'leaf_count': 0  # Sẽ dùng để đếm các node lá
+        }
+    
+    # Nếu node có con, tiếp tục đệ quy với cây con
+    if 'children' in node and node['children']:
+        for child in node['children']:
+            insert_tree_node(current[name]['children'], child, metadata)
+    else:
+        # Nếu node không có con, đó là node cuối cùng -> thêm metadata
+        current[name]['metadata'].update(metadata)
+
+def count_all_leaf_nodes(tree):
+    """
+    Hàm đệ quy để đếm tổng số node lá trong cây (những node cuối cùng không có con).
+    """
+    total_leaves = 0
+    
+    for node, value in tree.items():
+        # Nếu node có con, đệ quy vào cây con để đếm tổng số lá của cây đó
+        if value['children']:
+            value['leaf_count'] = count_all_leaf_nodes(value['children'])
+        else:
+            # Nếu là node lá, gán leaf_count là 1
+            value['leaf_count'] = 1
+        
+        # Cộng dồn số node lá
+        total_leaves += value['leaf_count']
+    
+    return total_leaves
 
 @app.post("/chain_code_tree")
 async def get_answer_code(
@@ -214,19 +253,27 @@ async def get_answer_code(
                 # print(k, v[0])
                 sources[index].metadata[k] = v[0]
     sources = search_standard(sources)
-    data = [[j.strip() for j in i.metadata['branch'].split("->")] for i in sources]
+    # data = [[j.strip() for j in i.metadata['branch'].split("->")] for i in sources]
+    
+    # Cấu trúc cây dữ liệu
     tree = {}
-    for entry in data:
-        insert_into_tree(tree, entry)
+    
+    # Chèn dữ liệu vào cây
+    for entry in sources:
+        insert_tree_node(tree, entry.metadata['tree'], entry.metadata)
 
-    print(json.dumps(tree, indent=4))
+    # Đếm tổng số node lá
+    count_all_leaf_nodes(tree)
+
+    # print(json.dumps(tree, indent=4))
 
     return {
         "result": "successfully",
         "status": 200,
         "output": res,
         "sources": sources,
-        "tree": json.dumps(tree, indent=4)
+        "tree": tree
+        # "tree": json.dumps(tree, indent=4)
     }
     # try:
     # except:

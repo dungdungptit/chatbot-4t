@@ -468,7 +468,6 @@ class ChatRequest(BaseModel):
     chat_history: Optional[List[Dict[str, str]]]
     organization: str
 
-
 def _format_chat_history(chat_history: List[Dict[str, str]]) -> List:
     converted_chat_history = []
     for message in chat_history:
