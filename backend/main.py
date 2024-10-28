@@ -225,6 +225,28 @@ def count_all_leaf_nodes(tree):
     
     return total_leaves
 
+def count_records_by_standard_organisation(sources: list):
+    organisation_standards = ["3GPP", "ESTI", "ITU", "ANSI", "ISO/IEC", "IEC/ISO", "ISO/TC", "ISO/PC", "ISO/WS"]
+    general_organisation_standards = ["3GPP", "ESTI", "ANSI", "ISO", "ITU"]
+    reports = {"Other": 0}
+    standards = []
+    for organisation in general_organisation_standards:
+        reports[organisation] = 0
+    for standard in sources:
+        branch = standard.metadata["branch"]
+        standards.append(standard.metadata["id"])
+        for organisation in general_organisation_standards:
+            is_check = False
+            if organisation in branch:
+                reports[organisation] += 1
+                is_check = True
+                break
+        if not is_check:
+            reports["Other"] += 1
+    print(len(sources), standards)
+    print(reports)
+    return reports
+
 @app.post("/chain_code_tree")
 async def get_answer_code(
     body: ChatRequest = Body(
@@ -243,10 +265,11 @@ async def get_answer_code(
     # return body
     # print(body)
     res = get_answer(question, chat_history, organization)
-    print(res)
+    # print(res)
     sources = get_results(question)
     # print(sources)
     sources = [i for i in sources if i.metadata["name_en"] in res["response"]]
+    reports = count_records_by_standard_organisation(sources)
     for index in range(len(sources)):
         for k, v in sources[index].metadata.items():
             if type(v) is list:
@@ -272,7 +295,8 @@ async def get_answer_code(
         "status": 200,
         "output": res,
         "sources": sources,
-        "tree": tree
+        "tree": tree,
+        "report": reports
         # "tree": json.dumps(tree, indent=4)
     }
     # try:
