@@ -23,11 +23,17 @@ template = """Based on the table schema below, write a SQL query that would answ
 
 Question: {question}
 
-if query about delete, update, insert with database, return 'No permission'
+only allow select query, others return 'No permission'
 else SQL Query:"""
-prompt = ChatPromptTemplate.from_messages(
+prompt_query = ChatPromptTemplate.from_messages(
     [
-        ("system", "Given an input question, convert it to a SQL query. No pre-amble."),
+        ("system", "Given an input question, convert it to a SQL query, limit to 50 records. No pre-amble."),
+        ("human", template),
+    ]
+)
+prompt_count = ChatPromptTemplate.from_messages(
+    [
+        ("system", "Given an input question, convert it to a SQL query that count number of records with the question. No pre-amble."),
         ("human", template),
     ]
 )
@@ -649,14 +655,17 @@ from langchain_core.runnables import RunnablePassthrough, RunnableParallel
 # final_rag_chain = _inputs | prompt | llm | StrOutputParser()
 
 
-sql_response = prompt | llm.bind(stop=["\nSQLResult:"]) | StrOutputParser()
+sql_response_query = prompt_query | llm.bind(stop=["\nSQLResult:"]) | StrOutputParser()
+sql_response_count = prompt_count | llm.bind(stop=["\nSQLResult:"]) | StrOutputParser()
 
 
 def get_sql(question: str):
     print(question)
     schema_description = get_schema()
-    res = sql_response.invoke({"question": question, "schema": schema_description})
+    res_query = sql_response_query.invoke({"question": question, "schema": schema_description})
+    res_count = sql_response_count.invoke({"question": question, "schema": schema_description})
     print("=========================")
-    print(res)
+    print(res_count)
+    print(res_query)
     print("=========================")
-    return res
+    return [res_query, res_count]
