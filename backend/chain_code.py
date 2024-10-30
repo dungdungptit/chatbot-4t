@@ -268,7 +268,7 @@ def search_standard_name(text):
         return {'display_name': text, 'name': text, 'description': text, 'parrent': None, 'children': []}
 
 def paser_standard(res):
-    print(res)
+    # print(res)
     res = res
     full_name = res["display_name"].split("->")
     full_name = [search_standard_name(i.strip()) for i in full_name]
@@ -300,7 +300,7 @@ def search_standard(docs):
         # print(docs[index].metadata["branch"])
         docs[index].metadata["tree"] = {}
         if docs[index].metadata["branch"] != "" and docs[index].metadata["branch"] != None:
-            print(docs[index].metadata["branch"])
+            # print(docs[index].metadata["branch"])
             res = df2.loc[
                 df2["display_name"].str.contains(str(docs[index].metadata["branch"]), na=False)
             ].to_json(orient="records")
@@ -314,7 +314,7 @@ def search_standard(docs):
                 tmp = {
                     "display_name": str(docs[index].metadata["branch"])
                 }
-            print(tmp)
+            # print(tmp)
             # paser_standard(tmp)
             docs[index].metadata["tree"] = paser_standard(tmp)
     return docs
@@ -349,7 +349,7 @@ Nếu câu trả lời có link ảnh (type: image) hoặc link đường dẫn,
 # Prompt
 template = """Từ câu hỏi, thông tin tổ chức và văn bản sau đây, hãy trả lời câu hỏi dựa trên \nQuestion: {question}\nOrganization: {organization}\nContext: {context}\n
 Đưa ra câu trả lời là các standarzation liên quan nhất đến thông tin câu hỏi và context
-Cần phân tách câu trả lời và trình bày như 1 danh sách có tối thiểu 10-15 (n) standarzation theo số thứ tự như mẫu sau:
+Cần phân tách câu trả lời và trình bày như 1 danh sách theo số thứ tự như mẫu sau:
 1. 
 2. 
 3. 
@@ -365,17 +365,23 @@ from langchain_community.vectorstores import FAISS
 
 embed_model = OpenAIEmbeddings()
 vectorstore = FAISS.load_local(
-    "./Chatbot_17102024",
+    "./Chatbot_30102024",
     OpenAIEmbeddings(),
     allow_dangerous_deserialization=True,
 )
-
-retriever = vectorstore.as_retriever(
-    search_kwargs={
-        "k": 15,
-        # "threshold": 0.5
-    }
+num_documents = len(vectorstore.index_to_docstore_id)
+print(f"Total number of documents: {num_documents}")
+retrieve = vectorstore.as_retriever(
+    search_type="similarity_score_threshold",
+    search_kwargs={'score_threshold': 0.65, "fetch_k": num_documents, "k": num_documents},
 )
+
+@chain
+def retriever(query: str) -> List[Document]:
+    docs, scores = zip(*vectorstore.similarity_search_with_relevance_scores(query, score_threshold=0.65, k=num_documents))
+    for doc, score in zip(docs, scores):
+        doc.metadata["score"] = float(score)
+    return docs
 
 template_vietnamese_fusion = """Bạn là một tư vấn viên chuyên nghiệp và là người giải quyết vấn đề, được giao nhiệm vụ trả lời bất kỳ câu hỏi nào \
 về các thông tin về các standarzation.
@@ -393,13 +399,29 @@ generate_queries = (
     | (lambda x: x.split("\n"))
 )
 
+# translation
 translate_prompt_template = """Bạn là 1 người giỏi tiếng anh và các ngôn ngữ khác bao gồm cả tiếng Việt. Với đầu vào sau đây: \n{question}Nếu câu đầu vào là tiếng Việt, hãy dịch trả về là tiếng Anh.
-Nếu câu đầu vào là tiếng Anh, hãy trả về là tiếng Anh.
+Chú ý:
+1. Nếu câu đầu vào là tiếng Việt hoặc ngôn ngữ nào khác tiếng Anh, hãy dịch sang tiếng Anh.
+2. Nếu câu đầu vào là tiếng Anh, giữ nguyên câu hỏi.
+3. Nếu có các từ liên quan đến Data Science như ai(artificial intelligence) thì dịch là artificial intelligence, ml(machine learning), dl(deep learning) etc.
 Đầu ra (Tiếng Anh):"""
 
 translate_prompt = ChatPromptTemplate.from_template(translate_prompt_template)
 
 translate_query = translate_prompt | ChatOpenAI(temperature=0) | StrOutputParser()
+
+# rewrite
+rewrite_prompt_template = """Bạn là 1 người giỏi tiếng anh và các ngôn ngữ khác bao gồm cả tiếng Việt, chuyên làm việc trong lĩnh vực liên quan đến các thông tin tiêu chuẩn, quy chuẩn. Với đầu vào sau đây: \n{question} và thông tin của người hỏi sau \n{organization} Hãy viết lại và trả về câu hỏi tóm tắt thật chi tiết, liên quan nhất và đầy đủ nội dung từ câu hỏi và thông tin người hỏi. 1. 
+Chú ý:
+1. Nếu câu đầu vào là tiếng Việt, hãy dịch sang tiếng Anh và kết hợp với thông tin người hỏi để tóm tắt.
+2. Nếu câu đầu vào là tiếng Anh, thì kết hợp với thông tin người hỏi để tóm tắt.
+3. Nếu có các từ liên quan đến Data Science như ai(artificial intelligence) thì hiểu là artificial intelligence, ml(machine learning), dl(deep learning) etc.
+Câu hỏi đầu ra tiếng Anh sau khi viết lại (Tiếng Anh):"""
+
+rewrite_prompt = ChatPromptTemplate.from_template(rewrite_prompt_template)
+
+rewrite_query = rewrite_prompt | ChatOpenAI(temperature=0) | StrOutputParser()
 
 from langchain.load import dumps, loads
 
@@ -447,18 +469,46 @@ def get_results(question: str):
     question = normalize_replace_abbreviation_text(question)
     # docs = retrieval_chain_rag_fusion.invoke({"question": question})
     question = translate(question=question)
-    docs1 = retriever.get_relevant_documents(question)
+    # question = rewrite(question=question)
+    # print(question)
+    docs1 = retriever.invoke(question)
+    print(len(docs1))
+    # print(docs1[0])
+    for doc in docs1[:10]:
+        print(doc.metadata['score'])
     # docs.append(docs1)
     # docs = reciprocal_rank_fusion(docs)
     return docs1
 
+#
+def get_results_with_rewrite(question: str, organization: str):
+    question = normalize_replace_abbreviation_text(question)
+    # docs = retrieval_chain_rag_fusion.invoke({"question": question})
+    question = translate(question=question)
+    question = rewrite(question, organization)
+    print(question)
+    docs1 = retriever.invoke(question)
+    print(len(docs1))
+    for doc in docs1[:10]:
+        print(doc.metadata['score'])
+    # docs.append(docs1)
+    # docs = reciprocal_rank_fusion(docs)
+    return docs1[:10]
 
 def translate(question: str):
-    question = normalize_replace_abbreviation_text(question)
     question = translate_query.invoke({"question": question})
-    print("===============================", question)
+    print("========translate_query=======================", question)
     return question
 
+def rewrite(question: str, organization: str):
+    description = ""
+    for k, v in vu_en.items():
+        if organization == k:
+            description = v
+            break
+    question = rewrite_query.invoke({"question": question, "organization": description})
+    print("========rewrite_query=======================", question)
+    return question
 
 retrieval_chain_rag_fusion = generate_queries | retriever.map()
 
@@ -515,14 +565,18 @@ def get_answer(question: str, chat_history: any, organization: str):
             description = v
             break
     docs = get_results(question)
-
-    response = final_rag_chain.invoke(
-        {
-            "question": question,
-            "docs": docs,
-            "organization": description,
-            "chat_history": chat_history,
-        }
-    )
-    print(response)
+    print(question, len(docs), description, chat_history)
+    # print(docs)
+    # description = "information technology"
+    print("Generate answer: ")
+    # response = final_rag_chain.invoke(
+    #     {
+    #         "question": question,
+    #         "docs": docs,
+    #         "organization": description,
+    #         "chat_history": chat_history,
+        # }
+    # )
+    response = "Response"
+    # print("Response", response)
     return {"response": response}

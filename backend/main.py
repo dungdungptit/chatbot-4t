@@ -6,6 +6,7 @@ from uuid import UUID
 from typing import Dict, List, Optional, Sequence, Tuple
 import json
 import langsmith
+from fastapi.encoders import jsonable_encoder
 
 # from chain import ChatRequest, answer_chain
 from fastapi import Body, FastAPI
@@ -19,6 +20,7 @@ from chain_code import (
     standard_name,
     search_standard,
     final_rag_chain,
+    get_results_with_rewrite,
     ChatRequest,
 )
 from chain_sql import get_sql
@@ -26,6 +28,7 @@ from chain_sql import get_sql
 # client = Client()
 
 app = FastAPI()
+app.search_results = []
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["null", "*"],
@@ -136,6 +139,22 @@ async def search_results(question: str):
     # print(res)
     return {"result": "preprocessed successfully", "code": 200, "res": res}
 
+@app.get("/search_results_with_organization")
+async def search_results_with_organization(question: str = "Standard involved in Machine Learning", organization: str = "vu_khoa_hoc_cong_nghe"):
+    print(f'question: {question}, organization: {organization}')
+    # res = f'question: {question}, organization: {organization}'
+    res = get_results_with_rewrite(question, organization)
+    # res = [i[0] for i in res]
+    # print(res)
+    for index in range(len(res)):
+        for k, v in res[index].metadata.items():
+            if type(v) is list:
+                # print(k, v[0])
+                res[index].metadata[k] = v[0]
+    res = search_standard(res)
+    # print(res)
+    return {"result": "preprocessed successfully", "code": 200, "res": res}
+
 
 @app.post("/chain_code")
 async def get_answer_code(
@@ -155,7 +174,7 @@ async def get_answer_code(
     # return body
     # print(body)
     res = get_answer(question, chat_history, organization)
-    print(res)
+    # print(res)
     sources = get_results(question)
     # print(sources)
     sources = [i for i in sources if i.metadata["name_en"] in res["response"]]
@@ -183,6 +202,7 @@ def insert_tree_node(tree, node, metadata):
     Node cha cũng sẽ chứa metadata từ cây con trong metadata.
     """
     current = tree
+    # print("Node", node)
     name = node['name']
     
     # Nếu node đã tồn tại, tiếp tục đi sâu vào cây con
@@ -195,16 +215,20 @@ def insert_tree_node(tree, node, metadata):
                 'parrent': node.get('parrent')
             },
             'children': {},
-            'leaf_count': 0  # Sẽ dùng để đếm các node lá
+            'leaf_count': 0,  # Sẽ dùng để đếm các node lá
+            'list_data': []
         }
     
     # Nếu node có con, tiếp tục đệ quy với cây con
     if 'children' in node and node['children']:
+        # print("Children", node['children'])
         for child in node['children']:
+            # print("Child", child)
             insert_tree_node(current[name]['children'], child, metadata)
     else:
         # Nếu node không có con, đó là node cuối cùng -> thêm metadata
-        current[name]['metadata'].update(metadata)
+        # print(metadata)
+        current[name]['list_data'].append(metadata)
 
 def count_all_leaf_nodes(tree):
     """
@@ -226,24 +250,31 @@ def count_all_leaf_nodes(tree):
     return total_leaves
 
 def count_records_by_standard_organisation(sources: list):
-    organisation_standards = ["3GPP", "ESTI", "ITU", "ANSI", "ISO/IEC", "IEC/ISO", "ISO/TC", "ISO/PC", "ISO/WS"]
-    general_organisation_standards = ["3GPP", "ESTI", "ANSI", "ISO", "ITU"]
+    organisation_standards = ["3GPP", "ETSI", "ITU", "ANSI", "ISO/IEC", "IEC/ISO", "ISO/TC", "ISO/PC", "ISO/WS"]
+    general_organisation_standards = ["3GPP", "ETSI", "ANSI", "ISO", "ITU", "IEC"]
     reports = {"Other": 0}
     standards = []
     for organisation in general_organisation_standards:
         reports[organisation] = 0
     for standard in sources:
         branch = standard.metadata["branch"]
+        # print(standard.metadata, branch)
         standards.append(standard.metadata["id"])
         for organisation in general_organisation_standards:
             is_check = False
-            if organisation in branch:
+            if not branch:
+                if organisation in standard.metadata['id']:
+                    reports[organisation] += 1
+                    is_check = True
+                    break
+            elif organisation in branch:
                 reports[organisation] += 1
                 is_check = True
                 break
         if not is_check:
+            print(branch, standard.metadata['id'])
             reports["Other"] += 1
-    print(len(sources), standards)
+    # print(len(sources), standards)
     print(reports)
     return reports
 
@@ -267,13 +298,55 @@ async def get_answer_code(
     res = get_answer(question, chat_history, organization)
     # print(res)
     sources = get_results(question)
+    # sources = sources[:20]
     # print(sources)
-    sources = [i for i in sources if i.metadata["name_en"] in res["response"]]
+    # sources = [i for i in sources if i.metadata["name_en"] in res["response"]]
+    reports = count_records_by_standard_organisation(sources)
+    # for index in range(len(sources)):
+    #     for k, v in sources[index].metadata.items():
+    #         if type(v) is list:
+    #             # print("Meta", k, v[0])
+    #             sources[index].metadata[k] = v[0]
+    # sources = search_standard(sources)
+    # # data = [[j.strip() for j in i.metadata['branch'].split("->")] for i in sources]
+    
+    # # Cấu trúc cây dữ liệu
+    # tree = {}
+    
+    # # Chèn dữ liệu vào cây
+    # for entry in sources:
+    #     if len(entry.metadata['tree'].keys()):
+    #         insert_tree_node(tree, entry.metadata['tree'], entry.metadata)
+
+    # # Đếm tổng số node lá
+    # count_all_leaf_nodes(tree)
+    # print(json.dumps(tree, indent=4))
+    # print(tree)
+    # print(tree)
+    response = {
+        "result": "successfully",
+        "status": 200,
+        "report": reports
+        # "tree": json.dumps(tree, indent=4)
+    }
+    app.search_results = sources
+    return response
+    # try:
+    # except:
+    #     res = "Hmm, tôi không chắc."
+    #     return {"result": "error", "status": 500, "output": res}
+
+@app.post("/chain_code_top_tree")
+async def get_answer_code_top_k(
+    k: int
+):
+    sources = app.search_results
+    sources = sources[:k]
     reports = count_records_by_standard_organisation(sources)
     for index in range(len(sources)):
         for k, v in sources[index].metadata.items():
             if type(v) is list:
-                # print(k, v[0])
+                # print("Meta", k, v[0])
                 sources[index].metadata[k] = v[0]
     sources = search_standard(sources)
     # data = [[j.strip() for j in i.metadata['branch'].split("->")] for i in sources]
@@ -283,22 +356,22 @@ async def get_answer_code(
     
     # Chèn dữ liệu vào cây
     for entry in sources:
-        insert_tree_node(tree, entry.metadata['tree'], entry.metadata)
+        if len(entry.metadata['tree'].keys()):
+            insert_tree_node(tree, entry.metadata['tree'], entry.metadata)
 
     # Đếm tổng số node lá
     count_all_leaf_nodes(tree)
-
     # print(json.dumps(tree, indent=4))
-
-    return {
+    # print(tree)
+    # print(tree)
+    response = {
         "result": "successfully",
         "status": 200,
-        "output": res,
         "sources": sources,
-        "tree": tree,
-        "report": reports
+        "tree": tree
         # "tree": json.dumps(tree, indent=4)
     }
+    return response
     # try:
     # except:
     #     res = "Hmm, tôi không chắc."
