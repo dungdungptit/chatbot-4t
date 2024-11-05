@@ -156,3 +156,13 @@ notebooks
 
 research/
 backend/.env
+backend/Chatbot*
+backend/Chatbot*/index*
+backend/Chatbot*/index.pkl
+backend/Chatbot*/index.faiss
+backend/data/Chatbot*
+backend/data/Chatbot*/index*
+backend/data/Chatbot*/index.pkl
+backend/data/Chatbot*/index.faiss
+backend/data/_*
+backend/data/data_standard.json

@@ -365,7 +365,7 @@ from langchain_community.vectorstores import FAISS
 
 embed_model = OpenAIEmbeddings()
 vectorstore = FAISS.load_local(
-    "./Chatbot_30102024",
+    "./Chatbot_02112024",
     OpenAIEmbeddings(),
     allow_dangerous_deserialization=True,
 )

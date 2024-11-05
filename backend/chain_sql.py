@@ -1,6 +1,11 @@
 from getpass import getpass
 import os
+import requests
+import json
 from dotenv import load_dotenv
+from langchain_core.pydantic_v1 import BaseModel, Field
+from typing import Dict, List, Optional, Sequence, Tuple
+from chain_code import translate
 
 load_dotenv()
 
@@ -40,10 +45,10 @@ prompt_count = ChatPromptTemplate.from_messages(
 
 
 def get_schema():
-    db_get_table_info = ""
-    with open("./database.sql", "r", encoding='utf-8') as file:
-        db_get_table_info = file.readlines()
-        file.close()
+    # db_get_table_info = ""
+    # with open("./database.sql", "r", encoding='utf-8') as file:
+    #     db_get_table_info = file.readlines()
+    #     file.close()
     return """--BẢNG CHA
 CREATE TABLE public.linh_vuc_tttt (
 	id serial4 NOT NULL,
@@ -661,6 +666,7 @@ sql_response_count = prompt_count | llm.bind(stop=["\nSQLResult:"]) | StrOutputP
 
 def get_sql(question: str):
     print(question)
+    question = translate(question)
     schema_description = get_schema()
     res_query = sql_response_query.invoke({"question": question, "schema": schema_description})
     res_count = sql_response_count.invoke({"question": question, "schema": schema_description})
@@ -668,4 +674,50 @@ def get_sql(question: str):
     print(res_count)
     print(res_query)
     print("=========================")
-    return [res_query, res_count]
+    return ["".join(res_query.split("\n")[1:-1]), "".join(res_count.split("\n")[1:-1])]
+
+
+class QueryRequest(BaseModel):
+    query: Optional[List[str]]
+
+def execute_sql(sqls: list):
+    url = 'http://192.168.30.188:7030/action_query'
+    data = {
+        "jsonrpc": "2.0", 
+        "params": {
+            "querys": sqls,
+        }
+    }
+
+    # Convert data to JSON format
+    json_data = json.dumps(data)
+
+    # Set the Content-Type header to application/json
+    headers = {'Content-Type': 'application/json'}
+
+    # Send POST request with JSON data
+    response = requests.post(url, data=json_data, headers=headers)
+
+    # Print the response
+    return response.json()
+
+def execute_sql_post(body: QueryRequest):
+    url = 'http://192.168.30.188:7030/action_query'
+    data = {
+        "jsonrpc": "2.0", 
+        "params": {
+            "querys": body.query,
+        }
+    }
+
+    # Convert data to JSON format
+    json_data = json.dumps(data)
+
+    # Set the Content-Type header to application/json
+    headers = {'Content-Type': 'application/json'}
+
+    # Send POST request with JSON data
+    response = requests.post(url, data=json_data, headers=headers)
+
+    # Print the response
+    return response.json()

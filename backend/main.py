@@ -23,7 +23,12 @@ from chain_code import (
     get_results_with_rewrite,
     ChatRequest,
 )
-from chain_sql import get_sql
+from chain_sql import (
+    get_sql,
+    execute_sql,
+    execute_sql_post,
+    QueryRequest
+)
 
 # client = Client()
 
@@ -380,8 +385,20 @@ async def get_answer_code_top_k(
 
 @app.get("/chain_sql")
 async def get_answer_sql(question: str):
-    res = get_sql(json.dumps(question, ensure_ascii=True))
-    return {"result": "preprocessed successfully", "code": 200, "query": res}
+    sqls = get_sql(json.dumps(question, ensure_ascii=True))
+    res = execute_sql(sqls)
+    return {"result": "preprocessed successfully", "code": 200, "query": sqls, "output": res}
+
+@app.post("/execute_sql")
+async def call_execute_sql(body: QueryRequest = Body(
+    examples=[
+        {
+        "query": ["SELECT * FROM public.tcvn LIMIT 50;"],
+        }
+    ]
+)):
+    res = execute_sql_post(body)
+    return {"result": "preprocessed successfully", "code": 200, "output": res}
 
 
 if __name__ == "__main__":
